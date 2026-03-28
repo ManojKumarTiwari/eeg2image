@@ -1,0 +1,26 @@
+torch>=2.0.0 --hash https://download.pytorch.org/whl/cu121
+numpy
+scipy
+scikit-learn
+lmdb
+einops
+tqdm
+matplotlib
+umap-learn
+plotly
+pandas
+Pillow>=9.0.0
+
+# EEG-LLM dependencies (Stage 1: EEG → Text)
+transformers>=4.36.0
+peft>=0.7.0
+bitsandbytes>=0.41.0
+accelerate>=0.25.0
+sentencepiece
+protobuf
+
+# Image generation dependencies (Stage 2: Text → Image)
+# Model: stabilityai/stable-diffusion-2-1 (Apache 2.0 license)
+diffusers>=0.24.0
+safetensors>=0.4.0
+xformers>=0.0.23       ; sys_platform == "linux"   # optional: faster attention on Linux
