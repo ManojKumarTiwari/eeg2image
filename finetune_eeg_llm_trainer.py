@@ -15,9 +15,13 @@ class EEGLLMTrainer:
         self.model = model
 
         # Load dataset-specific keywords for evaluation
-        if getattr(params, 'downstream_dataset', 'FACED').upper() == 'BCICIV2A':
+        ds = getattr(params, 'downstream_dataset', 'FACED').upper()
+        if ds == 'BCICIV2A':
             from datasets.bciciv2a_llm_dataset import MI_KEYWORDS
             self.eval_keywords = MI_KEYWORDS
+        elif ds == 'VI':
+            from datasets.visual_imagery_llm_dataset import VI_KEYWORDS
+            self.eval_keywords = VI_KEYWORDS
         else:
             from datasets.faced_llm_dataset import EMOTION_KEYWORDS
             self.eval_keywords = EMOTION_KEYWORDS
@@ -137,7 +141,7 @@ class EEGLLMTrainer:
                 eeg_data=batch['eeg_data'].cuda(),
                 prompt_ids=batch['prompt_ids'].cuda(),
                 prompt_mask=batch['prompt_mask'].cuda(),
-                max_new_tokens=20,
+                max_new_tokens=64,
             )
             label_ids = batch['label_ids'].numpy()
 
@@ -191,7 +195,7 @@ class EEGLLMTrainer:
                 eeg_data=batch['eeg_data'].cuda(),
                 prompt_ids=batch['prompt_ids'].cuda(),
                 prompt_mask=batch['prompt_mask'].cuda(),
-                max_new_tokens=20,
+                max_new_tokens=64,
             )
             label_ids = batch['label_ids'].numpy()
 

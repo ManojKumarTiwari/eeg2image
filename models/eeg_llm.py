@@ -50,6 +50,31 @@ FACED_TOPOLOGY = {
 }
 
 
+# ─── Visual Imagery brain region config (32 channels, 5 regions) ──────────────
+
+VI_BRAIN_REGIONS = [
+    0, 0, 0, 0, 0, 0, 0, 0,      # Fpz,Fp1,Fp2,Fz,F3,F4,F7,F8       → Frontal
+    1, 1, 1, 1, 1,                # FCz,FC3,FC4,FT7,FT8                → Fronto-central
+    2, 2, 2, 2, 2,                # Cz,C3,C4,T7,T8                     → Central
+    3, 3, 3, 3, 3, 3, 3, 3, 3,   # CP3,CP4,TP7,TP8,Pz,P3,P4,P7,P8   → Parietal
+    4, 4, 4, 4, 4,                # PO3,PO4,Oz,O1,O2                   → Occipital
+]
+VI_ELECTRODE_LABELS = [
+    'Fpz', 'Fp1', 'Fp2', 'Fz', 'F3', 'F4', 'F7', 'F8',
+    'FCz', 'FC3', 'FC4', 'FT7', 'FT8',
+    'Cz', 'C3', 'C4', 'T7', 'T8',
+    'CP3', 'CP4', 'TP7', 'TP8', 'Pz', 'P3', 'P4', 'P7', 'P8',
+    'PO3', 'PO4', 'Oz', 'O1', 'O2',
+]
+VI_TOPOLOGY = {
+    0: ['Fpz', 'Fp1', 'Fp2', 'Fz', 'F3', 'F4', 'F7', 'F8'],
+    1: ['FCz', 'FC3', 'FC4', 'FT7', 'FT8'],
+    2: ['Cz', 'C3', 'C4', 'T7', 'T8'],
+    3: ['CP3', 'CP4', 'TP7', 'TP8', 'Pz', 'P3', 'P4', 'P7', 'P8'],
+    4: ['PO3', 'PO4', 'Oz', 'O1', 'O2'],
+}
+
+
 def _build_sorted_indices(brain_regions, electrode_labels, topology):
     region_groups = {}
     for i, region in enumerate(brain_regions):
@@ -127,6 +152,12 @@ class EEGLanguageModel(nn.Module):
             topology         = BCIC_TOPOLOGY
             self._n_channels = 22
             temporal_pool_stride = 1   # BCIC only has 4 patches, no pooling needed
+        elif dataset == 'VI':
+            brain_regions    = VI_BRAIN_REGIONS
+            electrode_labels = VI_ELECTRODE_LABELS
+            topology         = VI_TOPOLOGY
+            self._n_channels = 32
+            temporal_pool_stride = 1   # VI also has 4 patches
         else:  # FACED
             brain_regions    = FACED_BRAIN_REGIONS
             electrode_labels = FACED_ELECTRODE_LABELS

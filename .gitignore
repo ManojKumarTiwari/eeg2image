@@ -1,14 +1,28 @@
+# Python
 __pycache__/
 *.py[cod]
+*.egg-info/
+dist/
+build/
+.ipynb_checkpoints/
+
+# Environment
+.env
+.venv/
+
+# Large model / data files
 *.pth
 *.safetensors
 *.mdb
 *.mat
+*.bdf
+*.zip
+*.bin
+
+# Data directories
 data/
 cache/
-.ipynb_checkpoints/
-*.egg-info/
-dist/
-build/
-.env
 wandb/
+
+# HuggingFace cache
+pth_downtasks/

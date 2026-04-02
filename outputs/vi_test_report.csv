@@ -1,0 +1,1786 @@
+index,original_label,predicted_label,original_class,predicted_class,original_text,predicted_text,correct
+0,0,7,dog,watch,The subject is imagining a dog.,The subject is imagining a watch.,False
+1,0,7,dog,watch,The subject is imagining a dog.,The subject is imagining a watch.,False
+2,1,6,bird,scissor,The subject is imagining a bird.,The image being imagined is a cup. Scissors are being mentally visualized.,False
+3,1,7,bird,watch,The subject is imagining a bird.,The image being imagined is a watch.,False
+4,1,8,bird,cup,The subject is imagining a bird.,The subject is imagining a cup.,False
+5,1,7,bird,watch,The subject is imagining a bird.,The subject is imagining a watch.,False
+6,0,7,dog,watch,The subject is imagining a dog.,The image being imagined is a watch.,False
+7,0,7,dog,watch,The subject is imagining a dog.,The image being imagined is a watch.,False
+8,2,8,fish,cup,The subject is imagining a fish.,The image being imagined is a cup.,False
+9,1,8,bird,cup,The subject is imagining a bird.,The image being imagined is a cup.,False
+10,2,4,fish,square,The subject is imagining a fish.,The image being imagined is a square. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16.,False
+11,2,8,fish,cup,The subject is imagining a fish.,The subject is imagining a cup.,False
+12,1,5,bird,circle,The subject is imagining a bird.,The image being imagined is a circle.,False
+13,0,8,dog,cup,The subject is imagining a dog.,The image being imagined is a cup.,False
+14,0,4,dog,square,The subject is imagining a dog.,The image being imagined is a square.,False
+15,2,4,fish,square,The subject is imagining a fish.,The subject is imagining a square.,False
+16,2,4,fish,square,The subject is imagining a fish.,The image being imagined is a square.,False
+17,2,7,fish,watch,The subject is imagining a fish.,The image being imagined is a watch.,False
+18,1,0,bird,dog,The subject is imagining a bird.,The image being imagined is a dog.,False
+19,0,0,dog,dog,The subject is imagining a dog.,The subject is imagining a dog.,True
+20,0,5,dog,circle,The subject is imagining a dog.,The image being imagined is a circle.,False
+21,2,9,fish,chair,The subject is imagining a fish.,The image being imagined is a chair.,False
+22,2,3,fish,pentagram,The subject is imagining a fish.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 1. 2. 3. 4. 5. 6. 7. 8.,False
+23,1,4,bird,square,The subject is imagining a bird.,The image being imagined is a square.,False
+24,2,5,fish,circle,The subject is imagining a fish.,The image being imagined is a circle.,False
+25,1,4,bird,square,The subject is imagining a bird.,The subject is imagining a square.,False
+26,0,4,dog,square,The subject is imagining a dog.,The image being imagined is a square.,False
+27,2,4,fish,square,The subject is imagining a fish.,The image being imagined is a square.,False
+28,1,5,bird,circle,The subject is imagining a bird.,The image being imagined is a circle.,False
+29,0,5,dog,circle,The subject is imagining a dog.,The image being imagined is a circle.,False
+30,0,8,dog,cup,The subject is imagining a dog.,The subject is imagining a cup.,False
+31,0,7,dog,watch,The subject is imagining a dog.,The image being imagined is a watch.,False
+32,0,4,dog,square,The subject is imagining a dog.,The image being imagined is a square.,False
+33,2,9,fish,chair,The subject is imagining a fish.,The image being imagined is a chair.,False
+34,2,8,fish,cup,The subject is imagining a fish.,The subject is imagining a cup.,False
+35,0,4,dog,square,The subject is imagining a dog.,The subject is imagining a square.,False
+36,2,2,fish,fish,The subject is imagining a fish.,The subject is imagining a fish.,True
+37,1,3,bird,pentagram,The subject is imagining a bird.,The subject is imagining a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 1. 2. 3. 4. 5. 6. 7. 8.,False
+38,1,4,bird,square,The subject is imagining a bird.,The subject is imagining a square.,False
+39,2,5,fish,circle,The subject is imagining a fish.,The image being imagined is a circle.,False
+40,1,4,bird,square,The subject is imagining a bird.,The subject is imagining a square.,False
+41,1,5,bird,circle,The subject is imagining a bird.,The image being imagined is a circle.,False
+42,0,0,dog,dog,The subject is imagining a dog.,The image being imagined is a dog.,True
+43,2,8,fish,cup,The subject is imagining a fish.,The subject is imagining a cup.,False
+44,2,5,fish,circle,The subject is imagining a fish.,The image being imagined is a circle.,False
+45,0,5,dog,circle,The subject is imagining a dog.,The image being imagined is a circle.,False
+46,1,2,bird,fish,The subject is imagining a bird.,The image being imagined is a fish.,False
+47,0,8,dog,cup,The subject is imagining a dog.,The subject is imagining a cup.,False
+48,2,4,fish,square,The subject is imagining a fish.,The image being imagined is a square. The subject is imagining a square.,False
+49,0,3,dog,pentagram,The subject is imagining a dog.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 0. 1. 2. 3. 4. 5. 6. 7.,False
+50,1,5,bird,circle,The subject is imagining a bird.,The subject is imagining a circle.,False
+51,1,9,bird,chair,The subject is imagining a bird.,The image being imagined is a chair.,False
+52,1,5,bird,circle,The subject is imagining a bird.,The image being imagined is a circle.,False
+53,1,0,bird,dog,The subject is imagining a bird.,The image being imagined is a dog.,False
+54,0,8,dog,cup,The subject is imagining a dog.,The image being imagined is a cup.,False
+55,1,4,bird,square,The subject is imagining a bird.,The subject is imagining a square.,False
+56,2,9,fish,chair,The subject is imagining a fish.,The image being imagined is a chair.,False
+57,2,5,fish,circle,The subject is imagining a fish.,The image being imagined is a circle.,False
+58,0,8,dog,cup,The subject is imagining a dog.,The image being imagined is a cup.,False
+59,2,5,fish,circle,The subject is imagining a fish.,The subject is imagining a circle.,False
+60,0,2,dog,fish,The subject is imagining a dog.,The image being imagined is a fish.,False
+61,2,2,fish,fish,The subject is imagining a fish.,The image being imagined is a fish.,True
+62,0,5,dog,circle,The subject is imagining a dog.,The subject is imagining a circle.,False
+63,0,3,dog,pentagram,The subject is imagining a dog.,The subject is imagining a pentagram.,False
+64,2,8,fish,cup,The subject is imagining a fish.,The subject is imagining a cup.,False
+65,1,4,bird,square,The subject is imagining a bird.,The subject is imagining a square.,False
+66,1,4,bird,square,The subject is imagining a bird.,The image being imagined is a square.,False
+67,1,3,bird,pentagram,The subject is imagining a bird.,The image being imagined is a pentagram.,False
+68,1,5,bird,circle,The subject is imagining a bird.,The image being imagined is a circle.,False
+69,2,5,fish,circle,The subject is imagining a fish.,The image being imagined is a circle.,False
+70,2,6,fish,scissor,The subject is imagining a fish.,"The image being imagined is a chair.
+scissors.",False
+71,2,8,fish,cup,The subject is imagining a fish.,The subject is imagining a cup.,False
+72,0,4,dog,square,The subject is imagining a dog.,The image being imagined is a square.,False
+73,1,8,bird,cup,The subject is imagining a bird.,The subject is imagining a cup.,False
+74,2,4,fish,square,The subject is imagining a fish.,The subject is imagining a square.,False
+75,0,0,dog,dog,The subject is imagining a dog.,The image being imagined is a dog.,True
+76,2,9,fish,chair,The subject is imagining a fish.,The image being imagined is a chair.,False
+77,1,5,bird,circle,The subject is imagining a bird.,The image being imagined is a circle.,False
+78,2,4,fish,square,The subject is imagining a fish.,The image being imagined is a square.,False
+79,1,4,bird,square,The subject is imagining a bird.,The image being imagined is a square.,False
+80,1,5,bird,circle,The subject is imagining a bird.,The image being imagined is a circle.,False
+81,2,5,fish,circle,The subject is imagining a fish.,The image being imagined is a circle.,False
+82,0,3,dog,pentagram,The subject is imagining a dog.,"The image being imagined is a pentagram.
+scott.
+cup.
+cup.
+cup.
+cup.
+cup.
+cup.
+cup.
+cup.
+cup.
+cup.
+cup.
+cup.
+cup.
+cup.
+cup.
+cup.
+cup",False
+83,0,5,dog,circle,The subject is imagining a dog.,The subject is imagining a circle.,False
+84,0,4,dog,square,The subject is imagining a dog.,The image being imagined is a square.,False
+85,2,4,fish,square,The subject is imagining a fish.,The subject is imagining a square.,False
+86,0,5,dog,circle,The subject is imagining a dog.,The image being imagined is a circle.,False
+87,1,4,bird,square,The subject is imagining a bird.,"The image being imagined is a square.
+
+[EEG_TOKENS]
+Give the subject a square.",False
+88,1,2,bird,fish,The subject is imagining a bird.,The image being imagined is a fish.,False
+89,0,5,dog,circle,The subject is imagining a dog.,The image being imagined is a circle.,False
+90,2,3,fish,pentagram,The subject is imagining a fish.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16,False
+91,2,4,fish,square,The subject is imagining a fish.,The subject is imagining a square.,False
+92,0,4,dog,square,The subject is imagining a dog.,The image being imagined is a square.,False
+93,1,4,bird,square,The subject is imagining a bird.,The image being imagined is a square.,False
+94,1,4,bird,square,The subject is imagining a bird.,The subject is imagining a square.,False
+95,0,5,dog,circle,The subject is imagining a dog.,The image being imagined is a circle.,False
+96,1,5,bird,circle,The subject is imagining a bird.,The subject is imagining a circle.,False
+97,2,4,fish,square,The subject is imagining a fish.,The image being imagined is a square.,False
+98,2,5,fish,circle,The subject is imagining a fish.,The image being imagined is a circle.,False
+99,1,4,bird,square,The subject is imagining a bird.,The image being imagined is a square.,False
+100,0,4,dog,square,The subject is imagining a dog.,The image being imagined is a square.,False
+101,2,2,fish,fish,The subject is imagining a fish.,The image being imagined is a fish.,True
+102,0,4,dog,square,The subject is imagining a dog.,The image being imagined is a square.,False
+103,1,4,bird,square,The subject is imagining a bird.,The subject is imagining a square.,False
+104,1,5,bird,circle,The subject is imagining a bird.,The image being imagined is a circle.,False
+105,0,8,dog,cup,The subject is imagining a dog.,The subject is imagining a cup.,False
+106,2,5,fish,circle,The subject is imagining a fish.,The image being imagined is a circle.,False
+107,0,5,dog,circle,The subject is imagining a dog.,The image being imagined is a circle.,False
+108,0,5,dog,circle,The subject is imagining a dog.,The subject is imagining a circle.,False
+109,1,5,bird,circle,The subject is imagining a bird.,The image being imagined is a circle.,False
+110,2,8,fish,cup,The subject is imagining a fish.,The image being imagined is a cup.,False
+111,2,2,fish,fish,The subject is imagining a fish.,The image being imagined is a fish.,True
+112,2,3,fish,pentagram,The subject is imagining a fish.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 1. 2. 3. 4. 5. 6. 7. 8.,False
+113,1,7,bird,watch,The subject is imagining a bird.,The image being imagined is a watch.,False
+114,2,4,fish,square,The subject is imagining a fish.,The image being imagined is a square.,False
+115,0,0,dog,dog,The subject is imagining a dog.,The subject is imagining a dog.,True
+116,0,5,dog,circle,The subject is imagining a dog.,The image being imagined is a circle.,False
+117,1,5,bird,circle,The subject is imagining a bird.,The image being imagined is a circle.,False
+118,0,4,dog,square,The subject is imagining a dog.,The image being imagined is a square.,False
+119,1,4,bird,square,The subject is imagining a bird.,The image being imagined is a square.,False
+120,3,5,pentagram,circle,The subject is imagining a pentagram.,The subject is imagining a circle.,False
+121,3,5,pentagram,circle,The subject is imagining a pentagram.,The image being imagined is a circle.,False
+122,3,4,pentagram,square,The subject is imagining a pentagram.,The image being imagined is a square.,False
+123,3,4,pentagram,square,The subject is imagining a pentagram.,The image being imagined is a square.,False
+124,4,5,square,circle,The subject is imagining a square.,The subject is imagining a circle.,False
+125,5,8,circle,cup,The subject is imagining a circle.,The image being imagined is a cup.,False
+126,3,8,pentagram,cup,The subject is imagining a pentagram.,The subject is imagining a cup.,False
+127,5,5,circle,circle,The subject is imagining a circle.,The image being imagined is a circle.,True
+128,4,3,square,pentagram,The subject is imagining a square.,The image being imagined is a pentagram.,False
+129,4,6,square,scissor,The subject is imagining a square.,The image being imagined is a cup. Scissors are being mentally visualized.,False
+130,4,4,square,square,The subject is imagining a square.,The image being imagined is a square.,True
+131,4,4,square,square,The subject is imagining a square.,The image being imagined is a square.,True
+132,4,3,square,pentagram,The subject is imagining a square.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 1. 2. 3. 4. 5. 6. 7. 8.,False
+133,5,5,circle,circle,The subject is imagining a circle.,The image being imagined is a circle.,True
+134,3,5,pentagram,circle,The subject is imagining a pentagram.,The subject is imagining a circle.,False
+135,5,8,circle,cup,The subject is imagining a circle.,The subject is imagining a cup.,False
+136,5,3,circle,pentagram,The subject is imagining a circle.,"The subject is imagining a pentagram.
+scott is the image.",False
+137,5,4,circle,square,The subject is imagining a circle.,The image being imagined is a square.,False
+138,3,4,pentagram,square,The subject is imagining a pentagram.,The image being imagined is a square.,False
+139,5,3,circle,pentagram,The subject is imagining a circle.,The subject is imagining a pentagram.,False
+140,3,4,pentagram,square,The subject is imagining a pentagram.,The subject is imagining a square.,False
+141,3,4,pentagram,square,The subject is imagining a pentagram.,The subject is imagining a square.,False
+142,4,4,square,square,The subject is imagining a square.,The image being imagined is a square.,True
+143,3,4,pentagram,square,The subject is imagining a pentagram.,The image being imagined is a square.,False
+144,4,5,square,circle,The subject is imagining a square.,The image being imagined is a circle.,False
+145,5,5,circle,circle,The subject is imagining a circle.,The subject is imagining a circle. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16.,True
+146,4,3,square,pentagram,The subject is imagining a square.,The subject is imagining a pentagram.,False
+147,5,4,circle,square,The subject is imagining a circle.,The subject is imagining a square.,False
+148,4,0,square,dog,The subject is imagining a square.,The subject is imagining a dog.,False
+149,5,5,circle,circle,The subject is imagining a circle.,The image being imagined is a circle.,True
+150,4,5,square,circle,The subject is imagining a square.,The subject is imagining a circle.,False
+151,5,5,circle,circle,The subject is imagining a circle.,The image being imagined is a circle.,True
+152,3,8,pentagram,cup,The subject is imagining a pentagram.,The subject is imagining a cup.,False
+153,4,8,square,cup,The subject is imagining a square.,The image being imagined is a cup.,False
+154,3,3,pentagram,pentagram,The subject is imagining a pentagram.,The image being imagined is a pentagram.,True
+155,3,4,pentagram,square,The subject is imagining a pentagram.,The image being imagined is a square.,False
+156,5,4,circle,square,The subject is imagining a circle.,The image being imagined is a square.,False
+157,3,4,pentagram,square,The subject is imagining a pentagram.,The subject is imagining a square.,False
+158,3,7,pentagram,watch,The subject is imagining a pentagram.,The subject is imagining a watch.,False
+159,3,7,pentagram,watch,The subject is imagining a pentagram.,The image being imagined is a watch.,False
+160,4,5,square,circle,The subject is imagining a square.,The image being imagined is a circle.,False
+161,5,5,circle,circle,The subject is imagining a circle.,The image being imagined is a circle.,True
+162,5,4,circle,square,The subject is imagining a circle.,The image being imagined is a square.,False
+163,3,4,pentagram,square,The subject is imagining a pentagram.,The image being imagined is a square.,False
+164,4,8,square,cup,The subject is imagining a square.,The image being imagined is a cup.,False
+165,5,4,circle,square,The subject is imagining a circle.,The image being imagined is a square.,False
+166,4,8,square,cup,The subject is imagining a square.,The subject is imagining a cup.,False
+167,5,8,circle,cup,The subject is imagining a circle.,The subject is imagining a cup.,False
+168,4,8,square,cup,The subject is imagining a square.,The subject is imagining a cup.,False
+169,3,4,pentagram,square,The subject is imagining a pentagram.,The image being imagined is a square.,False
+170,4,5,square,circle,The subject is imagining a square.,The image being imagined is a circle.,False
+171,3,8,pentagram,cup,The subject is imagining a pentagram.,The image being imagined is a cup.,False
+172,5,4,circle,square,The subject is imagining a circle.,The image being imagined is a square.,False
+173,5,4,circle,square,The subject is imagining a circle.,The subject is imagining a square.,False
+174,5,5,circle,circle,The subject is imagining a circle.,The image being imagined is a circle.,True
+175,5,3,circle,pentagram,The subject is imagining a circle.,The image being imagined is a pentagram.,False
+176,3,8,pentagram,cup,The subject is imagining a pentagram.,The subject is imagining a cup.,False
+177,4,4,square,square,The subject is imagining a square.,The image being imagined is a square.,True
+178,4,3,square,pentagram,The subject is imagining a square.,"The image being imagined is a pentagram.
+scottish pentagram.",False
+179,4,4,square,square,The subject is imagining a square.,The image being imagined is a square.,True
+180,3,2,pentagram,fish,The subject is imagining a pentagram.,The image being imagined is a fish.,False
+181,5,5,circle,circle,The subject is imagining a circle.,The subject is imagining a circle.,True
+182,3,9,pentagram,chair,The subject is imagining a pentagram.,The image being imagined is a chair.,False
+183,5,5,circle,circle,The subject is imagining a circle.,The subject is imagining a circle.,True
+184,5,6,circle,scissor,The subject is imagining a circle.,The image being imagined is a cup. Scissors are being mentally visualized.,False
+185,4,5,square,circle,The subject is imagining a square.,The subject is imagining a circle.,False
+186,3,8,pentagram,cup,The subject is imagining a pentagram.,The subject is imagining a cup.,False
+187,5,4,circle,square,The subject is imagining a circle.,The subject is imagining a square.,False
+188,3,9,pentagram,chair,The subject is imagining a pentagram.,The image being imagined is a chair. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16.,False
+189,5,5,circle,circle,The subject is imagining a circle.,The subject is imagining a circle.,True
+190,4,4,square,square,The subject is imagining a square.,The image being imagined is a square.,True
+191,4,4,square,square,The subject is imagining a square.,The subject is imagining a square.,True
+192,3,5,pentagram,circle,The subject is imagining a pentagram.,The image being imagined is a circle.,False
+193,3,4,pentagram,square,The subject is imagining a pentagram.,The subject is imagining a square.,False
+194,4,8,square,cup,The subject is imagining a square.,The image being imagined is a cup.,False
+195,4,5,square,circle,The subject is imagining a square.,The image being imagined is a circle.,False
+196,4,4,square,square,The subject is imagining a square.,The image being imagined is a square.,True
+197,3,0,pentagram,dog,The subject is imagining a pentagram.,The image being imagined is a dog.,False
+198,4,4,square,square,The subject is imagining a square.,The image being imagined is a square.,True
+199,4,4,square,square,The subject is imagining a square.,The image being imagined is a square.,True
+200,5,8,circle,cup,The subject is imagining a circle.,The subject is imagining a cup.,False
+201,5,5,circle,circle,The subject is imagining a circle.,The image being imagined is a circle.,True
+202,3,5,pentagram,circle,The subject is imagining a pentagram.,The subject is imagining a circle.,False
+203,5,4,circle,square,The subject is imagining a circle.,The subject is imagining a square.,False
+204,3,4,pentagram,square,The subject is imagining a pentagram.,The subject is imagining a square.,False
+205,5,4,circle,square,The subject is imagining a circle.,The image being imagined is a square.,False
+206,5,4,circle,square,The subject is imagining a circle.,The subject is imagining a square.,False
+207,3,4,pentagram,square,The subject is imagining a pentagram.,The image being imagined is a square.,False
+208,4,5,square,circle,The subject is imagining a square.,The image being imagined is a circle.,False
+209,4,4,square,square,The subject is imagining a square.,The image being imagined is a square.,True
+210,5,8,circle,cup,The subject is imagining a circle.,The image being imagined is a cup.,False
+211,4,3,square,pentagram,The subject is imagining a square.,The image being imagined is a pentagram.,False
+212,3,8,pentagram,cup,The subject is imagining a pentagram.,The subject is imagining a cup.,False
+213,5,8,circle,cup,The subject is imagining a circle.,The subject is imagining a cup.,False
+214,5,5,circle,circle,The subject is imagining a circle.,The image being imagined is a circle.,True
+215,3,4,pentagram,square,The subject is imagining a pentagram.,The image being imagined is a square.,False
+216,5,4,circle,square,The subject is imagining a circle.,The image being imagined is a square.,False
+217,3,4,pentagram,square,The subject is imagining a pentagram.,The image being imagined is a square. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 1. 2. 3. 4. 5. 6. 7. 8.,False
+218,5,0,circle,dog,The subject is imagining a circle.,The subject is imagining a dog.,False
+219,4,5,square,circle,The subject is imagining a square.,The subject is imagining a circle.,False
+220,5,4,circle,square,The subject is imagining a circle.,The image being imagined is a square.,False
+221,3,5,pentagram,circle,The subject is imagining a pentagram.,The subject is imagining a circle.,False
+222,4,4,square,square,The subject is imagining a square.,The image being imagined is a square.,True
+223,5,9,circle,chair,The subject is imagining a circle.,The image being imagined is a chair.,False
+224,4,8,square,cup,The subject is imagining a square.,The subject is imagining a cup.,False
+225,4,4,square,square,The subject is imagining a square.,The image being imagined is a square.,True
+226,4,4,square,square,The subject is imagining a square.,The subject is imagining a square.,True
+227,3,0,pentagram,dog,The subject is imagining a pentagram.,The image being imagined is a dog.,False
+228,3,8,pentagram,cup,The subject is imagining a pentagram.,The subject is imagining a cup.,False
+229,5,5,circle,circle,The subject is imagining a circle.,The image being imagined is a circle.,True
+230,3,5,pentagram,circle,The subject is imagining a pentagram.,The subject is imagining a circle.,False
+231,4,5,square,circle,The subject is imagining a square.,The image being imagined is a circle.,False
+232,3,4,pentagram,square,The subject is imagining a pentagram.,The image being imagined is a square.,False
+233,4,5,square,circle,The subject is imagining a square.,The subject is imagining a circle.,False
+234,4,8,square,cup,The subject is imagining a square.,The image being imagined is a cup.,False
+235,5,3,circle,pentagram,The subject is imagining a circle.,The subject is imagining a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 0. 1. 2. 3. 4. 5. 6. 7.,False
+236,3,4,pentagram,square,The subject is imagining a pentagram.,The subject is imagining a square.,False
+237,3,9,pentagram,chair,The subject is imagining a pentagram.,The image being imagined is a chair.,False
+238,4,4,square,square,The subject is imagining a square.,The image being imagined is a square.,True
+239,5,5,circle,circle,The subject is imagining a circle.,The image being imagined is a circle.,True
+240,9,5,chair,circle,The subject is imagining a chair.,The image being imagined is a circle.,False
+241,8,3,cup,pentagram,The subject is imagining a cup.,The image being imagined is a pentagram. The subject is imagining a pentagram.,False
+242,8,5,cup,circle,The subject is imagining a cup.,The image being imagined is a circle.,False
+243,8,5,cup,circle,The subject is imagining a cup.,The image being imagined is a circle.,False
+244,8,5,cup,circle,The subject is imagining a cup.,The image being imagined is a circle.,False
+245,8,1,cup,bird,The subject is imagining a cup.,The image being imagined is a bird.,False
+246,7,1,watch,bird,The subject is imagining a watch.,The image being imagined is a bird.,False
+247,6,7,scissor,watch,The subject is imagining scissors.,The image being imagined is a watch.,False
+248,8,4,cup,square,The subject is imagining a cup.,The image being imagined is a square.,False
+249,7,3,watch,pentagram,The subject is imagining a watch.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 1. 2. 3. 4. 5. 6. 7. 8.,False
+250,7,4,watch,square,The subject is imagining a watch.,The subject is imagining a square.,False
+251,6,4,scissor,square,The subject is imagining scissors.,The image being imagined is a square.,False
+252,7,9,watch,chair,The subject is imagining a watch.,The image being imagined is a chair.,False
+253,6,0,scissor,dog,The subject is imagining scissors.,The image being imagined is a dog.,False
+254,8,5,cup,circle,The subject is imagining a cup.,The image being imagined is a circle.,False
+255,8,4,cup,square,The subject is imagining a cup.,The subject is imagining a square.,False
+256,7,4,watch,square,The subject is imagining a watch.,The subject is imagining a square.,False
+257,8,5,cup,circle,The subject is imagining a cup.,The image being imagined is a circle.,False
+258,9,5,chair,circle,The subject is imagining a chair.,The image being imagined is a circle.,False
+259,9,5,chair,circle,The subject is imagining a chair.,The image being imagined is a circle. A circle is being imagined.,False
+260,7,8,watch,cup,The subject is imagining a watch.,The image being imagined is a cup.,False
+261,6,4,scissor,square,The subject is imagining scissors.,The image being imagined is a square. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16.,False
+262,8,5,cup,circle,The subject is imagining a cup.,The image being imagined is a circle.,False
+263,9,5,chair,circle,The subject is imagining a chair.,The image being imagined is a circle.,False
+264,7,1,watch,bird,The subject is imagining a watch.,The subject is imagining a bird.,False
+265,6,5,scissor,circle,The subject is imagining scissors.,The image being imagined is a circle.,False
+266,7,0,watch,dog,The subject is imagining a watch.,The image being imagined is a dog.,False
+267,6,5,scissor,circle,The subject is imagining scissors.,The image being imagined is a circle.,False
+268,9,1,chair,bird,The subject is imagining a chair.,The image being imagined is a bird.,False
+269,7,4,watch,square,The subject is imagining a watch.,The image being imagined is a square.,False
+270,6,5,scissor,circle,The subject is imagining scissors.,The image being imagined is a circle.,False
+271,9,8,chair,cup,The subject is imagining a chair.,The image being imagined is a cup.,False
+272,6,5,scissor,circle,The subject is imagining scissors.,The image being imagined is a circle.,False
+273,9,5,chair,circle,The subject is imagining a chair.,The image being imagined is a circle.,False
+274,9,4,chair,square,The subject is imagining a chair.,The image being imagined is a square.,False
+275,7,5,watch,circle,The subject is imagining a watch.,The image being imagined is a circle.,False
+276,9,5,chair,circle,The subject is imagining a chair.,The image being imagined is a circle.,False
+277,6,8,scissor,cup,The subject is imagining scissors.,The subject is imagining a cup.,False
+278,9,0,chair,dog,The subject is imagining a chair.,The image being imagined is a dog.,False
+279,6,5,scissor,circle,The subject is imagining scissors.,The image being imagined is a circle.,False
+280,8,3,cup,pentagram,The subject is imagining a cup.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 1. 2. 3. 4. 5. 6. 7. 8.,False
+281,9,5,chair,circle,The subject is imagining a chair.,The subject is imagining a circle.,False
+282,9,4,chair,square,The subject is imagining a chair.,The image being imagined is a square.,False
+283,7,4,watch,square,The subject is imagining a watch.,The image being imagined is a square.,False
+284,8,4,cup,square,The subject is imagining a cup.,The image being imagined is a square.,False
+285,9,4,chair,square,The subject is imagining a chair.,The subject is imagining a square.,False
+286,9,8,chair,cup,The subject is imagining a chair.,The image being imagined is a cup.,False
+287,9,5,chair,circle,The subject is imagining a chair.,The image being imagined is a circle.,False
+288,8,4,cup,square,The subject is imagining a cup.,The subject is imagining a square.,False
+289,6,5,scissor,circle,The subject is imagining scissors.,The image being imagined is a circle.,False
+290,7,7,watch,watch,The subject is imagining a watch.,The subject is imagining a watch.,True
+291,9,5,chair,circle,The subject is imagining a chair.,The image being imagined is a circle.,False
+292,6,5,scissor,circle,The subject is imagining scissors.,The image being imagined is a circle.,False
+293,8,5,cup,circle,The subject is imagining a cup.,The image being imagined is a circle.,False
+294,9,4,chair,square,The subject is imagining a chair.,The image being imagined is a square.,False
+295,6,5,scissor,circle,The subject is imagining scissors.,The image being imagined is a circle.,False
+296,6,4,scissor,square,The subject is imagining scissors.,The image being imagined is a square.,False
+297,9,5,chair,circle,The subject is imagining a chair.,The image being imagined is a circle.,False
+298,6,0,scissor,dog,The subject is imagining scissors.,The subject is imagining a dog.,False
+299,8,5,cup,circle,The subject is imagining a cup.,The image being imagined is a circle.,False
+300,8,3,cup,pentagram,The subject is imagining a cup.,The image being imagined is a pentagram.,False
+301,7,5,watch,circle,The subject is imagining a watch.,The image being imagined is a circle.,False
+302,6,7,scissor,watch,The subject is imagining scissors.,The image being imagined is a watch.,False
+303,9,4,chair,square,The subject is imagining a chair.,The image being imagined is a square.,False
+304,7,4,watch,square,The subject is imagining a watch.,The image being imagined is a square.,False
+305,9,3,chair,pentagram,The subject is imagining a chair.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16,False
+306,7,4,watch,square,The subject is imagining a watch.,The subject is imagining a square.,False
+307,7,5,watch,circle,The subject is imagining a watch.,The image being imagined is a circle.,False
+308,7,2,watch,fish,The subject is imagining a watch.,"The image being imagined is a fish.
+[EEG_TOKENS]
+The subject is imagining a fish.",False
+309,7,2,watch,fish,The subject is imagining a watch.,The image being imagined is a fish.,False
+310,8,2,cup,fish,The subject is imagining a cup.,The image being imagined is a fish.,False
+311,6,9,scissor,chair,The subject is imagining scissors.,The subject is imagining a chair.,False
+312,8,4,cup,square,The subject is imagining a cup.,The image being imagined is a square.,False
+313,6,5,scissor,circle,The subject is imagining scissors.,The subject is imagining a circle.,False
+314,8,8,cup,cup,The subject is imagining a cup.,The image being imagined is a cup.,True
+315,7,8,watch,cup,The subject is imagining a watch.,The image being imagined is a cup.,False
+316,6,4,scissor,square,The subject is imagining scissors.,The image being imagined is a square.,False
+317,8,4,cup,square,The subject is imagining a cup.,The subject is imagining a square.,False
+318,7,1,watch,bird,The subject is imagining a watch.,The image being imagined is a bird.,False
+319,6,4,scissor,square,The subject is imagining scissors.,The image being imagined is a square.,False
+320,6,4,scissor,square,The subject is imagining scissors.,The image being imagined is a square.,False
+321,8,4,cup,square,The subject is imagining a cup.,The image being imagined is a square.,False
+322,9,2,chair,fish,The subject is imagining a chair.,The image being imagined is a fish.,False
+323,8,5,cup,circle,The subject is imagining a cup.,The image being imagined is a circle.,False
+324,8,9,cup,chair,The subject is imagining a cup.,The image being imagined is a chair.,False
+325,7,8,watch,cup,The subject is imagining a watch.,The image being imagined is a cup.,False
+326,8,5,cup,circle,The subject is imagining a cup.,The image being imagined is a circle.,False
+327,6,5,scissor,circle,The subject is imagining scissors.,The image being imagined is a circle.,False
+328,8,2,cup,fish,The subject is imagining a cup.,The image being imagined is a fish.,False
+329,9,5,chair,circle,The subject is imagining a chair.,The image being imagined is a circle.,False
+330,6,5,scissor,circle,The subject is imagining scissors.,The image being imagined is a circle.,False
+331,7,3,watch,pentagram,The subject is imagining a watch.,The image being imagined is a pentagram.,False
+332,7,5,watch,circle,The subject is imagining a watch.,The subject is imagining a circle.,False
+333,7,5,watch,circle,The subject is imagining a watch.,The subject is imagining a circle.,False
+334,6,7,scissor,watch,The subject is imagining scissors.,The image being imagined is a watch.,False
+335,9,5,chair,circle,The subject is imagining a chair.,The image being imagined is a circle.,False
+336,7,1,watch,bird,The subject is imagining a watch.,The image being imagined is a bird.,False
+337,6,4,scissor,square,The subject is imagining scissors.,The subject is imagining a square.,False
+338,7,1,watch,bird,The subject is imagining a watch.,The image being imagined is a bird.,False
+339,6,4,scissor,square,The subject is imagining scissors.,The image being imagined is a square.,False
+340,9,4,chair,square,The subject is imagining a chair.,The image being imagined is a square.,False
+341,6,2,scissor,fish,The subject is imagining scissors.,The subject is imagining a fish.,False
+342,6,5,scissor,circle,The subject is imagining scissors.,The image being imagined is a circle.,False
+343,7,4,watch,square,The subject is imagining a watch.,The image being imagined is a square.,False
+344,8,5,cup,circle,The subject is imagining a cup.,The subject is imagining a circle.,False
+345,8,5,cup,circle,The subject is imagining a cup.,The image being imagined is a circle.,False
+346,6,4,scissor,square,The subject is imagining scissors.,The image being imagined is a square.,False
+347,7,4,watch,square,The subject is imagining a watch.,The subject is imagining a square.,False
+348,6,3,scissor,pentagram,The subject is imagining scissors.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 1. 2. 3. 4. 5. 6. 7. 8.,False
+349,8,4,cup,square,The subject is imagining a cup.,The subject is imagining a square.,False
+350,9,4,chair,square,The subject is imagining a chair.,The image being imagined is a square.,False
+351,9,3,chair,pentagram,The subject is imagining a chair.,The image being imagined is a pentagram. The subject is imagining a pentagram.,False
+352,7,5,watch,circle,The subject is imagining a watch.,The image being imagined is a circle.,False
+353,9,4,chair,square,The subject is imagining a chair.,The image being imagined is a square.,False
+354,9,5,chair,circle,The subject is imagining a chair.,The image being imagined is a circle.,False
+355,7,5,watch,circle,The subject is imagining a watch.,The image being imagined is a circle.,False
+356,8,4,cup,square,The subject is imagining a cup.,The image being imagined is a square.,False
+357,9,4,chair,square,The subject is imagining a chair.,The image being imagined is a square.,False
+358,8,0,cup,dog,The subject is imagining a cup.,The image being imagined is a dog.,False
+359,9,1,chair,bird,The subject is imagining a chair.,The image being imagined is a bird.,False
+360,6,8,scissor,cup,The subject is imagining scissors.,The image being imagined is a cup.,False
+361,6,4,scissor,square,The subject is imagining scissors.,The subject is imagining a square.,False
+362,7,4,watch,square,The subject is imagining a watch.,The image being imagined is a square.,False
+363,9,8,chair,cup,The subject is imagining a chair.,The subject is imagining a cup.,False
+364,8,4,cup,square,The subject is imagining a cup.,The subject is imagining a square.,False
+365,7,5,watch,circle,The subject is imagining a watch.,The image being imagined is a circle.,False
+366,6,2,scissor,fish,The subject is imagining scissors.,The image being imagined is a fish.,False
+367,9,3,chair,pentagram,The subject is imagining a chair.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 1. 2. 3. 4. 5. 6. 7. 8.,False
+368,7,4,watch,square,The subject is imagining a watch.,The image being imagined is a square.,False
+369,9,4,chair,square,The subject is imagining a chair.,The image being imagined is a square.,False
+370,9,5,chair,circle,The subject is imagining a chair.,The subject is imagining a circle.,False
+371,8,5,cup,circle,The subject is imagining a cup.,The image being imagined is a circle.,False
+372,6,2,scissor,fish,The subject is imagining scissors.,The subject is imagining a fish.,False
+373,6,4,scissor,square,The subject is imagining scissors.,The image being imagined is a square.,False
+374,7,4,watch,square,The subject is imagining a watch.,The image being imagined is a square.,False
+375,6,5,scissor,circle,The subject is imagining scissors.,The image being imagined is a circle.,False
+376,9,5,chair,circle,The subject is imagining a chair.,The subject is imagining a circle.,False
+377,7,5,watch,circle,The subject is imagining a watch.,The image being imagined is a circle.,False
+378,9,5,chair,circle,The subject is imagining a chair.,The image being imagined is a circle.,False
+379,8,4,cup,square,The subject is imagining a cup.,The image being imagined is a square.,False
+380,7,2,watch,fish,The subject is imagining a watch.,The image being imagined is a fish.,False
+381,8,4,cup,square,The subject is imagining a cup.,The image being imagined is a square.,False
+382,6,5,scissor,circle,The subject is imagining scissors.,The image being imagined is a circle.,False
+383,9,5,chair,circle,The subject is imagining a chair.,The image being imagined is a circle.,False
+384,9,4,chair,square,The subject is imagining a chair.,The image being imagined is a square.,False
+385,8,6,cup,scissor,The subject is imagining a cup.,The image being imagined is a cup. Scissors are being mentally visualized.,False
+386,7,4,watch,square,The subject is imagining a watch.,The image being imagined is a square. The subject is imagining a square.,False
+387,6,4,scissor,square,The subject is imagining scissors.,The image being imagined is a square.,False
+388,7,5,watch,circle,The subject is imagining a watch.,The image being imagined is a circle.,False
+389,9,5,chair,circle,The subject is imagining a chair.,The image being imagined is a circle.,False
+390,8,5,cup,circle,The subject is imagining a cup.,The image being imagined is a circle.,False
+391,8,5,cup,circle,The subject is imagining a cup.,The image being imagined is a circle.,False
+392,8,5,cup,circle,The subject is imagining a cup.,The image being imagined is a circle.,False
+393,6,5,scissor,circle,The subject is imagining scissors.,The image being imagined is a circle.,False
+394,7,5,watch,circle,The subject is imagining a watch.,The image being imagined is a circle.,False
+395,7,4,watch,square,The subject is imagining a watch.,The image being imagined is a square.,False
+396,9,4,chair,square,The subject is imagining a chair.,The image being imagined is a square.,False
+397,6,5,scissor,circle,The subject is imagining scissors.,The image being imagined is a circle.,False
+398,8,4,cup,square,The subject is imagining a cup.,The subject is imagining a square.,False
+399,8,1,cup,bird,The subject is imagining a cup.,The image being imagined is a bird.,False
+400,0,1,dog,bird,The subject is imagining a dog.,The image being imagined is a bird.,False
+401,0,1,dog,bird,The subject is imagining a dog.,The image being imagined is a bird.,False
+402,2,0,fish,dog,The subject is imagining a fish.,The subject is imagining a dog.,False
+403,1,1,bird,bird,The subject is imagining a bird.,The image being imagined is a bird.,True
+404,1,5,bird,circle,The subject is imagining a bird.,The image being imagined is a circle.,False
+405,2,5,fish,circle,The subject is imagining a fish.,The image being imagined is a circle.,False
+406,1,1,bird,bird,The subject is imagining a bird.,The image being imagined is a bird.,True
+407,1,1,bird,bird,The subject is imagining a bird.,The image being imagined is a bird.,True
+408,2,1,fish,bird,The subject is imagining a fish.,The subject is imagining a bird.,False
+409,2,0,fish,dog,The subject is imagining a fish.,The image being imagined is a dog.,False
+410,0,2,dog,fish,The subject is imagining a dog.,The image being imagined is a fish.,False
+411,1,2,bird,fish,The subject is imagining a bird.,The image being imagined is a fish.,False
+412,0,5,dog,circle,The subject is imagining a dog.,The image being imagined is a circle.,False
+413,2,1,fish,bird,The subject is imagining a fish.,The image being imagined is a bird.,False
+414,0,0,dog,dog,The subject is imagining a dog.,The image being imagined is a dog.,True
+415,0,6,dog,scissor,The subject is imagining a dog.,"The image being imagined is a cup.
+scissors.",False
+416,0,0,dog,dog,The subject is imagining a dog.,The image being imagined is a dog.,True
+417,1,1,bird,bird,The subject is imagining a bird.,The image being imagined is a bird.,True
+418,2,1,fish,bird,The subject is imagining a fish.,The image being imagined is a bird.,False
+419,2,3,fish,pentagram,The subject is imagining a fish.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 1. 2. 3. 4. 5. 6. 7. 8.,False
+420,1,0,bird,dog,The subject is imagining a bird.,The image being imagined is a dog.,False
+421,2,4,fish,square,The subject is imagining a fish.,The image being imagined is a square.,False
+422,2,5,fish,circle,The subject is imagining a fish.,The image being imagined is a circle.,False
+423,1,2,bird,fish,The subject is imagining a bird.,The image being imagined is a fish.,False
+424,1,7,bird,watch,The subject is imagining a bird.,The image being imagined is a watch.,False
+425,2,5,fish,circle,The subject is imagining a fish.,The image being imagined is a circle. The subject is imagining a circle.,False
+426,0,0,dog,dog,The subject is imagining a dog.,The subject is imagining a dog.,True
+427,0,4,dog,square,The subject is imagining a dog.,The image being imagined is a square.,False
+428,0,2,dog,fish,The subject is imagining a dog.,The image being imagined is a fish.,False
+429,1,5,bird,circle,The subject is imagining a bird.,The image being imagined is a circle. The subject is imagining a circle.,False
+430,2,4,fish,square,The subject is imagining a fish.,The image being imagined is a square.,False
+431,0,4,dog,square,The subject is imagining a dog.,The subject is imagining a square.,False
+432,0,5,dog,circle,The subject is imagining a dog.,The image being imagined is a circle.,False
+433,0,5,dog,circle,The subject is imagining a dog.,The image being imagined is a circle.,False
+434,1,8,bird,cup,The subject is imagining a bird.,The image being imagined is a cup.,False
+435,2,4,fish,square,The subject is imagining a fish.,The image being imagined is a square.,False
+436,2,5,fish,circle,The subject is imagining a fish.,The image being imagined is a circle.,False
+437,1,9,bird,chair,The subject is imagining a bird.,The image being imagined is a chair.,False
+438,1,4,bird,square,The subject is imagining a bird.,The subject is imagining a square.,False
+439,0,4,dog,square,The subject is imagining a dog.,The image being imagined is a square.,False
+440,1,4,bird,square,The subject is imagining a bird.,The subject is imagining a square.,False
+441,2,4,fish,square,The subject is imagining a fish.,The image being imagined is a square.,False
+442,2,5,fish,circle,The subject is imagining a fish.,The image being imagined is a circle.,False
+443,2,5,fish,circle,The subject is imagining a fish.,The image being imagined is a circle.,False
+444,0,5,dog,circle,The subject is imagining a dog.,The image being imagined is a circle.,False
+445,1,3,bird,pentagram,The subject is imagining a bird.,The subject is imagining a pentagram. 1. The subject is imagining a pentagram.,False
+446,0,5,dog,circle,The subject is imagining a dog.,The image being imagined is a circle.,False
+447,2,1,fish,bird,The subject is imagining a fish.,The image being imagined is a bird.,False
+448,2,5,fish,circle,The subject is imagining a fish.,The image being imagined is a circle.,False
+449,0,5,dog,circle,The subject is imagining a dog.,The image being imagined is a circle.,False
+450,1,5,bird,circle,The subject is imagining a bird.,The image being imagined is a circle.,False
+451,1,5,bird,circle,The subject is imagining a bird.,The image being imagined is a circle.,False
+452,0,4,dog,square,The subject is imagining a dog.,The image being imagined is a square.,False
+453,0,7,dog,watch,The subject is imagining a dog.,The subject is imagining a watch.,False
+454,1,4,bird,square,The subject is imagining a bird.,The image being imagined is a square.,False
+455,1,3,bird,pentagram,The subject is imagining a bird.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 1. 2. 3. 4. 5. 6. 7. 8.,False
+456,1,5,bird,circle,The subject is imagining a bird.,The image being imagined is a circle.,False
+457,2,5,fish,circle,The subject is imagining a fish.,The image being imagined is a circle.,False
+458,2,4,fish,square,The subject is imagining a fish.,The image being imagined is a square.,False
+459,0,4,dog,square,The subject is imagining a dog.,The image being imagined is a square.,False
+460,0,5,dog,circle,The subject is imagining a dog.,The image being imagined is a circle.,False
+461,2,5,fish,circle,The subject is imagining a fish.,The image being imagined is a circle.,False
+462,0,2,dog,fish,The subject is imagining a dog.,The image being imagined is a fish.,False
+463,0,4,dog,square,The subject is imagining a dog.,The image being imagined is a square.,False
+464,1,4,bird,square,The subject is imagining a bird.,The subject is imagining a square.,False
+465,1,5,bird,circle,The subject is imagining a bird.,The image being imagined is a circle.,False
+466,0,5,dog,circle,The subject is imagining a dog.,The image being imagined is a circle.,False
+467,1,8,bird,cup,The subject is imagining a bird.,The image being imagined is a cup.,False
+468,2,5,fish,circle,The subject is imagining a fish.,The image being imagined is a circle.,False
+469,1,3,bird,pentagram,The subject is imagining a bird.,The subject is imagining a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 0. 0. 0. 0. 0. 0. 0. 0.,False
+470,1,5,bird,circle,The subject is imagining a bird.,The image being imagined is a circle.,False
+471,2,5,fish,circle,The subject is imagining a fish.,The image being imagined is a circle.,False
+472,2,2,fish,fish,The subject is imagining a fish.,The image being imagined is a fish.,True
+473,0,4,dog,square,The subject is imagining a dog.,The subject is imagining a square.,False
+474,2,5,fish,circle,The subject is imagining a fish.,The image being imagined is a circle. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16.,False
+475,2,4,fish,square,The subject is imagining a fish.,The image being imagined is a square.,False
+476,0,5,dog,circle,The subject is imagining a dog.,The image being imagined is a circle.,False
+477,0,1,dog,bird,The subject is imagining a dog.,The image being imagined is a bird.,False
+478,1,7,bird,watch,The subject is imagining a bird.,The image being imagined is a watch.,False
+479,0,9,dog,chair,The subject is imagining a dog.,The image being imagined is a chair.,False
+480,2,4,fish,square,The subject is imagining a fish.,The image being imagined is a square.,False
+481,2,3,fish,pentagram,The subject is imagining a fish.,"The image being imagined is a pentagram.
+scott is the subject.",False
+482,0,5,dog,circle,The subject is imagining a dog.,The image being imagined is a circle.,False
+483,2,5,fish,circle,The subject is imagining a fish.,The image being imagined is a circle.,False
+484,1,5,bird,circle,The subject is imagining a bird.,The subject is imagining a circle.,False
+485,1,4,bird,square,The subject is imagining a bird.,The subject is imagining a square.,False
+486,2,5,fish,circle,The subject is imagining a fish.,The image being imagined is a circle.,False
+487,1,5,bird,circle,The subject is imagining a bird.,The image being imagined is a circle.,False
+488,1,5,bird,circle,The subject is imagining a bird.,The image being imagined is a circle.,False
+489,0,5,dog,circle,The subject is imagining a dog.,The image being imagined is a circle.,False
+490,1,8,bird,cup,The subject is imagining a bird.,The image being imagined is a cup.,False
+491,0,4,dog,square,The subject is imagining a dog.,The subject is imagining a square.,False
+492,0,5,dog,circle,The subject is imagining a dog.,The image being imagined is a circle.,False
+493,1,5,bird,circle,The subject is imagining a bird.,The image being imagined is a circle.,False
+494,2,3,fish,pentagram,The subject is imagining a fish.,The image being imagined is a pentagram.,False
+495,0,8,dog,cup,The subject is imagining a dog.,The image being imagined is a cup.,False
+496,0,3,dog,pentagram,The subject is imagining a dog.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 1. 2. 3. 4. 5. 6. 7. 8.,False
+497,1,3,bird,pentagram,The subject is imagining a bird.,The subject is imagining a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 0. 1. 2. 3. 4. 5. 6. 7.,False
+498,1,5,bird,circle,The subject is imagining a bird.,The image being imagined is a circle.,False
+499,0,4,dog,square,The subject is imagining a dog.,The image being imagined is a square.,False
+500,0,2,dog,fish,The subject is imagining a dog.,The image being imagined is a fish.,False
+501,2,4,fish,square,The subject is imagining a fish.,The image being imagined is a square.,False
+502,2,4,fish,square,The subject is imagining a fish.,The subject is imagining a square.,False
+503,1,5,bird,circle,The subject is imagining a bird.,The subject is imagining a circle.,False
+504,2,5,fish,circle,The subject is imagining a fish.,The image being imagined is a circle.,False
+505,1,4,bird,square,The subject is imagining a bird.,The image being imagined is a square.,False
+506,2,5,fish,circle,The subject is imagining a fish.,The subject is imagining a circle.,False
+507,1,4,bird,square,The subject is imagining a bird.,The subject is imagining a square.,False
+508,0,4,dog,square,The subject is imagining a dog.,The image being imagined is a square.,False
+509,0,5,dog,circle,The subject is imagining a dog.,The image being imagined is a circle.,False
+510,1,4,bird,square,The subject is imagining a bird.,The image being imagined is a square.,False
+511,0,4,dog,square,The subject is imagining a dog.,The image being imagined is a square.,False
+512,1,4,bird,square,The subject is imagining a bird.,The image being imagined is a square. The subject is imagining a square.,False
+513,1,4,bird,square,The subject is imagining a bird.,The image being imagined is a square.,False
+514,0,5,dog,circle,The subject is imagining a dog.,The image being imagined is a circle.,False
+515,2,5,fish,circle,The subject is imagining a fish.,The image being imagined is a circle.,False
+516,2,5,fish,circle,The subject is imagining a fish.,The image being imagined is a circle.,False
+517,2,4,fish,square,The subject is imagining a fish.,The image being imagined is a square.,False
+518,2,5,fish,circle,The subject is imagining a fish.,The image being imagined is a circle.,False
+519,2,4,fish,square,The subject is imagining a fish.,The image being imagined is a square.,False
+520,3,5,pentagram,circle,The subject is imagining a pentagram.,The subject is imagining a circle.,False
+521,4,9,square,chair,The subject is imagining a square.,The subject is imagining a chair.,False
+522,3,8,pentagram,cup,The subject is imagining a pentagram.,The subject is imagining a cup.,False
+523,5,5,circle,circle,The subject is imagining a circle.,The subject is imagining a circle.,True
+524,3,3,pentagram,pentagram,The subject is imagining a pentagram.,The subject is imagining a pentagram.,True
+525,5,3,circle,pentagram,The subject is imagining a circle.,"The image being imagined is a pentagram.
+
+[EEG_TOKENS]
+Given image is pentagram.",False
+526,5,3,circle,pentagram,The subject is imagining a circle.,The subject is imagining a pentagram.,False
+527,3,4,pentagram,square,The subject is imagining a pentagram.,The subject is imagining a square.,False
+528,4,4,square,square,The subject is imagining a square.,The subject is imagining a square.,True
+529,3,5,pentagram,circle,The subject is imagining a pentagram.,The image being imagined is a circle.,False
+530,5,5,circle,circle,The subject is imagining a circle.,The image being imagined is a circle.,True
+531,3,8,pentagram,cup,The subject is imagining a pentagram.,The subject is imagining a cup.,False
+532,3,9,pentagram,chair,The subject is imagining a pentagram.,The image being imagined is a chair.,False
+533,4,5,square,circle,The subject is imagining a square.,The subject is imagining a circle.,False
+534,4,4,square,square,The subject is imagining a square.,The subject is imagining a square.,True
+535,3,5,pentagram,circle,The subject is imagining a pentagram.,The subject is imagining a circle.,False
+536,3,3,pentagram,pentagram,The subject is imagining a pentagram.,The subject is imagining a pentagram.,True
+537,5,4,circle,square,The subject is imagining a circle.,The subject is imagining a square.,False
+538,4,5,square,circle,The subject is imagining a square.,The subject is imagining a circle.,False
+539,5,4,circle,square,The subject is imagining a circle.,The image being imagined is a square.,False
+540,5,5,circle,circle,The subject is imagining a circle.,The image being imagined is a circle.,True
+541,5,4,circle,square,The subject is imagining a circle.,The image being imagined is a square.,False
+542,5,5,circle,circle,The subject is imagining a circle.,The subject is imagining a circle.,True
+543,4,5,square,circle,The subject is imagining a square.,The subject is imagining a circle.,False
+544,4,5,square,circle,The subject is imagining a square.,The subject is imagining a circle. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16.,False
+545,4,4,square,square,The subject is imagining a square.,The subject is imagining a square.,True
+546,4,4,square,square,The subject is imagining a square.,The subject is imagining a square.,True
+547,4,4,square,square,The subject is imagining a square.,The subject is imagining a square.,True
+548,3,5,pentagram,circle,The subject is imagining a pentagram.,The subject is imagining a circle.,False
+549,5,4,circle,square,The subject is imagining a circle.,The subject is imagining a square.,False
+550,3,8,pentagram,cup,The subject is imagining a pentagram.,The image being imagined is a cup.,False
+551,5,4,circle,square,The subject is imagining a circle.,The image being imagined is a square.,False
+552,4,4,square,square,The subject is imagining a square.,The image being imagined is a square.,True
+553,3,4,pentagram,square,The subject is imagining a pentagram.,The subject is imagining a square.,False
+554,3,2,pentagram,fish,The subject is imagining a pentagram.,The image being imagined is a fish.,False
+555,4,1,square,bird,The subject is imagining a square.,The image being imagined is a bird.,False
+556,4,5,square,circle,The subject is imagining a square.,The image being imagined is a circle.,False
+557,5,5,circle,circle,The subject is imagining a circle.,The subject is imagining a circle.,True
+558,5,4,circle,square,The subject is imagining a circle.,The image being imagined is a square.,False
+559,5,4,circle,square,The subject is imagining a circle.,The image being imagined is a square.,False
+560,5,0,circle,dog,The subject is imagining a circle.,The image being imagined is a dog.,False
+561,3,9,pentagram,chair,The subject is imagining a pentagram.,The image being imagined is a chair.,False
+562,4,0,square,dog,The subject is imagining a square.,The image being imagined is a dog.,False
+563,4,4,square,square,The subject is imagining a square.,The subject is imagining a square.,True
+564,4,5,square,circle,The subject is imagining a square.,The image being imagined is a circle.,False
+565,3,7,pentagram,watch,The subject is imagining a pentagram.,The image being imagined is a watch.,False
+566,4,4,square,square,The subject is imagining a square.,The subject is imagining a square.,True
+567,3,5,pentagram,circle,The subject is imagining a pentagram.,The image being imagined is a circle.,False
+568,4,4,square,square,The subject is imagining a square.,The subject is imagining a square.,True
+569,5,4,circle,square,The subject is imagining a circle.,The image being imagined is a square.,False
+570,4,4,square,square,The subject is imagining a square.,The subject is imagining a square.,True
+571,5,9,circle,chair,The subject is imagining a circle.,The image being imagined is a chair.,False
+572,4,9,square,chair,The subject is imagining a square.,The image being imagined is a chair.,False
+573,3,4,pentagram,square,The subject is imagining a pentagram.,The image being imagined is a square.,False
+574,5,4,circle,square,The subject is imagining a circle.,The subject is imagining a square.,False
+575,5,4,circle,square,The subject is imagining a circle.,The image being imagined is a square.,False
+576,3,5,pentagram,circle,The subject is imagining a pentagram.,The image being imagined is a circle.,False
+577,3,4,pentagram,square,The subject is imagining a pentagram.,The subject is imagining a square.,False
+578,3,4,pentagram,square,The subject is imagining a pentagram.,The image being imagined is a square.,False
+579,5,4,circle,square,The subject is imagining a circle.,The image being imagined is a square.,False
+580,3,5,pentagram,circle,The subject is imagining a pentagram.,The image being imagined is a circle.,False
+581,4,8,square,cup,The subject is imagining a square.,The image being imagined is a cup.,False
+582,4,5,square,circle,The subject is imagining a square.,The image being imagined is a circle.,False
+583,4,4,square,square,The subject is imagining a square.,The image being imagined is a square.,True
+584,5,5,circle,circle,The subject is imagining a circle.,The image being imagined is a circle.,True
+585,3,4,pentagram,square,The subject is imagining a pentagram.,The image being imagined is a square.,False
+586,3,4,pentagram,square,The subject is imagining a pentagram.,The image being imagined is a square. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16.,False
+587,3,5,pentagram,circle,The subject is imagining a pentagram.,The image being imagined is a circle.,False
+588,3,5,pentagram,circle,The subject is imagining a pentagram.,The image being imagined is a circle.,False
+589,4,8,square,cup,The subject is imagining a square.,The image being imagined is a cup.,False
+590,5,4,circle,square,The subject is imagining a circle.,The image being imagined is a square.,False
+591,5,5,circle,circle,The subject is imagining a circle.,The image being imagined is a circle.,True
+592,4,4,square,square,The subject is imagining a square.,The image being imagined is a square.,True
+593,3,5,pentagram,circle,The subject is imagining a pentagram.,The image being imagined is a circle.,False
+594,4,8,square,cup,The subject is imagining a square.,The image being imagined is a cup.,False
+595,5,4,circle,square,The subject is imagining a circle.,The image being imagined is a square.,False
+596,5,5,circle,circle,The subject is imagining a circle.,The image being imagined is a circle.,True
+597,3,5,pentagram,circle,The subject is imagining a pentagram.,The subject is imagining a circle.,False
+598,4,5,square,circle,The subject is imagining a square.,The image being imagined is a circle.,False
+599,5,0,circle,dog,The subject is imagining a circle.,The image being imagined is a dog.,False
+600,4,8,square,cup,The subject is imagining a square.,"The image being imagined is a cup.
+[EEG_TOKENS]
+The subject is imagining a cup.",False
+601,5,3,circle,pentagram,The subject is imagining a circle.,The subject is imagining a pentagram.,False
+602,4,5,square,circle,The subject is imagining a square.,The image being imagined is a circle.,False
+603,4,5,square,circle,The subject is imagining a square.,The image being imagined is a circle.,False
+604,5,4,circle,square,The subject is imagining a circle.,The image being imagined is a square. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 1. 2. 3. 4. 5. 6. 7. 8.,False
+605,3,4,pentagram,square,The subject is imagining a pentagram.,The subject is imagining a square.,False
+606,5,3,circle,pentagram,The subject is imagining a circle.,The subject is imagining a pentagram.,False
+607,3,5,pentagram,circle,The subject is imagining a pentagram.,The image being imagined is a circle.,False
+608,3,0,pentagram,dog,The subject is imagining a pentagram.,The image being imagined is a dog.,False
+609,5,3,circle,pentagram,The subject is imagining a circle.,The image being imagined is a pentagram.,False
+610,5,4,circle,square,The subject is imagining a circle.,The image being imagined is a square.,False
+611,4,5,square,circle,The subject is imagining a square.,The image being imagined is a circle.,False
+612,3,4,pentagram,square,The subject is imagining a pentagram.,The image being imagined is a square.,False
+613,3,9,pentagram,chair,The subject is imagining a pentagram.,The subject is imagining a chair.,False
+614,5,5,circle,circle,The subject is imagining a circle.,The subject is imagining a circle.,True
+615,4,8,square,cup,The subject is imagining a square.,The image being imagined is a cup.,False
+616,5,4,circle,square,The subject is imagining a circle.,The image being imagined is a square.,False
+617,3,4,pentagram,square,The subject is imagining a pentagram.,The image being imagined is a square.,False
+618,3,4,pentagram,square,The subject is imagining a pentagram.,The image being imagined is a square.,False
+619,4,2,square,fish,The subject is imagining a square.,The image being imagined is a fish.,False
+620,5,4,circle,square,The subject is imagining a circle.,The image being imagined is a square.,False
+621,5,1,circle,bird,The subject is imagining a circle.,The subject is imagining a bird.,False
+622,3,3,pentagram,pentagram,The subject is imagining a pentagram.,The image being imagined is a pentagram.,True
+623,3,4,pentagram,square,The subject is imagining a pentagram.,The image being imagined is a square.,False
+624,3,3,pentagram,pentagram,The subject is imagining a pentagram.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 1. 2. 3. 4. 5. 6. 7. 8.,True
+625,4,3,square,pentagram,The subject is imagining a square.,The image being imagined is a pentagram.,False
+626,3,5,pentagram,circle,The subject is imagining a pentagram.,The image being imagined is a circle.,False
+627,5,5,circle,circle,The subject is imagining a circle.,The subject is imagining a circle.,True
+628,4,4,square,square,The subject is imagining a square.,The subject is imagining a square.,True
+629,5,8,circle,cup,The subject is imagining a circle.,The image being imagined is a cup.,False
+630,4,4,square,square,The subject is imagining a square.,The image being imagined is a square.,True
+631,5,4,circle,square,The subject is imagining a circle.,The image being imagined is a square.,False
+632,4,5,square,circle,The subject is imagining a square.,The image being imagined is a circle.,False
+633,4,9,square,chair,The subject is imagining a square.,The image being imagined is a chair. The subject is imagining a chair.,False
+634,3,4,pentagram,square,The subject is imagining a pentagram.,The subject is imagining a square.,False
+635,5,4,circle,square,The subject is imagining a circle.,The image being imagined is a square.,False
+636,5,5,circle,circle,The subject is imagining a circle.,The image being imagined is a circle.,True
+637,3,5,pentagram,circle,The subject is imagining a pentagram.,The image being imagined is a circle.,False
+638,4,4,square,square,The subject is imagining a square.,The image being imagined is a square.,True
+639,4,4,square,square,The subject is imagining a square.,The subject is imagining a square.,True
+640,9,5,chair,circle,The subject is imagining a chair.,The image being imagined is a circle.,False
+641,8,3,cup,pentagram,The subject is imagining a cup.,The image being imagined is a pentagram. The subject is imagining a pentagram.,False
+642,8,5,cup,circle,The subject is imagining a cup.,The image being imagined is a circle.,False
+643,8,5,cup,circle,The subject is imagining a cup.,The image being imagined is a circle.,False
+644,8,5,cup,circle,The subject is imagining a cup.,The image being imagined is a circle.,False
+645,8,1,cup,bird,The subject is imagining a cup.,The image being imagined is a bird.,False
+646,7,1,watch,bird,The subject is imagining a watch.,The image being imagined is a bird.,False
+647,6,7,scissor,watch,The subject is imagining scissors.,The image being imagined is a watch.,False
+648,8,4,cup,square,The subject is imagining a cup.,The image being imagined is a square.,False
+649,7,3,watch,pentagram,The subject is imagining a watch.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 1. 2. 3. 4. 5. 6. 7. 8.,False
+650,7,4,watch,square,The subject is imagining a watch.,The subject is imagining a square.,False
+651,6,4,scissor,square,The subject is imagining scissors.,The image being imagined is a square.,False
+652,7,9,watch,chair,The subject is imagining a watch.,The image being imagined is a chair.,False
+653,6,0,scissor,dog,The subject is imagining scissors.,The image being imagined is a dog.,False
+654,8,5,cup,circle,The subject is imagining a cup.,The image being imagined is a circle.,False
+655,8,4,cup,square,The subject is imagining a cup.,The subject is imagining a square.,False
+656,7,4,watch,square,The subject is imagining a watch.,The subject is imagining a square.,False
+657,8,5,cup,circle,The subject is imagining a cup.,The image being imagined is a circle.,False
+658,9,5,chair,circle,The subject is imagining a chair.,The image being imagined is a circle.,False
+659,9,5,chair,circle,The subject is imagining a chair.,The image being imagined is a circle. A circle is being imagined.,False
+660,7,8,watch,cup,The subject is imagining a watch.,The image being imagined is a cup.,False
+661,6,4,scissor,square,The subject is imagining scissors.,The image being imagined is a square. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16.,False
+662,8,5,cup,circle,The subject is imagining a cup.,The image being imagined is a circle.,False
+663,9,5,chair,circle,The subject is imagining a chair.,The image being imagined is a circle.,False
+664,7,1,watch,bird,The subject is imagining a watch.,The subject is imagining a bird.,False
+665,6,5,scissor,circle,The subject is imagining scissors.,The image being imagined is a circle.,False
+666,7,0,watch,dog,The subject is imagining a watch.,The image being imagined is a dog.,False
+667,6,5,scissor,circle,The subject is imagining scissors.,The image being imagined is a circle.,False
+668,9,1,chair,bird,The subject is imagining a chair.,The image being imagined is a bird.,False
+669,7,4,watch,square,The subject is imagining a watch.,The image being imagined is a square.,False
+670,6,5,scissor,circle,The subject is imagining scissors.,The image being imagined is a circle.,False
+671,9,8,chair,cup,The subject is imagining a chair.,The image being imagined is a cup.,False
+672,6,5,scissor,circle,The subject is imagining scissors.,The image being imagined is a circle.,False
+673,9,5,chair,circle,The subject is imagining a chair.,The image being imagined is a circle.,False
+674,9,4,chair,square,The subject is imagining a chair.,The image being imagined is a square.,False
+675,7,5,watch,circle,The subject is imagining a watch.,The image being imagined is a circle.,False
+676,9,5,chair,circle,The subject is imagining a chair.,The image being imagined is a circle.,False
+677,6,8,scissor,cup,The subject is imagining scissors.,The subject is imagining a cup.,False
+678,9,0,chair,dog,The subject is imagining a chair.,The image being imagined is a dog.,False
+679,6,5,scissor,circle,The subject is imagining scissors.,The image being imagined is a circle.,False
+680,8,3,cup,pentagram,The subject is imagining a cup.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 1. 2. 3. 4. 5. 6. 7. 8.,False
+681,9,5,chair,circle,The subject is imagining a chair.,The subject is imagining a circle.,False
+682,9,4,chair,square,The subject is imagining a chair.,The image being imagined is a square.,False
+683,7,4,watch,square,The subject is imagining a watch.,The image being imagined is a square.,False
+684,8,4,cup,square,The subject is imagining a cup.,The image being imagined is a square.,False
+685,9,4,chair,square,The subject is imagining a chair.,The subject is imagining a square.,False
+686,9,8,chair,cup,The subject is imagining a chair.,The image being imagined is a cup.,False
+687,9,5,chair,circle,The subject is imagining a chair.,The image being imagined is a circle.,False
+688,8,4,cup,square,The subject is imagining a cup.,The subject is imagining a square.,False
+689,6,5,scissor,circle,The subject is imagining scissors.,The image being imagined is a circle.,False
+690,7,7,watch,watch,The subject is imagining a watch.,The subject is imagining a watch.,True
+691,9,5,chair,circle,The subject is imagining a chair.,The image being imagined is a circle.,False
+692,6,5,scissor,circle,The subject is imagining scissors.,The image being imagined is a circle.,False
+693,8,5,cup,circle,The subject is imagining a cup.,The image being imagined is a circle.,False
+694,9,4,chair,square,The subject is imagining a chair.,The image being imagined is a square.,False
+695,6,5,scissor,circle,The subject is imagining scissors.,The image being imagined is a circle.,False
+696,6,4,scissor,square,The subject is imagining scissors.,The image being imagined is a square.,False
+697,9,5,chair,circle,The subject is imagining a chair.,The image being imagined is a circle.,False
+698,6,0,scissor,dog,The subject is imagining scissors.,The subject is imagining a dog.,False
+699,8,5,cup,circle,The subject is imagining a cup.,The image being imagined is a circle.,False
+700,8,3,cup,pentagram,The subject is imagining a cup.,The image being imagined is a pentagram.,False
+701,7,5,watch,circle,The subject is imagining a watch.,The image being imagined is a circle.,False
+702,6,7,scissor,watch,The subject is imagining scissors.,The image being imagined is a watch.,False
+703,9,4,chair,square,The subject is imagining a chair.,The image being imagined is a square.,False
+704,7,4,watch,square,The subject is imagining a watch.,The image being imagined is a square.,False
+705,9,3,chair,pentagram,The subject is imagining a chair.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16,False
+706,7,4,watch,square,The subject is imagining a watch.,The subject is imagining a square.,False
+707,7,5,watch,circle,The subject is imagining a watch.,The image being imagined is a circle.,False
+708,7,2,watch,fish,The subject is imagining a watch.,"The image being imagined is a fish.
+[EEG_TOKENS]
+The subject is imagining a fish.",False
+709,7,2,watch,fish,The subject is imagining a watch.,The image being imagined is a fish.,False
+710,8,2,cup,fish,The subject is imagining a cup.,The image being imagined is a fish.,False
+711,6,9,scissor,chair,The subject is imagining scissors.,The subject is imagining a chair.,False
+712,8,4,cup,square,The subject is imagining a cup.,The image being imagined is a square.,False
+713,6,5,scissor,circle,The subject is imagining scissors.,The subject is imagining a circle.,False
+714,8,8,cup,cup,The subject is imagining a cup.,The image being imagined is a cup.,True
+715,7,8,watch,cup,The subject is imagining a watch.,The image being imagined is a cup.,False
+716,6,4,scissor,square,The subject is imagining scissors.,The image being imagined is a square.,False
+717,8,4,cup,square,The subject is imagining a cup.,The subject is imagining a square.,False
+718,7,1,watch,bird,The subject is imagining a watch.,The image being imagined is a bird.,False
+719,6,4,scissor,square,The subject is imagining scissors.,The image being imagined is a square.,False
+720,6,4,scissor,square,The subject is imagining scissors.,The image being imagined is a square.,False
+721,8,4,cup,square,The subject is imagining a cup.,The image being imagined is a square.,False
+722,9,2,chair,fish,The subject is imagining a chair.,The image being imagined is a fish.,False
+723,8,5,cup,circle,The subject is imagining a cup.,The image being imagined is a circle.,False
+724,8,9,cup,chair,The subject is imagining a cup.,The image being imagined is a chair.,False
+725,7,8,watch,cup,The subject is imagining a watch.,The image being imagined is a cup.,False
+726,8,5,cup,circle,The subject is imagining a cup.,The image being imagined is a circle.,False
+727,6,5,scissor,circle,The subject is imagining scissors.,The image being imagined is a circle.,False
+728,8,2,cup,fish,The subject is imagining a cup.,The image being imagined is a fish.,False
+729,9,5,chair,circle,The subject is imagining a chair.,The image being imagined is a circle.,False
+730,6,5,scissor,circle,The subject is imagining scissors.,The image being imagined is a circle.,False
+731,7,3,watch,pentagram,The subject is imagining a watch.,The image being imagined is a pentagram.,False
+732,7,5,watch,circle,The subject is imagining a watch.,The subject is imagining a circle.,False
+733,7,5,watch,circle,The subject is imagining a watch.,The subject is imagining a circle.,False
+734,6,7,scissor,watch,The subject is imagining scissors.,The image being imagined is a watch.,False
+735,9,5,chair,circle,The subject is imagining a chair.,The image being imagined is a circle.,False
+736,7,1,watch,bird,The subject is imagining a watch.,The image being imagined is a bird.,False
+737,6,4,scissor,square,The subject is imagining scissors.,The subject is imagining a square.,False
+738,7,1,watch,bird,The subject is imagining a watch.,The image being imagined is a bird.,False
+739,6,4,scissor,square,The subject is imagining scissors.,The image being imagined is a square.,False
+740,9,4,chair,square,The subject is imagining a chair.,The image being imagined is a square.,False
+741,6,2,scissor,fish,The subject is imagining scissors.,The subject is imagining a fish.,False
+742,6,5,scissor,circle,The subject is imagining scissors.,The image being imagined is a circle.,False
+743,7,4,watch,square,The subject is imagining a watch.,The image being imagined is a square.,False
+744,8,5,cup,circle,The subject is imagining a cup.,The subject is imagining a circle.,False
+745,8,5,cup,circle,The subject is imagining a cup.,The image being imagined is a circle.,False
+746,6,4,scissor,square,The subject is imagining scissors.,The image being imagined is a square.,False
+747,7,4,watch,square,The subject is imagining a watch.,The subject is imagining a square.,False
+748,6,3,scissor,pentagram,The subject is imagining scissors.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 1. 2. 3. 4. 5. 6. 7. 8.,False
+749,8,4,cup,square,The subject is imagining a cup.,The subject is imagining a square.,False
+750,9,4,chair,square,The subject is imagining a chair.,The image being imagined is a square.,False
+751,9,3,chair,pentagram,The subject is imagining a chair.,The image being imagined is a pentagram. The subject is imagining a pentagram.,False
+752,7,5,watch,circle,The subject is imagining a watch.,The image being imagined is a circle.,False
+753,9,4,chair,square,The subject is imagining a chair.,The image being imagined is a square.,False
+754,9,5,chair,circle,The subject is imagining a chair.,The image being imagined is a circle.,False
+755,7,5,watch,circle,The subject is imagining a watch.,The image being imagined is a circle.,False
+756,8,4,cup,square,The subject is imagining a cup.,The image being imagined is a square.,False
+757,9,4,chair,square,The subject is imagining a chair.,The image being imagined is a square.,False
+758,8,0,cup,dog,The subject is imagining a cup.,The image being imagined is a dog.,False
+759,9,1,chair,bird,The subject is imagining a chair.,The image being imagined is a bird.,False
+760,6,8,scissor,cup,The subject is imagining scissors.,The image being imagined is a cup.,False
+761,6,4,scissor,square,The subject is imagining scissors.,The subject is imagining a square.,False
+762,7,4,watch,square,The subject is imagining a watch.,The image being imagined is a square.,False
+763,9,8,chair,cup,The subject is imagining a chair.,The subject is imagining a cup.,False
+764,8,4,cup,square,The subject is imagining a cup.,The subject is imagining a square.,False
+765,7,5,watch,circle,The subject is imagining a watch.,The image being imagined is a circle.,False
+766,6,2,scissor,fish,The subject is imagining scissors.,The image being imagined is a fish.,False
+767,9,3,chair,pentagram,The subject is imagining a chair.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 1. 2. 3. 4. 5. 6. 7. 8.,False
+768,7,4,watch,square,The subject is imagining a watch.,The image being imagined is a square.,False
+769,9,4,chair,square,The subject is imagining a chair.,The image being imagined is a square.,False
+770,9,5,chair,circle,The subject is imagining a chair.,The subject is imagining a circle.,False
+771,8,5,cup,circle,The subject is imagining a cup.,The image being imagined is a circle.,False
+772,6,2,scissor,fish,The subject is imagining scissors.,The subject is imagining a fish.,False
+773,6,4,scissor,square,The subject is imagining scissors.,The image being imagined is a square.,False
+774,7,4,watch,square,The subject is imagining a watch.,The image being imagined is a square.,False
+775,6,5,scissor,circle,The subject is imagining scissors.,The image being imagined is a circle.,False
+776,9,5,chair,circle,The subject is imagining a chair.,The subject is imagining a circle.,False
+777,7,5,watch,circle,The subject is imagining a watch.,The image being imagined is a circle.,False
+778,9,5,chair,circle,The subject is imagining a chair.,The image being imagined is a circle.,False
+779,8,4,cup,square,The subject is imagining a cup.,The image being imagined is a square.,False
+780,7,2,watch,fish,The subject is imagining a watch.,The image being imagined is a fish.,False
+781,8,4,cup,square,The subject is imagining a cup.,The image being imagined is a square.,False
+782,6,5,scissor,circle,The subject is imagining scissors.,The image being imagined is a circle.,False
+783,9,5,chair,circle,The subject is imagining a chair.,The image being imagined is a circle.,False
+784,9,4,chair,square,The subject is imagining a chair.,The image being imagined is a square.,False
+785,8,6,cup,scissor,The subject is imagining a cup.,The image being imagined is a cup. Scissors are being mentally visualized.,False
+786,7,4,watch,square,The subject is imagining a watch.,The image being imagined is a square. The subject is imagining a square.,False
+787,6,4,scissor,square,The subject is imagining scissors.,The image being imagined is a square.,False
+788,7,5,watch,circle,The subject is imagining a watch.,The image being imagined is a circle.,False
+789,9,5,chair,circle,The subject is imagining a chair.,The image being imagined is a circle.,False
+790,8,5,cup,circle,The subject is imagining a cup.,The image being imagined is a circle.,False
+791,8,5,cup,circle,The subject is imagining a cup.,The image being imagined is a circle.,False
+792,8,5,cup,circle,The subject is imagining a cup.,The image being imagined is a circle.,False
+793,6,5,scissor,circle,The subject is imagining scissors.,The image being imagined is a circle.,False
+794,7,5,watch,circle,The subject is imagining a watch.,The image being imagined is a circle.,False
+795,7,4,watch,square,The subject is imagining a watch.,The image being imagined is a square.,False
+796,9,4,chair,square,The subject is imagining a chair.,The image being imagined is a square.,False
+797,6,5,scissor,circle,The subject is imagining scissors.,The image being imagined is a circle.,False
+798,8,4,cup,square,The subject is imagining a cup.,The subject is imagining a square.,False
+799,8,1,cup,bird,The subject is imagining a cup.,The image being imagined is a bird.,False
+800,1,1,bird,bird,The subject is imagining a bird.,The subject is imagining a bird.,True
+801,2,3,fish,pentagram,The subject is imagining a fish.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 1. 2. 3. 4. 5. 6. 7. 8.,False
+802,0,1,dog,bird,The subject is imagining a dog.,"The subject is imagining a bird.
+[EEG_TOKEN]
+The subject is imagining a bird.",False
+803,1,6,bird,scissor,The subject is imagining a bird.,The image being imagined is a cup. Scissors are being mentally visualized.,False
+804,0,1,dog,bird,The subject is imagining a dog.,The subject is imagining a bird.,False
+805,0,3,dog,pentagram,The subject is imagining a dog.,The image being imagined is a pentagram. The subject is imagining a pentagram.,False
+806,2,2,fish,fish,The subject is imagining a fish.,The image being imagined is a fish.,True
+807,0,3,dog,pentagram,The subject is imagining a dog.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 1. 2. 3. 4. 5. 6. 7. 8.,False
+808,0,3,dog,pentagram,The subject is imagining a dog.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 1. 2. 3. 4. 5. 6. 7. 8.,False
+809,0,8,dog,cup,The subject is imagining a dog.,The image being imagined is a cup. The subject is imagining a cup.,False
+810,1,2,bird,fish,The subject is imagining a bird.,"The image being imagined is a fish.
+[EEG_TOKEN]
+The subject is imagining a fish.",False
+811,2,8,fish,cup,The subject is imagining a fish.,The image being imagined is a cup.,False
+812,2,8,fish,cup,The subject is imagining a fish.,The subject is imagining a cup.,False
+813,0,5,dog,circle,The subject is imagining a dog.,The image being imagined is a circle. A circle is being imagined.,False
+814,1,5,bird,circle,The subject is imagining a bird.,The image being imagined is a circle.,False
+815,2,2,fish,fish,The subject is imagining a fish.,The subject is imagining a fish.,True
+816,1,2,bird,fish,The subject is imagining a bird.,The image being imagined is a fish.,False
+817,2,5,fish,circle,The subject is imagining a fish.,The image being imagined is a circle.,False
+818,1,2,bird,fish,The subject is imagining a bird.,The subject is imagining a fish.,False
+819,0,2,dog,fish,The subject is imagining a dog.,The image being imagined is a fish.,False
+820,1,3,bird,pentagram,The subject is imagining a bird.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 1. 2. 3. 4. 5. 6. 7. 8.,False
+821,0,7,dog,watch,The subject is imagining a dog.,The image being imagined is a watch.,False
+822,2,9,fish,chair,The subject is imagining a fish.,The image being imagined is a chair.,False
+823,2,2,fish,fish,The subject is imagining a fish.,The image being imagined is a fish.,True
+824,2,7,fish,watch,The subject is imagining a fish.,The image being imagined is a watch.,False
+825,2,1,fish,bird,The subject is imagining a fish.,The subject is imagining a bird.,False
+826,0,2,dog,fish,The subject is imagining a dog.,The image being imagined is a fish.,False
+827,1,7,bird,watch,The subject is imagining a bird.,The subject is imagining a watch.,False
+828,1,3,bird,pentagram,The subject is imagining a bird.,The subject is imagining a pentagram.,False
+829,1,5,bird,circle,The subject is imagining a bird.,The subject is imagining a circle. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16.,False
+830,0,5,dog,circle,The subject is imagining a dog.,The image being imagined is a circle.,False
+831,2,5,fish,circle,The subject is imagining a fish.,The image being imagined is a circle. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16.,False
+832,0,7,dog,watch,The subject is imagining a dog.,The image being imagined is a watch.,False
+833,2,1,fish,bird,The subject is imagining a fish.,The image being imagined is a bird.,False
+834,2,7,fish,watch,The subject is imagining a fish.,The image being imagined is a watch.,False
+835,1,2,bird,fish,The subject is imagining a bird.,The image being imagined is a fish.,False
+836,0,5,dog,circle,The subject is imagining a dog.,The image being imagined is a circle. A circle is being imagined.,False
+837,2,3,fish,pentagram,The subject is imagining a fish.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 0. 1. 2. 3. 4. 5. 6. 7.,False
+838,0,6,dog,scissor,The subject is imagining a dog.,The image being imagined is a cup. Scissors are being mentally visualized.,False
+839,2,8,fish,cup,The subject is imagining a fish.,The image being imagined is a cup.,False
+840,1,7,bird,watch,The subject is imagining a bird.,The subject is imagining a watch.,False
+841,1,8,bird,cup,The subject is imagining a bird.,The subject is imagining a cup.,False
+842,0,8,dog,cup,The subject is imagining a dog.,The image being imagined is a cup.,False
+843,0,5,dog,circle,The subject is imagining a dog.,The image being imagined is a circle.,False
+844,1,2,bird,fish,The subject is imagining a bird.,"The image being imagined is a fish.
+[EEG_TOKENS]
+The subject is imagining a fish.",False
+845,1,8,bird,cup,The subject is imagining a bird.,The image being imagined is a cup.,False
+846,1,7,bird,watch,The subject is imagining a bird.,The subject is imagining a watch.,False
+847,0,9,dog,chair,The subject is imagining a dog.,The image being imagined is a chair. The subject is imagining a chair.,False
+848,1,7,bird,watch,The subject is imagining a bird.,The image being imagined is a watch.,False
+849,1,4,bird,square,The subject is imagining a bird.,"The image being imagined is a square.
+
+[EEG_TOKENS]
+The subject is imagining a square.",False
+850,2,3,fish,pentagram,The subject is imagining a fish.,The image being imagined is a pentagram.,False
+851,2,4,fish,square,The subject is imagining a fish.,The image being imagined is a square.,False
+852,0,6,dog,scissor,The subject is imagining a dog.,The image being imagined is a cup. Scissors are being mentally visualized.,False
+853,2,4,fish,square,The subject is imagining a fish.,The image being imagined is a square. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16.,False
+854,0,4,dog,square,The subject is imagining a dog.,The image being imagined is a square.,False
+855,2,5,fish,circle,The subject is imagining a fish.,The subject is imagining a circle.,False
+856,2,4,fish,square,The subject is imagining a fish.,The subject is imagining a square.,False
+857,0,2,dog,fish,The subject is imagining a dog.,The image being imagined is a fish.,False
+858,1,1,bird,bird,The subject is imagining a bird.,The image being imagined is a bird.,True
+859,1,5,bird,circle,The subject is imagining a bird.,The image being imagined is a circle.,False
+860,2,8,fish,cup,The subject is imagining a fish.,The image being imagined is a cup.,False
+861,1,1,bird,bird,The subject is imagining a bird.,The image being imagined is a bird.,True
+862,0,5,dog,circle,The subject is imagining a dog.,The image being imagined is a circle.,False
+863,2,3,fish,pentagram,The subject is imagining a fish.,The image being imagined is a pentagram.,False
+864,2,2,fish,fish,The subject is imagining a fish.,The image being imagined is a fish.,True
+865,0,8,dog,cup,The subject is imagining a dog.,The image being imagined is a cup.,False
+866,2,7,fish,watch,The subject is imagining a fish.,The image being imagined is a watch.,False
+867,0,2,dog,fish,The subject is imagining a dog.,The subject is imagining a fish.,False
+868,2,1,fish,bird,The subject is imagining a fish.,The subject is imagining a bird.,False
+869,1,1,bird,bird,The subject is imagining a bird.,The image being imagined is a bird.,True
+870,2,8,fish,cup,The subject is imagining a fish.,The image being imagined is a cup. A cup is being imagined.,False
+871,0,5,dog,circle,The subject is imagining a dog.,The subject is imagining a circle.,False
+872,1,3,bird,pentagram,The subject is imagining a bird.,The subject is imagining a pentagram.,False
+873,2,8,fish,cup,The subject is imagining a fish.,The image being imagined is a cup. A cup is being imagined.,False
+874,1,8,bird,cup,The subject is imagining a bird.,The image being imagined is a cup.,False
+875,1,5,bird,circle,The subject is imagining a bird.,The image being imagined is a circle.,False
+876,1,1,bird,bird,The subject is imagining a bird.,The image being imagined is a bird. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16.,True
+877,0,5,dog,circle,The subject is imagining a dog.,The subject is imagining a circle.,False
+878,0,3,dog,pentagram,The subject is imagining a dog.,"The subject is imagining a pentagram.
+[EEG_TOKENS]
+The subject is imagining a pentagram.",False
+879,2,4,fish,square,The subject is imagining a fish.,The image being imagined is a square.,False
+880,0,7,dog,watch,The subject is imagining a dog.,The image being imagined is a watch.,False
+881,1,2,bird,fish,The subject is imagining a bird.,The image being imagined is a fish.,False
+882,0,0,dog,dog,The subject is imagining a dog.,The image being imagined is a dog.,True
+883,1,3,bird,pentagram,The subject is imagining a bird.,The image being imagined is a pentagram.,False
+884,1,4,bird,square,The subject is imagining a bird.,The subject is imagining a square.,False
+885,2,2,fish,fish,The subject is imagining a fish.,The image being imagined is a fish.,True
+886,0,3,dog,pentagram,The subject is imagining a dog.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16,False
+887,0,7,dog,watch,The subject is imagining a dog.,The image being imagined is a watch.,False
+888,1,5,bird,circle,The subject is imagining a bird.,The image being imagined is a circle.,False
+889,2,2,fish,fish,The subject is imagining a fish.,The image being imagined is a fish.,True
+890,0,8,dog,cup,The subject is imagining a dog.,The image being imagined is a cup.,False
+891,0,2,dog,fish,The subject is imagining a dog.,The image being imagined is a fish.,False
+892,2,2,fish,fish,The subject is imagining a fish.,The image being imagined is a fish.,True
+893,0,2,dog,fish,The subject is imagining a dog.,The image being imagined is a fish.,False
+894,1,2,bird,fish,The subject is imagining a bird.,The image being imagined is a fish.,False
+895,0,6,dog,scissor,The subject is imagining a dog.,The image being imagined is a cup. Scissors are being mentally visualized.,False
+896,1,0,bird,dog,The subject is imagining a bird.,The image being imagined is a dog.,False
+897,0,2,dog,fish,The subject is imagining a dog.,"The image being imagined is a fish.
+[EEG_TOKEN]
+The subject is imagining a fish.",False
+898,2,2,fish,fish,The subject is imagining a fish.,The image being imagined is a fish.,True
+899,2,5,fish,circle,The subject is imagining a fish.,The subject is imagining a circle. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16.,False
+900,2,2,fish,fish,The subject is imagining a fish.,The image being imagined is a fish.,True
+901,2,2,fish,fish,The subject is imagining a fish.,The subject is imagining a fish.,True
+902,1,2,bird,fish,The subject is imagining a bird.,The image being imagined is a fish.,False
+903,1,3,bird,pentagram,The subject is imagining a bird.,The image being imagined is a pentagram.,False
+904,1,5,bird,circle,The subject is imagining a bird.,The image being imagined is a circle.,False
+905,0,2,dog,fish,The subject is imagining a dog.,The image being imagined is a fish.,False
+906,2,9,fish,chair,The subject is imagining a fish.,"The image being imagined is a chair.
+[EEG_TOKEN]
+The subject is imagining a chair.",False
+907,2,2,fish,fish,The subject is imagining a fish.,The image being imagined is a fish.,True
+908,1,1,bird,bird,The subject is imagining a bird.,The subject is imagining a bird.,True
+909,2,3,fish,pentagram,The subject is imagining a fish.,The subject is imagining a pentagram.,False
+910,1,9,bird,chair,The subject is imagining a bird.,The image being imagined is a chair.,False
+911,0,3,dog,pentagram,The subject is imagining a dog.,The subject is imagining a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 0. 0. 0. 0. 0. 0. 0. 0.,False
+912,0,1,dog,bird,The subject is imagining a dog.,The image being imagined is a bird.,False
+913,1,3,bird,pentagram,The subject is imagining a bird.,"The image being imagined is a pentagram.
+scott is the subject.",False
+914,2,2,fish,fish,The subject is imagining a fish.,The image being imagined is a fish.,True
+915,0,7,dog,watch,The subject is imagining a dog.,The image being imagined is a watch.,False
+916,0,5,dog,circle,The subject is imagining a dog.,The image being imagined is a circle.,False
+917,1,3,bird,pentagram,The subject is imagining a bird.,The image being imagined is a pentagram. A pentagram is being imagined. Scene pentagram is being imagined. A pentagram is being imagined. A pentagram is being imagined. A pentagram is being imagined. A pentagram is being imagined. A pentagram is being,False
+918,2,7,fish,watch,The subject is imagining a fish.,The image being imagined is a watch.,False
+919,1,1,bird,bird,The subject is imagining a bird.,The subject is imagining a bird.,True
+920,3,5,pentagram,circle,The subject is imagining a pentagram.,The image being imagined is a circle.,False
+921,3,7,pentagram,watch,The subject is imagining a pentagram.,The image being imagined is a watch.,False
+922,3,9,pentagram,chair,The subject is imagining a pentagram.,The image being imagined is a chair. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16.,False
+923,5,7,circle,watch,The subject is imagining a circle.,The subject is imagining a watch.,False
+924,5,3,circle,pentagram,The subject is imagining a circle.,The subject is imagining a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16.,False
+925,3,9,pentagram,chair,The subject is imagining a pentagram.,The image being imagined is a chair.,False
+926,5,8,circle,cup,The subject is imagining a circle.,The subject is imagining a cup.,False
+927,4,9,square,chair,The subject is imagining a square.,The subject is imagining a chair.,False
+928,4,1,square,bird,The subject is imagining a square.,The subject is imagining a bird. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16.,False
+929,5,7,circle,watch,The subject is imagining a circle.,The image being imagined is a watch.,False
+930,4,5,square,circle,The subject is imagining a square.,The image being imagined is a circle.,False
+931,4,1,square,bird,The subject is imagining a square.,The subject is imagining a bird. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16.,False
+932,3,5,pentagram,circle,The subject is imagining a pentagram.,The image being imagined is a circle.,False
+933,5,2,circle,fish,The subject is imagining a circle.,The image being imagined is a fish.,False
+934,5,9,circle,chair,The subject is imagining a circle.,"The image being imagined is a chair.
+[EEG_TOKEN]
+The subject is imagining a chair.",False
+935,3,7,pentagram,watch,The subject is imagining a pentagram.,The image being imagined is a watch.,False
+936,4,1,square,bird,The subject is imagining a square.,The image being imagined is a bird.,False
+937,3,2,pentagram,fish,The subject is imagining a pentagram.,The image being imagined is a fish.,False
+938,5,0,circle,dog,The subject is imagining a circle.,The image being imagined is a dog.,False
+939,3,2,pentagram,fish,The subject is imagining a pentagram.,The subject is imagining a fish.,False
+940,4,4,square,square,The subject is imagining a square.,The image being imagined is a square.,True
+941,4,1,square,bird,The subject is imagining a square.,The image being imagined is a bird.,False
+942,4,4,square,square,The subject is imagining a square.,The image being imagined is a square.,True
+943,4,5,square,circle,The subject is imagining a square.,The image being imagined is a circle. A circle is being imagined.,False
+944,3,8,pentagram,cup,The subject is imagining a pentagram.,The image being imagined is a cup. The subject is imagining a cup.,False
+945,4,8,square,cup,The subject is imagining a square.,"The subject is imagining a cup.
+
+[EEG_TOKENS]
+The subject is imagining a cup.",False
+946,5,0,circle,dog,The subject is imagining a circle.,The image being imagined is a dog.,False
+947,5,0,circle,dog,The subject is imagining a circle.,The image being imagined is a dog.,False
+948,3,3,pentagram,pentagram,The subject is imagining a pentagram.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 1. 2. 3. 4. 5. 6. 7. 8.,True
+949,5,3,circle,pentagram,The subject is imagining a circle.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16,False
+950,3,5,pentagram,circle,The subject is imagining a pentagram.,The subject is imagining a circle.,False
+951,5,2,circle,fish,The subject is imagining a circle.,The image being imagined is a fish.,False
+952,3,4,pentagram,square,The subject is imagining a pentagram.,The image being imagined is a square.,False
+953,3,8,pentagram,cup,The subject is imagining a pentagram.,The image being imagined is a cup.,False
+954,5,7,circle,watch,The subject is imagining a circle.,The image being imagined is a watch.,False
+955,4,9,square,chair,The subject is imagining a square.,The image being imagined is a chair.,False
+956,4,3,square,pentagram,The subject is imagining a square.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 1. 2. 3. 4. 5. 6. 7. 8.,False
+957,4,8,square,cup,The subject is imagining a square.,The image being imagined is a cup.,False
+958,4,7,square,watch,The subject is imagining a square.,The subject is imagining a watch.,False
+959,5,2,circle,fish,The subject is imagining a circle.,The image being imagined is a fish.,False
+960,5,3,circle,pentagram,The subject is imagining a circle.,The subject is imagining a pentagram.,False
+961,5,7,circle,watch,The subject is imagining a circle.,The subject is imagining a watch.,False
+962,3,1,pentagram,bird,The subject is imagining a pentagram.,The image being imagined is a bird.,False
+963,4,7,square,watch,The subject is imagining a square.,The image being imagined is a watch.,False
+964,5,7,circle,watch,The subject is imagining a circle.,The image being imagined is a watch.,False
+965,3,4,pentagram,square,The subject is imagining a pentagram.,The image being imagined is a square.,False
+966,5,7,circle,watch,The subject is imagining a circle.,The image being imagined is a watch.,False
+967,4,6,square,scissor,The subject is imagining a square.,"The subject is imagining a watch.
+scissors are being scissors.
+dog is being dog.
+bird is being bird.
+dog is being dog.
+scissors are being scissors.
+scissors are being scissors.
+dog is being dog.
+bird",False
+968,5,4,circle,square,The subject is imagining a circle.,"The image being imagined is a square.
+
+[EEG_TOKENS]
+Give the subject a square.",False
+969,4,7,square,watch,The subject is imagining a square.,The image being imagined is a watch.,False
+970,4,3,square,pentagram,The subject is imagining a square.,The subject is imagining a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 0. 0. 0. 0. 0. 0. 0. 0.,False
+971,5,7,circle,watch,The subject is imagining a circle.,The subject is imagining a watch.,False
+972,3,7,pentagram,watch,The subject is imagining a pentagram.,The subject is imagining a watch.,False
+973,3,6,pentagram,scissor,The subject is imagining a pentagram.,The image being imagined is a cup. Scissors are being mentally visualized.,False
+974,3,5,pentagram,circle,The subject is imagining a pentagram.,The image being imagined is a circle.,False
+975,5,8,circle,cup,The subject is imagining a circle.,The image being imagined is a cup.,False
+976,3,3,pentagram,pentagram,The subject is imagining a pentagram.,The image being imagined is a pentagram. Scratch. Scratch. Scratch. Scratch. Scratch. Scratch. Scratch. Scratch. Scratch. Scratch. Scratch. Scratch. Scratch. Scr,True
+977,4,2,square,fish,The subject is imagining a square.,The image being imagined is a fish.,False
+978,4,7,square,watch,The subject is imagining a square.,The image being imagined is a watch.,False
+979,3,5,pentagram,circle,The subject is imagining a pentagram.,The image being imagined is a circle. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16.,False
+980,5,4,circle,square,The subject is imagining a circle.,"The image being imagined is a square. 1, 2, 3, 4. 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8,",False
+981,5,8,circle,cup,The subject is imagining a circle.,The image being imagined is a cup.,False
+982,3,4,pentagram,square,The subject is imagining a pentagram.,The image being imagined is a square. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16.,False
+983,4,2,square,fish,The subject is imagining a square.,"The subject is imagining a fish.
+[EEG_TOKEN]
+The subject is imagining a fish.",False
+984,4,2,square,fish,The subject is imagining a square.,The image being imagined is a fish.,False
+985,3,3,pentagram,pentagram,The subject is imagining a pentagram.,The image being imagined is a pentagram. The subject is imagining a pentagram.,True
+986,4,4,square,square,The subject is imagining a square.,The image being imagined is a square.,True
+987,5,5,circle,circle,The subject is imagining a circle.,"The subject is imagining a circle.
+[EEG_TOKENS]
+The subject is imagining a circle.",True
+988,5,2,circle,fish,The subject is imagining a circle.,The subject is imagining a fish.,False
+989,4,7,square,watch,The subject is imagining a square.,The image being imagined is a watch.,False
+990,3,1,pentagram,bird,The subject is imagining a pentagram.,The image being imagined is a bird.,False
+991,5,8,circle,cup,The subject is imagining a circle.,The image being imagined is a cup.,False
+992,3,7,pentagram,watch,The subject is imagining a pentagram.,The image being imagined is a watch.,False
+993,4,4,square,square,The subject is imagining a square.,The image being imagined is a square.,True
+994,4,7,square,watch,The subject is imagining a square.,The image being imagined is a watch.,False
+995,3,2,pentagram,fish,The subject is imagining a pentagram.,"The image being imagined is a fish.
+[EEG_TOKENS]
+The subject is imagining a fish.",False
+996,5,7,circle,watch,The subject is imagining a circle.,The subject is imagining a watch.,False
+997,3,3,pentagram,pentagram,The subject is imagining a pentagram.,The image being imagined is a pentagram. The subject is imagining a pentagram.,True
+998,3,8,pentagram,cup,The subject is imagining a pentagram.,The image being imagined is a cup. The subject is imagining a cup.,False
+999,4,5,square,circle,The subject is imagining a square.,The image being imagined is a circle.,False
+1000,5,1,circle,bird,The subject is imagining a circle.,The subject is imagining a bird.,False
+1001,5,7,circle,watch,The subject is imagining a circle.,The subject is imagining a watch.,False
+1002,5,8,circle,cup,The subject is imagining a circle.,The image being imagined is a cup. A cup is being imagined.,False
+1003,4,0,square,dog,The subject is imagining a square.,The image being imagined is a dog.,False
+1004,5,8,circle,cup,The subject is imagining a circle.,The image being imagined is a cup. The subject is imagining a cup.,False
+1005,3,6,pentagram,scissor,The subject is imagining a pentagram.,The image being imagined is a cup. Scissors are being mentally visualized.,False
+1006,3,7,pentagram,watch,The subject is imagining a pentagram.,The image being imagined is a watch.,False
+1007,4,5,square,circle,The subject is imagining a square.,The image being imagined is a circle.,False
+1008,3,5,pentagram,circle,The subject is imagining a pentagram.,The image being imagined is a circle.,False
+1009,4,7,square,watch,The subject is imagining a square.,The subject is imagining a watch.,False
+1010,3,3,pentagram,pentagram,The subject is imagining a pentagram.,The image being imagined is a pentagram.,True
+1011,3,5,pentagram,circle,The subject is imagining a pentagram.,The image being imagined is a circle. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16.,False
+1012,3,7,pentagram,watch,The subject is imagining a pentagram.,The image being imagined is a watch.,False
+1013,3,5,pentagram,circle,The subject is imagining a pentagram.,The image being imagined is a circle. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16.,False
+1014,4,5,square,circle,The subject is imagining a square.,The image being imagined is a circle.,False
+1015,5,5,circle,circle,The subject is imagining a circle.,"The subject is imagining a circle.
+
+[EEG_TOKENS]
+Give the subject is a circle.",True
+1016,3,5,pentagram,circle,The subject is imagining a pentagram.,The image being imagined is a circle.,False
+1017,5,5,circle,circle,The subject is imagining a circle.,The subject is imagining a circle.,True
+1018,4,4,square,square,The subject is imagining a square.,The image being imagined is a square. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 1. 2. 3. 4. 5. 6. 7. 8.,True
+1019,4,2,square,fish,The subject is imagining a square.,The image being imagined is a fish.,False
+1020,4,5,square,circle,The subject is imagining a square.,The image being imagined is a circle.,False
+1021,4,3,square,pentagram,The subject is imagining a square.,The subject is imagining a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 0. 0. 0. 0. 0. 0. 0. 0.,False
+1022,4,4,square,square,The subject is imagining a square.,"The image being imagined is a square.
+
+[EEG_TOKENS]
+Give the subject a square.",True
+1023,5,0,circle,dog,The subject is imagining a circle.,The image being imagined is a dog.,False
+1024,3,2,pentagram,fish,The subject is imagining a pentagram.,The image being imagined is a fish.,False
+1025,5,9,circle,chair,The subject is imagining a circle.,The image being imagined is a chair.,False
+1026,5,9,circle,chair,The subject is imagining a circle.,The image being imagined is a chair.,False
+1027,5,0,circle,dog,The subject is imagining a circle.,The image being imagined is a dog.,False
+1028,3,4,pentagram,square,The subject is imagining a pentagram.,The subject is imagining a square.,False
+1029,5,8,circle,cup,The subject is imagining a circle.,The subject is imagining a cup.,False
+1030,3,7,pentagram,watch,The subject is imagining a pentagram.,The image being imagined is a watch.,False
+1031,3,3,pentagram,pentagram,The subject is imagining a pentagram.,"The image being imagined is a pentagram.
+[EEG_TOKENS]
+The subject is imagining a pentagram.",True
+1032,4,6,square,scissor,The subject is imagining a square.,"The image being imagined is a cup.
+scissors are being watched.",False
+1033,3,5,pentagram,circle,The subject is imagining a pentagram.,The image being imagined is a circle. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16.,False
+1034,4,2,square,fish,The subject is imagining a square.,The image being imagined is a fish. The subject is imagining a fish.,False
+1035,5,5,circle,circle,The subject is imagining a circle.,The image being imagined is a circle.,True
+1036,4,8,square,cup,The subject is imagining a square.,The image being imagined is a cup.,False
+1037,5,9,circle,chair,The subject is imagining a circle.,The image being imagined is a chair.,False
+1038,4,5,square,circle,The subject is imagining a square.,The subject is imagining a circle.,False
+1039,5,0,circle,dog,The subject is imagining a circle.,The image being imagined is a dog.,False
+1040,6,8,scissor,cup,The subject is imagining scissors.,The image being imagined is a cup. The subject is imagining a cup.,False
+1041,6,8,scissor,cup,The subject is imagining scissors.,The subject is imagining a cup. The image being imagined is a cup.,False
+1042,6,6,scissor,scissor,The subject is imagining scissors.,The image being imagined is a cup. Scissors are being mentally visualized.,True
+1043,6,6,scissor,scissor,The subject is imagining scissors.,"The image being imagined is a cup.
+scissors.",True
+1044,8,1,cup,bird,The subject is imagining a cup.,"The image being imagined is a bird.
+[EEG_TOKENS]
+The subject is imagining a bird.",False
+1045,9,3,chair,pentagram,The subject is imagining a chair.,The subject is imagining a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16.,False
+1046,9,8,chair,cup,The subject is imagining a chair.,The image being imagined is a cup.,False
+1047,8,0,cup,dog,The subject is imagining a cup.,The image being imagined is a dog.,False
+1048,7,3,watch,pentagram,The subject is imagining a watch.,The subject is imagining a pentagram.,False
+1049,8,2,cup,fish,The subject is imagining a cup.,The image being imagined is a fish. The subject is imagining a fish.,False
+1050,9,3,chair,pentagram,The subject is imagining a chair.,"The image being imagined is a pentagram. 1, 2, 3, 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16",False
+1051,9,6,chair,scissor,The subject is imagining a chair.,The image being imagined is a cup. Scissors are being mentally visualized.,False
+1052,8,3,cup,pentagram,The subject is imagining a cup.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16,False
+1053,6,0,scissor,dog,The subject is imagining scissors.,The image being imagined is a dog.,False
+1054,6,4,scissor,square,The subject is imagining scissors.,The image being imagined is a square.,False
+1055,8,8,cup,cup,The subject is imagining a cup.,The subject is imagining a cup.,True
+1056,7,9,watch,chair,The subject is imagining a watch.,The image being imagined is a chair.,False
+1057,7,8,watch,cup,The subject is imagining a watch.,The image being imagined is a cup.,False
+1058,7,7,watch,watch,The subject is imagining a watch.,The image being imagined is a watch.,True
+1059,7,3,watch,pentagram,The subject is imagining a watch.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16,False
+1060,8,7,cup,watch,The subject is imagining a cup.,The subject is imagining a watch.,False
+1061,9,5,chair,circle,The subject is imagining a chair.,The image being imagined is a circle.,False
+1062,9,0,chair,dog,The subject is imagining a chair.,The subject is imagining a dog.,False
+1063,8,8,cup,cup,The subject is imagining a cup.,The image being imagined is a cup. The subject is imagining a cup.,True
+1064,7,4,watch,square,The subject is imagining a watch.,The image being imagined is a square.,False
+1065,8,9,cup,chair,The subject is imagining a cup.,The image being imagined is a chair.,False
+1066,8,5,cup,circle,The subject is imagining a cup.,The subject is imagining a circle.,False
+1067,6,7,scissor,watch,The subject is imagining scissors.,The subject is imagining a watch.,False
+1068,9,7,chair,watch,The subject is imagining a chair.,The image being imagined is a watch. The subject is imagining a watch.,False
+1069,6,9,scissor,chair,The subject is imagining scissors.,The image being imagined is a chair. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16.,False
+1070,7,5,watch,circle,The subject is imagining a watch.,The image being imagined is a circle.,False
+1071,9,7,chair,watch,The subject is imagining a chair.,The image being imagined is a watch.,False
+1072,7,1,watch,bird,The subject is imagining a watch.,The image being imagined is a bird.,False
+1073,7,3,watch,pentagram,The subject is imagining a watch.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16,False
+1074,7,7,watch,watch,The subject is imagining a watch.,The subject is imagining a watch.,True
+1075,6,0,scissor,dog,The subject is imagining scissors.,The subject is imagining a dog.,False
+1076,9,3,chair,pentagram,The subject is imagining a chair.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16,False
+1077,6,9,scissor,chair,The subject is imagining scissors.,The image being imagined is a chair.,False
+1078,9,8,chair,cup,The subject is imagining a chair.,The image being imagined is a cup.,False
+1079,8,3,cup,pentagram,The subject is imagining a cup.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16,False
+1080,8,8,cup,cup,The subject is imagining a cup.,"The image being imagined is a cup.
+The subject is imagining a cup.",True
+1081,8,2,cup,fish,The subject is imagining a cup.,"The image being imagined is a fish.
+[EEG_TOKEN]
+The subject is imagining a fish.",False
+1082,8,8,cup,cup,The subject is imagining a cup.,The image being imagined is a cup. The subject is imagining a cup.,True
+1083,8,6,cup,scissor,The subject is imagining a cup.,The image being imagined is a cup. Scissors are being mentally visualized.,False
+1084,9,4,chair,square,The subject is imagining a chair.,The subject is imagining a square.,False
+1085,9,6,chair,scissor,The subject is imagining a chair.,"The subject is imagining a watch.
+scissors are being watch.
+scissors are being watch.
+scissors are being watch.
+scissors are being watch.
+scissors are being watch.
+scissors are being watch.
+scissors are being watch.",False
+1086,6,2,scissor,fish,The subject is imagining scissors.,The image being imagined is a fish.,False
+1087,6,8,scissor,cup,The subject is imagining scissors.,The image being imagined is a cup.,False
+1088,6,3,scissor,pentagram,The subject is imagining scissors.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16,False
+1089,6,2,scissor,fish,The subject is imagining scissors.,The image being imagined is a fish.,False
+1090,9,2,chair,fish,The subject is imagining a chair.,The subject is imagining a fish.,False
+1091,7,5,watch,circle,The subject is imagining a watch.,The image being imagined is a circle.,False
+1092,9,2,chair,fish,The subject is imagining a chair.,The image being imagined is a fish.,False
+1093,8,8,cup,cup,The subject is imagining a cup.,The image being imagined is a cup.,True
+1094,6,7,scissor,watch,The subject is imagining scissors.,The image being imagined is a watch. The subject is imagining a watch.,False
+1095,7,6,watch,scissor,The subject is imagining a watch.,"The image being imagined is a circle.
+scissors are being mentally visualized.",False
+1096,7,8,watch,cup,The subject is imagining a watch.,The image being imagined is a cup.,False
+1097,8,7,cup,watch,The subject is imagining a cup.,The image being imagined is a watch.,False
+1098,6,7,scissor,watch,The subject is imagining scissors.,The image being imagined is a watch.,False
+1099,9,0,chair,dog,The subject is imagining a chair.,The image being imagined is a dog.,False
+1100,8,8,cup,cup,The subject is imagining a cup.,The image being imagined is a cup. A cup is being imagined.,True
+1101,7,8,watch,cup,The subject is imagining a watch.,"The subject is imagining a cup.
+[EEG_TOKENS]
+The subject is imagining a cup.",False
+1102,7,3,watch,pentagram,The subject is imagining a watch.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16,False
+1103,8,6,cup,scissor,The subject is imagining a cup.,"The image being imagined is a fish.
+scissors are being mentally visualized.",False
+1104,7,3,watch,pentagram,The subject is imagining a watch.,The image being imagined is a pentagram. A pentagram is being imagined. Scene pentagram is being imagined. A pentagram is being imagined. A pentagram is being imagined. A pentagram is being imagined. A pentagram is being imagined. A pentagram is being,False
+1105,9,5,chair,circle,The subject is imagining a chair.,The image being imagined is a circle.,False
+1106,6,8,scissor,cup,The subject is imagining scissors.,The image being imagined is a cup. A cup is being imagined.,False
+1107,9,5,chair,circle,The subject is imagining a chair.,"The image being imagined is a circle.
+
+[EEG_TOKENS]
+The subject is imagining a circle.",False
+1108,9,8,chair,cup,The subject is imagining a chair.,"The subject is imagining a cup.
+
+[EEG_TOKENS]
+Give the subject is a cup.",False
+1109,9,7,chair,watch,The subject is imagining a chair.,The image being imagined is a watch.,False
+1110,7,8,watch,cup,The subject is imagining a watch.,The image being imagined is a cup.,False
+1111,7,0,watch,dog,The subject is imagining a watch.,The image being imagined is a dog. The subject is imagining a dog.,False
+1112,8,7,cup,watch,The subject is imagining a cup.,The image being imagined is a watch.,False
+1113,9,8,chair,cup,The subject is imagining a chair.,The image being imagined is a cup. The subject is imagining a cup.,False
+1114,6,2,scissor,fish,The subject is imagining scissors.,The image being imagined is a fish.,False
+1115,7,3,watch,pentagram,The subject is imagining a watch.,The image being imagined is a pentagram. The subject is imagining a pentagram.,False
+1116,6,7,scissor,watch,The subject is imagining scissors.,The subject is imagining a watch.,False
+1117,7,7,watch,watch,The subject is imagining a watch.,The subject is imagining a watch.,True
+1118,6,7,scissor,watch,The subject is imagining scissors.,The image being imagined is a watch.,False
+1119,8,0,cup,dog,The subject is imagining a cup.,The subject is imagining a dog.,False
+1120,7,8,watch,cup,The subject is imagining a watch.,The image being imagined is a cup. The subject is imagining a cup.,False
+1121,9,8,chair,cup,The subject is imagining a chair.,The image being imagined is a cup.,False
+1122,6,6,scissor,scissor,The subject is imagining scissors.,The image being imagined is a cup. Scissors are being mentally visualized.,True
+1123,6,6,scissor,scissor,The subject is imagining scissors.,The image being imagined is a cup. Scissors are being mentally visualized.,True
+1124,7,7,watch,watch,The subject is imagining a watch.,The image being imagined is a watch.,True
+1125,7,7,watch,watch,The subject is imagining a watch.,The image being imagined is a watch.,True
+1126,9,5,chair,circle,The subject is imagining a chair.,The image being imagined is a circle.,False
+1127,8,5,cup,circle,The subject is imagining a cup.,The subject is imagining a circle.,False
+1128,8,8,cup,cup,The subject is imagining a cup.,The image being imagined is a cup. The subject is imagining a cup.,True
+1129,8,3,cup,pentagram,The subject is imagining a cup.,The image being imagined is a pentagram. The subject is imagining a pentagram.,False
+1130,6,5,scissor,circle,The subject is imagining scissors.,The image being imagined is a circle.,False
+1131,8,6,cup,scissor,The subject is imagining a cup.,"The subject is imagining a cup.
+scissors are being mentally visualized.",False
+1132,9,0,chair,dog,The subject is imagining a chair.,"The image being imagined is a pentagram.
+scott.
+dog.",False
+1133,6,7,scissor,watch,The subject is imagining scissors.,The image being imagined is a watch.,False
+1134,9,7,chair,watch,The subject is imagining a chair.,The image being imagined is a watch.,False
+1135,9,0,chair,dog,The subject is imagining a chair.,The image being imagined is a dog.,False
+1136,7,3,watch,pentagram,The subject is imagining a watch.,The image being imagined is a pentagram. The subject is imagining a pentagram.,False
+1137,8,3,cup,pentagram,The subject is imagining a cup.,The image being imagined is a pentagram.,False
+1138,9,3,chair,pentagram,The subject is imagining a chair.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 0. 1. 2. 3. 4. 5. 6. 7.,False
+1139,7,8,watch,cup,The subject is imagining a watch.,The subject is imagining a cup.,False
+1140,9,3,chair,pentagram,The subject is imagining a chair.,The image being imagined is a pentagram. The subject is imagining a pentagram.,False
+1141,8,8,cup,cup,The subject is imagining a cup.,The image being imagined is a cup.,True
+1142,6,3,scissor,pentagram,The subject is imagining scissors.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16,False
+1143,6,4,scissor,square,The subject is imagining scissors.,"The image being imagined is a square.
+The subject is imagining a square.",False
+1144,9,9,chair,chair,The subject is imagining a chair.,The image being imagined is a chair.,True
+1145,6,8,scissor,cup,The subject is imagining scissors.,The image being imagined is a cup. A cup is being imagined.,False
+1146,8,7,cup,watch,The subject is imagining a cup.,The image being imagined is a watch.,False
+1147,8,7,cup,watch,The subject is imagining a cup.,The image being imagined is a watch. The subject is imagining a watch. The image being imagined is a watch. The subject is imagining a watch. The subject is imagining a watch. The subject is imagining a watch. The subject is imagining a watch. The subject is imagining a,False
+1148,9,7,chair,watch,The subject is imagining a chair.,The subject is imagining a watch.,False
+1149,7,0,watch,dog,The subject is imagining a watch.,The subject is imagining a dog.,False
+1150,7,7,watch,watch,The subject is imagining a watch.,The subject is imagining a watch.,True
+1151,7,4,watch,square,The subject is imagining a watch.,"The image being imagined is a square.
+[EEG_TOKENS]
+The subject is imagining a square.",False
+1152,6,3,scissor,pentagram,The subject is imagining scissors.,The image being imagined is a pentagram. The subject is imagining a pentagram.,False
+1153,9,4,chair,square,The subject is imagining a chair.,The image being imagined is a square.,False
+1154,7,7,watch,watch,The subject is imagining a watch.,The subject is imagining a watch.,True
+1155,8,7,cup,watch,The subject is imagining a cup.,The subject is imagining a watch.,False
+1156,8,7,cup,watch,The subject is imagining a cup.,The image being imagined is a watch.,False
+1157,6,7,scissor,watch,The subject is imagining scissors.,The subject is imagining a watch.,False
+1158,7,7,watch,watch,The subject is imagining a watch.,The image being imagined is a watch.,True
+1159,6,7,scissor,watch,The subject is imagining scissors.,The image being imagined is a watch.,False
+1160,8,8,cup,cup,The subject is imagining a cup.,The subject is imagining a cup.,True
+1161,8,3,cup,pentagram,The subject is imagining a cup.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16,False
+1162,6,8,scissor,cup,The subject is imagining scissors.,The subject is imagining a cup.,False
+1163,7,3,watch,pentagram,The subject is imagining a watch.,The subject is imagining a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16.,False
+1164,9,6,chair,scissor,The subject is imagining a chair.,The image being imagined is a cup. Scissors are being mentally visualized.,False
+1165,7,6,watch,scissor,The subject is imagining a watch.,"The image being imagined is a fish.
+scissors are being imagined.",False
+1166,6,3,scissor,pentagram,The subject is imagining scissors.,The image being imagined is a pentagram.,False
+1167,7,7,watch,watch,The subject is imagining a watch.,The image being imagined is a watch.,True
+1168,8,7,cup,watch,The subject is imagining a cup.,The subject is imagining a watch.,False
+1169,9,7,chair,watch,The subject is imagining a chair.,The subject is imagining a watch.,False
+1170,9,7,chair,watch,The subject is imagining a chair.,The image being imagined is a watch.,False
+1171,8,6,cup,scissor,The subject is imagining a cup.,The image being imagined is a pentagram. Scissors are being mentally visualized.,False
+1172,7,7,watch,watch,The subject is imagining a watch.,The image being imagined is a watch.,True
+1173,9,3,chair,pentagram,The subject is imagining a chair.,"The subject is imagining a pentagram.
+[EEG_TOKENS]
+The subject is imagining a pentagram.",False
+1174,6,3,scissor,pentagram,The subject is imagining scissors.,The subject is imagining a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 0. 0. 0. 0. 0. 0. 0. 0.,False
+1175,8,7,cup,watch,The subject is imagining a cup.,The subject is imagining a watch.,False
+1176,9,3,chair,pentagram,The subject is imagining a chair.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 0. 1. 2. 3. 4. 5. 6. 7.,False
+1177,6,5,scissor,circle,The subject is imagining scissors.,The image being imagined is a circle.,False
+1178,7,2,watch,fish,The subject is imagining a watch.,The image being imagined is a fish. The subject is imagining a fish.,False
+1179,7,3,watch,pentagram,The subject is imagining a watch.,The subject is imagining a pentagram.,False
+1180,6,6,scissor,scissor,The subject is imagining scissors.,"The image being imagined is a circle.
+scissors are being mentally visualized.",True
+1181,8,5,cup,circle,The subject is imagining a cup.,The subject is imagining a circle.,False
+1182,6,2,scissor,fish,The subject is imagining scissors.,The image being imagined is a fish. The subject is imagining a fish.,False
+1183,6,5,scissor,circle,The subject is imagining scissors.,The image being imagined is a circle.,False
+1184,9,7,chair,watch,The subject is imagining a chair.,The image being imagined is a watch.,False
+1185,7,7,watch,watch,The subject is imagining a watch.,The image being imagined is a watch.,True
+1186,9,8,chair,cup,The subject is imagining a chair.,The image being imagined is a cup.,False
+1187,8,7,cup,watch,The subject is imagining a cup.,The subject is imagining a watch.,False
+1188,8,7,cup,watch,The subject is imagining a cup.,The image being imagined is a watch.,False
+1189,9,5,chair,circle,The subject is imagining a chair.,"The subject is imagining a circle.
+[EEG_TOKENS]
+The subject is imagining a circle.",False
+1190,8,2,cup,fish,The subject is imagining a cup.,The image being imagined is a fish.,False
+1191,9,8,chair,cup,The subject is imagining a chair.,The image being imagined is a cup.,False
+1192,9,2,chair,fish,The subject is imagining a chair.,The image being imagined is a fish.,False
+1193,7,7,watch,watch,The subject is imagining a watch.,The subject is imagining a watch.,True
+1194,8,3,cup,pentagram,The subject is imagining a cup.,The subject is imagining a pentagram.,False
+1195,6,7,scissor,watch,The subject is imagining scissors.,The subject is imagining a watch.,False
+1196,6,7,scissor,watch,The subject is imagining scissors.,The image being imagined is a watch.,False
+1197,7,2,watch,fish,The subject is imagining a watch.,The image being imagined is a fish.,False
+1198,6,3,scissor,pentagram,The subject is imagining scissors.,The image being imagined is a pentagram. 1.,False
+1199,7,8,watch,cup,The subject is imagining a watch.,The image being imagined is a cup.,False
+1200,0,9,dog,chair,The subject is imagining a dog.,The image being imagined is a chair.,False
+1201,0,9,dog,chair,The subject is imagining a dog.,The image being imagined is a chair.,False
+1202,1,2,bird,fish,The subject is imagining a bird.,The image being imagined is a fish.,False
+1203,1,7,bird,watch,The subject is imagining a bird.,The image being imagined is a watch.,False
+1204,1,4,bird,square,The subject is imagining a bird.,The image being imagined is a square.,False
+1205,1,2,bird,fish,The subject is imagining a bird.,The image being imagined is a fish.,False
+1206,0,0,dog,dog,The subject is imagining a dog.,The subject is imagining a dog.,True
+1207,0,5,dog,circle,The subject is imagining a dog.,The subject is imagining a circle.,False
+1208,2,6,fish,scissor,The subject is imagining a fish.,The image being imagined is a cup. Scissors are being mentally visualized.,False
+1209,1,2,bird,fish,The subject is imagining a bird.,The image being imagined is a fish.,False
+1210,2,2,fish,fish,The subject is imagining a fish.,The image being imagined is a fish.,True
+1211,2,5,fish,circle,The subject is imagining a fish.,The image being imagined is a circle.,False
+1212,1,4,bird,square,The subject is imagining a bird.,The image being imagined is a square.,False
+1213,0,2,dog,fish,The subject is imagining a dog.,The image being imagined is a fish.,False
+1214,0,2,dog,fish,The subject is imagining a dog.,The subject is imagining a fish.,False
+1215,2,2,fish,fish,The subject is imagining a fish.,"The image being imagined is a fish.
+[EEG_TOKENS]
+The subject is imagining a fish.",True
+1216,2,8,fish,cup,The subject is imagining a fish.,The subject is imagining a cup.,False
+1217,2,5,fish,circle,The subject is imagining a fish.,The subject is imagining a circle.,False
+1218,1,2,bird,fish,The subject is imagining a bird.,The image being imagined is a fish.,False
+1219,0,2,dog,fish,The subject is imagining a dog.,The image being imagined is a fish.,False
+1220,0,0,dog,dog,The subject is imagining a dog.,The image being imagined is a dog.,True
+1221,2,2,fish,fish,The subject is imagining a fish.,The image being imagined is a fish.,True
+1222,2,2,fish,fish,The subject is imagining a fish.,The image being imagined is a fish.,True
+1223,1,0,bird,dog,The subject is imagining a bird.,The image being imagined is a dog.,False
+1224,2,1,fish,bird,The subject is imagining a fish.,The image being imagined is a bird.,False
+1225,1,8,bird,cup,The subject is imagining a bird.,The image being imagined is a cup.,False
+1226,0,4,dog,square,The subject is imagining a dog.,The image being imagined is a square.,False
+1227,2,2,fish,fish,The subject is imagining a fish.,The image being imagined is a fish.,True
+1228,1,5,bird,circle,The subject is imagining a bird.,The image being imagined is a circle.,False
+1229,0,8,dog,cup,The subject is imagining a dog.,The image being imagined is a cup.,False
+1230,0,4,dog,square,The subject is imagining a dog.,The image being imagined is a square.,False
+1231,0,3,dog,pentagram,The subject is imagining a dog.,"The subject is imagining a pentagram.
+[EEG_TOKENS]
+The subject is imagining a pentagram.",False
+1232,0,8,dog,cup,The subject is imagining a dog.,The image being imagined is a cup.,False
+1233,2,5,fish,circle,The subject is imagining a fish.,"The image being imagined is a circle.
+[EEG_TOKENS]
+The subject is imagining a circle.",False
+1234,2,0,fish,dog,The subject is imagining a fish.,The image being imagined is a dog.,False
+1235,0,2,dog,fish,The subject is imagining a dog.,The image being imagined is a fish.,False
+1236,2,3,fish,pentagram,The subject is imagining a fish.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 1. 2. 3. 4. 5. 6. 7. 8.,False
+1237,1,4,bird,square,The subject is imagining a bird.,The image being imagined is a square.,False
+1238,1,0,bird,dog,The subject is imagining a bird.,The subject is imagining a dog.,False
+1239,2,2,fish,fish,The subject is imagining a fish.,The subject is imagining a fish.,True
+1240,1,8,bird,cup,The subject is imagining a bird.,The image being imagined is a cup.,False
+1241,1,5,bird,circle,The subject is imagining a bird.,The image being imagined is a circle.,False
+1242,0,6,dog,scissor,The subject is imagining a dog.,The image being imagined is a pentagram. A pentagram is being imagined. Scissors are being imagined. A pentagram is being imagined. A pentagram is being imagined. A pentagram is being imagined. A pentagram is being imagined. A pentagram is being imag,False
+1243,2,5,fish,circle,The subject is imagining a fish.,The image being imagined is a circle.,False
+1244,2,6,fish,scissor,The subject is imagining a fish.,"The image being imagined is a fish.
+scissors are being imagined.",False
+1245,0,5,dog,circle,The subject is imagining a dog.,The image being imagined is a circle.,False
+1246,1,0,bird,dog,The subject is imagining a bird.,The image being imagined is a dog.,False
+1247,0,3,dog,pentagram,The subject is imagining a dog.,The image being imagined is a pentagram. The subject is imagining a pentagram.,False
+1248,2,0,fish,dog,The subject is imagining a fish.,The image being imagined is a dog.,False
+1249,0,8,dog,cup,The subject is imagining a dog.,The image being imagined is a cup.,False
+1250,1,5,bird,circle,The subject is imagining a bird.,The subject is imagining a circle. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16.,False
+1251,1,3,bird,pentagram,The subject is imagining a bird.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 1. 2. 3. 4. 5. 6. 7. 8.,False
+1252,1,3,bird,pentagram,The subject is imagining a bird.,The subject is imagining a pentagram.,False
+1253,1,5,bird,circle,The subject is imagining a bird.,The image being imagined is a circle.,False
+1254,0,4,dog,square,The subject is imagining a dog.,The subject is imagining a square.,False
+1255,1,8,bird,cup,The subject is imagining a bird.,The subject is imagining a cup.,False
+1256,2,5,fish,circle,The subject is imagining a fish.,The subject is imagining a circle.,False
+1257,2,5,fish,circle,The subject is imagining a fish.,The subject is imagining a circle.,False
+1258,0,4,dog,square,The subject is imagining a dog.,The image being imagined is a square.,False
+1259,2,5,fish,circle,The subject is imagining a fish.,The image being imagined is a circle.,False
+1260,0,7,dog,watch,The subject is imagining a dog.,The image being imagined is a watch.,False
+1261,2,4,fish,square,The subject is imagining a fish.,The subject is imagining a square.,False
+1262,0,2,dog,fish,The subject is imagining a dog.,The image being imagined is a fish.,False
+1263,0,4,dog,square,The subject is imagining a dog.,The image being imagined is a square.,False
+1264,2,5,fish,circle,The subject is imagining a fish.,The image being imagined is a circle.,False
+1265,1,0,bird,dog,The subject is imagining a bird.,The image being imagined is a dog.,False
+1266,1,7,bird,watch,The subject is imagining a bird.,The image being imagined is a watch.,False
+1267,1,4,bird,square,The subject is imagining a bird.,The image being imagined is a square.,False
+1268,1,0,bird,dog,The subject is imagining a bird.,The image being imagined is a dog.,False
+1269,2,7,fish,watch,The subject is imagining a fish.,The image being imagined is a watch.,False
+1270,2,8,fish,cup,The subject is imagining a fish.,The image being imagined is a cup.,False
+1271,2,2,fish,fish,The subject is imagining a fish.,The image being imagined is a fish.,True
+1272,0,0,dog,dog,The subject is imagining a dog.,The image being imagined is a dog.,True
+1273,1,5,bird,circle,The subject is imagining a bird.,The image being imagined is a circle.,False
+1274,2,3,fish,pentagram,The subject is imagining a fish.,The image being imagined is a pentagram. 1.,False
+1275,0,9,dog,chair,The subject is imagining a dog.,The image being imagined is a chair. The subject is imagining a chair.,False
+1276,2,0,fish,dog,The subject is imagining a fish.,The image being imagined is a dog.,False
+1277,1,2,bird,fish,The subject is imagining a bird.,The subject is imagining a fish.,False
+1278,2,6,fish,scissor,The subject is imagining a fish.,"The image being imagined is a chair.
+scissors are being mentally visualized.",False
+1279,1,3,bird,pentagram,The subject is imagining a bird.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 1. 2. 3. 4. 5. 6. 7. 8.,False
+1280,1,2,bird,fish,The subject is imagining a bird.,The subject is imagining a fish.,False
+1281,2,7,fish,watch,The subject is imagining a fish.,The image being imagined is a watch.,False
+1282,0,3,dog,pentagram,The subject is imagining a dog.,The image being imagined is a pentagram. The subject is imagining a pentagram.,False
+1283,0,3,dog,pentagram,The subject is imagining a dog.,The subject is imagining a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16.,False
+1284,0,2,dog,fish,The subject is imagining a dog.,The image being imagined is a fish.,False
+1285,2,3,fish,pentagram,The subject is imagining a fish.,The image being imagined is a pentagram. The subject is imagining a pentagram.,False
+1286,0,5,dog,circle,The subject is imagining a dog.,The image being imagined is a circle.,False
+1287,1,2,bird,fish,The subject is imagining a bird.,The image being imagined is a fish.,False
+1288,1,8,bird,cup,The subject is imagining a bird.,The image being imagined is a cup. The subject is imagining a cup.,False
+1289,0,4,dog,square,The subject is imagining a dog.,The image being imagined is a square.,False
+1290,2,5,fish,circle,The subject is imagining a fish.,The subject is imagining a circle.,False
+1291,2,7,fish,watch,The subject is imagining a fish.,The image being imagined is a watch.,False
+1292,0,5,dog,circle,The subject is imagining a dog.,The image being imagined is a circle. A circle is being imagined.,False
+1293,1,6,bird,scissor,The subject is imagining a bird.,The image being imagined is a cup. Scissors are being mentally visualized.,False
+1294,1,3,bird,pentagram,The subject is imagining a bird.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 0. 0. 0. 0. 0. 0. 0. 0.,False
+1295,0,2,dog,fish,The subject is imagining a dog.,The subject is imagining a fish.,False
+1296,1,8,bird,cup,The subject is imagining a bird.,The image being imagined is a cup. The subject is imagining a cup.,False
+1297,2,6,fish,scissor,The subject is imagining a fish.,"The image being imagined is a circle.
+scissors are being mentally visualized.",False
+1298,2,3,fish,pentagram,The subject is imagining a fish.,"The subject is imagining a pentagram.
+[EEG_TOKENS]
+The subject is imagining a pentagram.",False
+1299,1,3,bird,pentagram,The subject is imagining a bird.,The subject is imagining a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16.,False
+1300,0,9,dog,chair,The subject is imagining a dog.,The image being imagined is a chair.,False
+1301,2,8,fish,cup,The subject is imagining a fish.,The image being imagined is a cup.,False
+1302,0,6,dog,scissor,The subject is imagining a dog.,"The image being imagined is a fish.
+scissors are being imagined.",False
+1303,1,2,bird,fish,The subject is imagining a bird.,The image being imagined is a fish.,False
+1304,1,2,bird,fish,The subject is imagining a bird.,The image being imagined is a fish.,False
+1305,0,3,dog,pentagram,The subject is imagining a dog.,The image being imagined is a pentagram. The subject is imagining a pentagram.,False
+1306,2,3,fish,pentagram,The subject is imagining a fish.,The subject is imagining a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16.,False
+1307,0,2,dog,fish,The subject is imagining a dog.,The image being imagined is a fish.,False
+1308,0,3,dog,pentagram,The subject is imagining a dog.,The image being imagined is a pentagram.,False
+1309,1,3,bird,pentagram,The subject is imagining a bird.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 0. 1. 2. 3. 4. 5. 6. 7.,False
+1310,2,3,fish,pentagram,The subject is imagining a fish.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 0. 0. 0. 0. 0. 0. 0. 0.,False
+1311,2,5,fish,circle,The subject is imagining a fish.,The image being imagined is a circle.,False
+1312,2,2,fish,fish,The subject is imagining a fish.,The image being imagined is a fish.,True
+1313,1,5,bird,circle,The subject is imagining a bird.,The image being imagined is a circle.,False
+1314,2,5,fish,circle,The subject is imagining a fish.,The image being imagined is a circle.,False
+1315,0,2,dog,fish,The subject is imagining a dog.,The subject is imagining a fish.,False
+1316,0,3,dog,pentagram,The subject is imagining a dog.,"The subject is imagining a pentagram.
+
+[EEG_TOKENS]
+Given image is pentagram.",False
+1317,1,5,bird,circle,The subject is imagining a bird.,The image being imagined is a circle.,False
+1318,0,3,dog,pentagram,The subject is imagining a dog.,The image being imagined is a pentagram. The subject is imagining a pentagram.,False
+1319,1,5,bird,circle,The subject is imagining a bird.,The image being imagined is a circle.,False
+1320,3,3,pentagram,pentagram,The subject is imagining a pentagram.,The subject is imagining a pentagram.,True
+1321,3,5,pentagram,circle,The subject is imagining a pentagram.,The subject is imagining a circle.,False
+1322,3,0,pentagram,dog,The subject is imagining a pentagram.,The image being imagined is a dog.,False
+1323,3,5,pentagram,circle,The subject is imagining a pentagram.,The image being imagined is a circle.,False
+1324,4,2,square,fish,The subject is imagining a square.,The image being imagined is a fish. The subject is imagining a fish.,False
+1325,5,4,circle,square,The subject is imagining a circle.,The image being imagined is a square.,False
+1326,3,4,pentagram,square,The subject is imagining a pentagram.,The subject is imagining a square.,False
+1327,5,3,circle,pentagram,The subject is imagining a circle.,The image being imagined is a pentagram. The subject is imagining a pentagram.,False
+1328,4,7,square,watch,The subject is imagining a square.,The image being imagined is a watch.,False
+1329,4,4,square,square,The subject is imagining a square.,The image being imagined is a square.,True
+1330,4,0,square,dog,The subject is imagining a square.,The subject is imagining a dog.,False
+1331,4,3,square,pentagram,The subject is imagining a square.,The subject is imagining a pentagram. 1. The subject is imagining a pentagram. 2. The subject is imagining a pentagram. 3. The subject is imagining a pentagram. 4. The subject is imagining a pentagram. 5. The subject is imag,False
+1332,4,2,square,fish,The subject is imagining a square.,The image being imagined is a fish.,False
+1333,5,2,circle,fish,The subject is imagining a circle.,The image being imagined is a fish.,False
+1334,3,4,pentagram,square,The subject is imagining a pentagram.,The image being imagined is a square.,False
+1335,5,5,circle,circle,The subject is imagining a circle.,The image being imagined is a circle.,True
+1336,5,3,circle,pentagram,The subject is imagining a circle.,The image being imagined is a pentagram. The subject is imagining a pentagram.,False
+1337,5,5,circle,circle,The subject is imagining a circle.,The image being imagined is a circle.,True
+1338,3,5,pentagram,circle,The subject is imagining a pentagram.,The image being imagined is a circle.,False
+1339,5,3,circle,pentagram,The subject is imagining a circle.,The image being imagined is a pentagram. The subject is imagining a pentagram.,False
+1340,3,3,pentagram,pentagram,The subject is imagining a pentagram.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 1. 2. 3. 4. 5. 6. 7. 8.,True
+1341,3,5,pentagram,circle,The subject is imagining a pentagram.,The image being imagined is a circle.,False
+1342,4,2,square,fish,The subject is imagining a square.,The subject is imagining a fish.,False
+1343,3,5,pentagram,circle,The subject is imagining a pentagram.,The image being imagined is a circle.,False
+1344,4,5,square,circle,The subject is imagining a square.,"The image being imagined is a circle.
+[EEG_TOKEN]
+The subject is imagining a circle.",False
+1345,5,5,circle,circle,The subject is imagining a circle.,The image being imagined is a circle.,True
+1346,4,3,square,pentagram,The subject is imagining a square.,The image being imagined is a pentagram. The subject is imagining a pentagram.,False
+1347,5,3,circle,pentagram,The subject is imagining a circle.,The image being imagined is a pentagram. The subject is imagining a pentagram.,False
+1348,4,3,square,pentagram,The subject is imagining a square.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 1. 2. 3. 4. 5. 6. 7. 8.,False
+1349,5,7,circle,watch,The subject is imagining a circle.,The image being imagined is a watch.,False
+1350,4,7,square,watch,The subject is imagining a square.,The image being imagined is a watch.,False
+1351,5,9,circle,chair,The subject is imagining a circle.,The image being imagined is a chair.,False
+1352,3,5,pentagram,circle,The subject is imagining a pentagram.,The image being imagined is a circle.,False
+1353,4,5,square,circle,The subject is imagining a square.,The image being imagined is a circle.,False
+1354,3,4,pentagram,square,The subject is imagining a pentagram.,The image being imagined is a square.,False
+1355,3,5,pentagram,circle,The subject is imagining a pentagram.,The image being imagined is a circle.,False
+1356,5,4,circle,square,The subject is imagining a circle.,The image being imagined is a square.,False
+1357,3,5,pentagram,circle,The subject is imagining a pentagram.,The image being imagined is a circle.,False
+1358,3,5,pentagram,circle,The subject is imagining a pentagram.,The image being imagined is a circle.,False
+1359,3,4,pentagram,square,The subject is imagining a pentagram.,The image being imagined is a square.,False
+1360,4,4,square,square,The subject is imagining a square.,The subject is imagining a square.,True
+1361,5,4,circle,square,The subject is imagining a circle.,The image being imagined is a square.,False
+1362,5,8,circle,cup,The subject is imagining a circle.,The image being imagined is a cup.,False
+1363,3,9,pentagram,chair,The subject is imagining a pentagram.,The image being imagined is a chair. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 1. 2. 3. 4. 5. 6. 7. 8.,False
+1364,4,3,square,pentagram,The subject is imagining a square.,The subject is imagining a pentagram.,False
+1365,5,0,circle,dog,The subject is imagining a circle.,The image being imagined is a dog.,False
+1366,4,3,square,pentagram,The subject is imagining a square.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 0. 1. 2. 3. 4. 5. 6. 7.,False
+1367,5,1,circle,bird,The subject is imagining a circle.,The image being imagined is a bird.,False
+1368,4,2,square,fish,The subject is imagining a square.,"The image being imagined is a fish.
+[EEG_TOKENS]
+The subject is imagining a fish.",False
+1369,3,4,pentagram,square,The subject is imagining a pentagram.,The subject is imagining a square.,False
+1370,4,9,square,chair,The subject is imagining a square.,The image being imagined is a chair. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16.,False
+1371,3,3,pentagram,pentagram,The subject is imagining a pentagram.,The image being imagined is a pentagram. The subject is imagining a pentagram.,True
+1372,5,2,circle,fish,The subject is imagining a circle.,The image being imagined is a fish.,False
+1373,5,5,circle,circle,The subject is imagining a circle.,The subject is imagining a circle.,True
+1374,5,5,circle,circle,The subject is imagining a circle.,The image being imagined is a circle.,True
+1375,5,1,circle,bird,The subject is imagining a circle.,"The image being imagined is a bird.
+[EEG_TOKEN]
+The subject is imagining a bird.",False
+1376,3,5,pentagram,circle,The subject is imagining a pentagram.,The image being imagined is a circle. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16.,False
+1377,4,3,square,pentagram,The subject is imagining a square.,The image being imagined is a pentagram. The subject is imagining a pentagram.,False
+1378,4,3,square,pentagram,The subject is imagining a square.,The image being imagined is a pentagram. The subject is imagining a pentagram.,False
+1379,4,5,square,circle,The subject is imagining a square.,The image being imagined is a circle.,False
+1380,3,5,pentagram,circle,The subject is imagining a pentagram.,The subject is imagining a circle.,False
+1381,5,5,circle,circle,The subject is imagining a circle.,The subject is imagining a circle.,True
+1382,3,3,pentagram,pentagram,The subject is imagining a pentagram.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 1. 2. 3. 4. 5. 6. 7. 8.,True
+1383,5,8,circle,cup,The subject is imagining a circle.,The image being imagined is a cup.,False
+1384,5,2,circle,fish,The subject is imagining a circle.,The image being imagined is a fish.,False
+1385,4,3,square,pentagram,The subject is imagining a square.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 1. 2. 3. 4. 5. 6. 7. 8.,False
+1386,3,4,pentagram,square,The subject is imagining a pentagram.,"The image being imagined is a square.
+
+[EEG_TOKENS]
+The subject is imagining a square.",False
+1387,5,8,circle,cup,The subject is imagining a circle.,The image being imagined is a cup.,False
+1388,3,3,pentagram,pentagram,The subject is imagining a pentagram.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16,True
+1389,5,2,circle,fish,The subject is imagining a circle.,The image being imagined is a fish.,False
+1390,4,8,square,cup,The subject is imagining a square.,The image being imagined is a cup.,False
+1391,4,0,square,dog,The subject is imagining a square.,The image being imagined is a dog.,False
+1392,3,8,pentagram,cup,The subject is imagining a pentagram.,The image being imagined is a cup. A cup is being imagined.,False
+1393,3,3,pentagram,pentagram,The subject is imagining a pentagram.,The subject is imagining a pentagram.,True
+1394,4,3,square,pentagram,The subject is imagining a square.,The subject is imagining a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16.,False
+1395,4,3,square,pentagram,The subject is imagining a square.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 0. 1. 2. 3. 4. 5. 6. 7.,False
+1396,4,4,square,square,The subject is imagining a square.,The image being imagined is a square.,True
+1397,3,3,pentagram,pentagram,The subject is imagining a pentagram.,The image being imagined is a pentagram.,True
+1398,4,7,square,watch,The subject is imagining a square.,The image being imagined is a watch.,False
+1399,4,6,square,scissor,The subject is imagining a square.,"The image being imagined is a dog.
+scissors are being dog.",False
+1400,5,3,circle,pentagram,The subject is imagining a circle.,The subject is imagining a pentagram. The image being imagined is a pentagram.,False
+1401,5,5,circle,circle,The subject is imagining a circle.,The image being imagined is a circle.,True
+1402,3,0,pentagram,dog,The subject is imagining a pentagram.,The image being imagined is a dog.,False
+1403,5,3,circle,pentagram,The subject is imagining a circle.,The image being imagined is a pentagram.,False
+1404,3,5,pentagram,circle,The subject is imagining a pentagram.,The image being imagined is a circle. A circle is being imagined.,False
+1405,5,4,circle,square,The subject is imagining a circle.,The image being imagined is a square.,False
+1406,5,0,circle,dog,The subject is imagining a circle.,The image being imagined is a dog.,False
+1407,3,2,pentagram,fish,The subject is imagining a pentagram.,The image being imagined is a fish.,False
+1408,4,8,square,cup,The subject is imagining a square.,The image being imagined is a cup. The subject is imagining a cup.,False
+1409,4,5,square,circle,The subject is imagining a square.,The image being imagined is a circle.,False
+1410,5,5,circle,circle,The subject is imagining a circle.,The image being imagined is a circle.,True
+1411,4,3,square,pentagram,The subject is imagining a square.,"The image being imagined is a pentagram.
+scott is the image being imagined.",False
+1412,3,3,pentagram,pentagram,The subject is imagining a pentagram.,The subject is imagining a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16.,True
+1413,5,7,circle,watch,The subject is imagining a circle.,The subject is imagining a watch.,False
+1414,5,5,circle,circle,The subject is imagining a circle.,The image being imagined is a circle.,True
+1415,3,5,pentagram,circle,The subject is imagining a pentagram.,The image being imagined is a circle. The subject is imagining a circle.,False
+1416,5,5,circle,circle,The subject is imagining a circle.,The image being imagined is a circle. A circle is being imagined.,True
+1417,3,5,pentagram,circle,The subject is imagining a pentagram.,The subject is imagining a circle.,False
+1418,5,5,circle,circle,The subject is imagining a circle.,The subject is imagining a circle.,True
+1419,4,6,square,scissor,The subject is imagining a square.,"The image being imagined is a circle.
+scissors.
+circle is a circle.
+circle is a circle.
+circle is a circle.
+circle is a circle.
+circle is a circle.
+circle is a circle.
+circle is a circle.
+circle is a circle.
+circle",False
+1420,5,8,circle,cup,The subject is imagining a circle.,The image being imagined is a cup.,False
+1421,3,3,pentagram,pentagram,The subject is imagining a pentagram.,The subject is imagining a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 0. 1. 2. 3. 4. 5. 6. 7.,True
+1422,4,5,square,circle,The subject is imagining a square.,The image being imagined is a circle. A circle is being imagined.,False
+1423,5,2,circle,fish,The subject is imagining a circle.,The image being imagined is a fish.,False
+1424,4,1,square,bird,The subject is imagining a square.,The subject is imagining a bird.,False
+1425,4,8,square,cup,The subject is imagining a square.,The image being imagined is a cup.,False
+1426,4,3,square,pentagram,The subject is imagining a square.,The subject is imagining a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 0. 1. 2. 3. 4. 5. 6. 7.,False
+1427,3,3,pentagram,pentagram,The subject is imagining a pentagram.,The image being imagined is a pentagram. A pentagram is being imagined. Scan the pentagram. A pentagram is being imagined. A pentagram is being imagined. A pentagram is being imagined. A pentagram is being imagined. A pentagram is being imagined.,True
+1428,3,2,pentagram,fish,The subject is imagining a pentagram.,The image being imagined is a fish.,False
+1429,5,2,circle,fish,The subject is imagining a circle.,The image being imagined is a fish.,False
+1430,3,6,pentagram,scissor,The subject is imagining a pentagram.,"The image being imagined is a square.
+scissors.",False
+1431,4,9,square,chair,The subject is imagining a square.,The image being imagined is a chair.,False
+1432,3,2,pentagram,fish,The subject is imagining a pentagram.,The image being imagined is a fish. The subject is imagining a fish.,False
+1433,4,3,square,pentagram,The subject is imagining a square.,"The image being imagined is a pentagram.
+scottish pentagram.",False
+1434,4,3,square,pentagram,The subject is imagining a square.,The image being imagined is a pentagram. The subject is imagining a pentagram.,False
+1435,5,5,circle,circle,The subject is imagining a circle.,The subject is imagining a circle.,True
+1436,3,3,pentagram,pentagram,The subject is imagining a pentagram.,"The image being imagined is a pentagram.
+
+[EEG_TOKENS]
+Given image is pentagram.",True
+1437,3,5,pentagram,circle,The subject is imagining a pentagram.,The image being imagined is a circle.,False
+1438,4,3,square,pentagram,The subject is imagining a square.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16,False
+1439,5,3,circle,pentagram,The subject is imagining a circle.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 0. 1. 2. 3. 4. 5. 6. 7.,False
+1440,6,8,scissor,cup,The subject is imagining scissors.,The image being imagined is a cup.,False
+1441,6,7,scissor,watch,The subject is imagining scissors.,The image being imagined is a watch.,False
+1442,6,7,scissor,watch,The subject is imagining scissors.,The image being imagined is a watch.,False
+1443,6,5,scissor,circle,The subject is imagining scissors.,The subject is imagining a circle.,False
+1444,8,2,cup,fish,The subject is imagining a cup.,The subject is imagining a fish.,False
+1445,9,0,chair,dog,The subject is imagining a chair.,The subject is imagining a dog.,False
+1446,9,0,chair,dog,The subject is imagining a chair.,The image being imagined is a dog.,False
+1447,8,2,cup,fish,The subject is imagining a cup.,The image being imagined is a fish.,False
+1448,7,1,watch,bird,The subject is imagining a watch.,The image being imagined is a bird.,False
+1449,8,5,cup,circle,The subject is imagining a cup.,The image being imagined is a circle. A circle is being imagined.,False
+1450,9,2,chair,fish,The subject is imagining a chair.,The image being imagined is a fish.,False
+1451,9,0,chair,dog,The subject is imagining a chair.,The image being imagined is a dog.,False
+1452,8,5,cup,circle,The subject is imagining a cup.,The image being imagined is a circle.,False
+1453,6,3,scissor,pentagram,The subject is imagining scissors.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16,False
+1454,6,3,scissor,pentagram,The subject is imagining scissors.,The subject is imagining a pentagram.,False
+1455,8,8,cup,cup,The subject is imagining a cup.,The image being imagined is a cup.,True
+1456,7,4,watch,square,The subject is imagining a watch.,The subject is imagining a square. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16.,False
+1457,7,4,watch,square,The subject is imagining a watch.,The image being imagined is a square.,False
+1458,7,4,watch,square,The subject is imagining a watch.,The image being imagined is a square.,False
+1459,7,5,watch,circle,The subject is imagining a watch.,The subject is imagining a circle.,False
+1460,8,7,cup,watch,The subject is imagining a cup.,The image being imagined is a watch.,False
+1461,9,7,chair,watch,The subject is imagining a chair.,The image being imagined is a watch.,False
+1462,9,8,chair,cup,The subject is imagining a chair.,The image being imagined is a cup.,False
+1463,8,9,cup,chair,The subject is imagining a cup.,The image being imagined is a chair.,False
+1464,7,5,watch,circle,The subject is imagining a watch.,The image being imagined is a circle.,False
+1465,8,6,cup,scissor,The subject is imagining a cup.,"The image being imagined is a chair.
+scissors.",False
+1466,8,2,cup,fish,The subject is imagining a cup.,The subject is imagining a fish.,False
+1467,6,7,scissor,watch,The subject is imagining scissors.,The subject is imagining a watch.,False
+1468,9,3,chair,pentagram,The subject is imagining a chair.,"The image being imagined is a pentagram.
+scott is the subject.",False
+1469,6,2,scissor,fish,The subject is imagining scissors.,The subject is imagining a fish.,False
+1470,7,9,watch,chair,The subject is imagining a watch.,The image being imagined is a chair.,False
+1471,9,3,chair,pentagram,The subject is imagining a chair.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 1. 2. 3. 4. 5. 6. 7. 8.,False
+1472,7,7,watch,watch,The subject is imagining a watch.,The subject is imagining a watch.,True
+1473,7,6,watch,scissor,The subject is imagining a watch.,The image being imagined is a square. Scissors are being mentally visualized.,False
+1474,7,5,watch,circle,The subject is imagining a watch.,The image being imagined is a circle.,False
+1475,6,9,scissor,chair,The subject is imagining scissors.,The image being imagined is a chair.,False
+1476,9,4,chair,square,The subject is imagining a chair.,The image being imagined is a square.,False
+1477,6,2,scissor,fish,The subject is imagining scissors.,The subject is imagining a fish.,False
+1478,9,9,chair,chair,The subject is imagining a chair.,The image being imagined is a chair.,True
+1479,8,6,cup,scissor,The subject is imagining a cup.,"The subject is imagining a watch.
+scissors are being mentally visualized.",False
+1480,8,7,cup,watch,The subject is imagining a cup.,The image being imagined is a watch.,False
+1481,8,4,cup,square,The subject is imagining a cup.,The subject is imagining a square.,False
+1482,8,0,cup,dog,The subject is imagining a cup.,The subject is imagining a dog.,False
+1483,8,0,cup,dog,The subject is imagining a cup.,The subject is imagining a dog.,False
+1484,9,2,chair,fish,The subject is imagining a chair.,The image being imagined is a fish.,False
+1485,9,5,chair,circle,The subject is imagining a chair.,The image being imagined is a circle.,False
+1486,6,4,scissor,square,The subject is imagining scissors.,The image being imagined is a square.,False
+1487,6,7,scissor,watch,The subject is imagining scissors.,The subject is imagining a watch.,False
+1488,6,8,scissor,cup,The subject is imagining scissors.,The image being imagined is a cup. The subject is imagining a cup.,False
+1489,6,6,scissor,scissor,The subject is imagining scissors.,"The subject is imagining a dog.
+scissors are being mentally visualized.",True
+1490,9,3,chair,pentagram,The subject is imagining a chair.,The subject is imagining a pentagram.,False
+1491,7,8,watch,cup,The subject is imagining a watch.,The image being imagined is a cup.,False
+1492,9,4,chair,square,The subject is imagining a chair.,The subject is imagining a square.,False
+1493,8,8,cup,cup,The subject is imagining a cup.,The image being imagined is a cup.,True
+1494,6,4,scissor,square,The subject is imagining scissors.,The image being imagined is a square.,False
+1495,7,3,watch,pentagram,The subject is imagining a watch.,"The subject is imagining a pentagram.
+scott is the image.",False
+1496,7,9,watch,chair,The subject is imagining a watch.,"The subject is imagining a chair.
+[EEG_TOKENS]
+The subject is imagining a chair.",False
+1497,8,7,cup,watch,The subject is imagining a cup.,The image being imagined is a watch.,False
+1498,6,5,scissor,circle,The subject is imagining scissors.,The image being imagined is a circle.,False
+1499,9,4,chair,square,The subject is imagining a chair.,The image being imagined is a square. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 1. 2. 3. 4. 5. 6. 7. 8.,False
+1500,8,8,cup,cup,The subject is imagining a cup.,The subject is imagining a cup.,True
+1501,7,7,watch,watch,The subject is imagining a watch.,The image being imagined is a watch.,True
+1502,7,7,watch,watch,The subject is imagining a watch.,The subject is imagining a watch.,True
+1503,8,1,cup,bird,The subject is imagining a cup.,The image being imagined is a bird.,False
+1504,7,5,watch,circle,The subject is imagining a watch.,The image being imagined is a circle.,False
+1505,9,0,chair,dog,The subject is imagining a chair.,The image being imagined is a dog.,False
+1506,6,9,scissor,chair,The subject is imagining scissors.,The image being imagined is a chair. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16.,False
+1507,9,5,chair,circle,The subject is imagining a chair.,The subject is imagining a circle.,False
+1508,9,3,chair,pentagram,The subject is imagining a chair.,The subject is imagining a pentagram.,False
+1509,9,4,chair,square,The subject is imagining a chair.,The image being imagined is a square.,False
+1510,7,0,watch,dog,The subject is imagining a watch.,The image being imagined is a dog.,False
+1511,7,2,watch,fish,The subject is imagining a watch.,The subject is imagining a fish.,False
+1512,8,7,cup,watch,The subject is imagining a cup.,The image being imagined is a watch.,False
+1513,9,4,chair,square,The subject is imagining a chair.,The image being imagined is a square.,False
+1514,6,1,scissor,bird,The subject is imagining scissors.,The subject is imagining a bird.,False
+1515,7,7,watch,watch,The subject is imagining a watch.,The subject is imagining a watch.,True
+1516,6,8,scissor,cup,The subject is imagining scissors.,The image being imagined is a cup.,False
+1517,7,2,watch,fish,The subject is imagining a watch.,The subject is imagining a fish.,False
+1518,6,1,scissor,bird,The subject is imagining scissors.,The image being imagined is a bird.,False
+1519,8,7,cup,watch,The subject is imagining a cup.,The subject is imagining a watch.,False
+1520,7,4,watch,square,The subject is imagining a watch.,The image being imagined is a square.,False
+1521,9,2,chair,fish,The subject is imagining a chair.,The subject is imagining a fish.,False
+1522,6,5,scissor,circle,The subject is imagining scissors.,The subject is imagining a circle.,False
+1523,6,7,scissor,watch,The subject is imagining scissors.,The image being imagined is a watch.,False
+1524,7,8,watch,cup,The subject is imagining a watch.,The image being imagined is a cup. A cup is being imagined.,False
+1525,7,5,watch,circle,The subject is imagining a watch.,The image being imagined is a circle.,False
+1526,9,6,chair,scissor,The subject is imagining a chair.,"The subject is imagining a circle.
+scissors.",False
+1527,8,7,cup,watch,The subject is imagining a cup.,The subject is imagining a watch.,False
+1528,8,2,cup,fish,The subject is imagining a cup.,The image being imagined is a fish.,False
+1529,8,5,cup,circle,The subject is imagining a cup.,The image being imagined is a circle.,False
+1530,6,5,scissor,circle,The subject is imagining scissors.,The image being imagined is a circle.,False
+1531,8,3,cup,pentagram,The subject is imagining a cup.,The image being imagined is a pentagram. The subject is imagining a pentagram.,False
+1532,9,4,chair,square,The subject is imagining a chair.,The subject is imagining a square.,False
+1533,6,8,scissor,cup,The subject is imagining scissors.,The image being imagined is a cup.,False
+1534,9,2,chair,fish,The subject is imagining a chair.,The image being imagined is a fish.,False
+1535,9,5,chair,circle,The subject is imagining a chair.,The image being imagined is a circle.,False
+1536,7,2,watch,fish,The subject is imagining a watch.,The subject is imagining a fish.,False
+1537,8,4,cup,square,The subject is imagining a cup.,The subject is imagining a square.,False
+1538,9,0,chair,dog,The subject is imagining a chair.,The image being imagined is a dog.,False
+1539,7,8,watch,cup,The subject is imagining a watch.,The image being imagined is a cup.,False
+1540,9,2,chair,fish,The subject is imagining a chair.,The image being imagined is a fish.,False
+1541,8,8,cup,cup,The subject is imagining a cup.,The subject is imagining a cup.,True
+1542,6,3,scissor,pentagram,The subject is imagining scissors.,The subject is imagining a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 0. 0. 0. 0. 0. 0. 0. 0.,False
+1543,6,5,scissor,circle,The subject is imagining scissors.,The image being imagined is a circle.,False
+1544,9,2,chair,fish,The subject is imagining a chair.,The subject is imagining a fish.,False
+1545,6,1,scissor,bird,The subject is imagining scissors.,The subject is imagining a bird.,False
+1546,8,7,cup,watch,The subject is imagining a cup.,The image being imagined is a watch.,False
+1547,8,0,cup,dog,The subject is imagining a cup.,The subject is imagining a dog.,False
+1548,9,3,chair,pentagram,The subject is imagining a chair.,The image being imagined is a pentagram.,False
+1549,7,4,watch,square,The subject is imagining a watch.,The image being imagined is a square.,False
+1550,7,5,watch,circle,The subject is imagining a watch.,The image being imagined is a circle.,False
+1551,7,2,watch,fish,The subject is imagining a watch.,The image being imagined is a fish.,False
+1552,6,8,scissor,cup,The subject is imagining scissors.,The image being imagined is a cup.,False
+1553,9,5,chair,circle,The subject is imagining a chair.,The image being imagined is a circle.,False
+1554,7,5,watch,circle,The subject is imagining a watch.,The subject is imagining a circle. 1. The subject is imagining a circle. 2. The subject is imagining a circle. 3. The subject is imagining a circle. 4. The subject is imagining a circle. 5. The subject is imagining a circle.,False
+1555,8,3,cup,pentagram,The subject is imagining a cup.,"The image being imagined is a pentagram.
+scottish pentagram is being imagined.",False
+1556,8,9,cup,chair,The subject is imagining a cup.,The image being imagined is a chair.,False
+1557,6,0,scissor,dog,The subject is imagining scissors.,"The image being imagined is a pentagram.
+scott.
+dog.
+bird.
+circle.
+circle.
+pentagram.
+scott.
+dog.
+scott.
+dog.
+bird.
+circle.
+circle.
+pentagram.
+scott.
+dog.",False
+1558,7,2,watch,fish,The subject is imagining a watch.,The image being imagined is a fish. The subject is imagining a fish.,False
+1559,6,4,scissor,square,The subject is imagining scissors.,The subject is imagining a square.,False
+1560,8,2,cup,fish,The subject is imagining a cup.,The image being imagined is a fish.,False
+1561,8,5,cup,circle,The subject is imagining a cup.,The subject is imagining a circle.,False
+1562,6,2,scissor,fish,The subject is imagining scissors.,The subject is imagining a fish.,False
+1563,7,2,watch,fish,The subject is imagining a watch.,The subject is imagining a fish.,False
+1564,9,4,chair,square,The subject is imagining a chair.,The image being imagined is a square.,False
+1565,7,8,watch,cup,The subject is imagining a watch.,The image being imagined is a cup.,False
+1566,6,5,scissor,circle,The subject is imagining scissors.,The image being imagined is a circle.,False
+1567,7,3,watch,pentagram,The subject is imagining a watch.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 1. 2. 3. 4. 5. 6. 7. 8.,False
+1568,8,7,cup,watch,The subject is imagining a cup.,The subject is imagining a watch.,False
+1569,9,8,chair,cup,The subject is imagining a chair.,The subject is imagining a cup. The image being imagined is a cup.,False
+1570,9,8,chair,cup,The subject is imagining a chair.,The subject is imagining a cup.,False
+1571,8,2,cup,fish,The subject is imagining a cup.,The image being imagined is a fish.,False
+1572,7,1,watch,bird,The subject is imagining a watch.,The image being imagined is a bird.,False
+1573,9,8,chair,cup,The subject is imagining a chair.,The image being imagined is a cup.,False
+1574,6,4,scissor,square,The subject is imagining scissors.,The image being imagined is a square.,False
+1575,8,4,cup,square,The subject is imagining a cup.,The image being imagined is a square.,False
+1576,9,5,chair,circle,The subject is imagining a chair.,The subject is imagining a circle.,False
+1577,6,3,scissor,pentagram,The subject is imagining scissors.,The image being imagined is a pentagram. 1. 2. 3. 4. 5. 6. 7. 8. 9. 0. 1. 2. 3. 4. 5. 6. 7. 8.,False
+1578,7,5,watch,circle,The subject is imagining a watch.,The subject is imagining a circle.,False
+1579,7,5,watch,circle,The subject is imagining a watch.,The image being imagined is a circle. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16.,False
+1580,6,4,scissor,square,The subject is imagining scissors.,The image being imagined is a square.,False
+1581,8,3,cup,pentagram,The subject is imagining a cup.,The subject is imagining a pentagram.,False
+1582,6,5,scissor,circle,The subject is imagining scissors.,The subject is imagining a circle.,False
+1583,6,5,scissor,circle,The subject is imagining scissors.,The image being imagined is a circle.,False
+1584,9,5,chair,circle,The subject is imagining a chair.,The subject is imagining a circle.,False
+1585,7,2,watch,fish,The subject is imagining a watch.,"The image being imagined is a fish.
+[EEG_TOKEN]
+The subject is imagining a fish.",False
+1586,9,5,chair,circle,The subject is imagining a chair.,The subject is imagining a circle.,False
+1587,8,7,cup,watch,The subject is imagining a cup.,The image being imagined is a watch.,False
+1588,8,5,cup,circle,The subject is imagining a cup.,The image being imagined is a circle.,False
+1589,9,8,chair,cup,The subject is imagining a chair.,The image being imagined is a cup.,False
+1590,8,3,cup,pentagram,The subject is imagining a cup.,The image being imagined is a pentagram.,False
+1591,9,7,chair,watch,The subject is imagining a chair.,The subject is imagining a watch.,False
+1592,9,4,chair,square,The subject is imagining a chair.,The image being imagined is a square.,False
+1593,7,2,watch,fish,The subject is imagining a watch.,The image being imagined is a fish. The subject is imagining a fish.,False
+1594,8,4,cup,square,The subject is imagining a cup.,The image being imagined is a square.,False
+1595,6,0,scissor,dog,The subject is imagining scissors.,The subject is imagining a dog.,False
+1596,6,7,scissor,watch,The subject is imagining scissors.,The image being imagined is a watch.,False
+1597,7,0,watch,dog,The subject is imagining a watch.,The image being imagined is a dog.,False
+1598,6,0,scissor,dog,The subject is imagining scissors.,The subject is imagining a dog.,False
+1599,7,5,watch,circle,The subject is imagining a watch.,The image being imagined is a circle.,False

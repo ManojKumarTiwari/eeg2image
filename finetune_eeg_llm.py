@@ -54,9 +54,13 @@ def main():
     model = EEGLanguageModel(params)
 
     print(f"Loading {params.downstream_dataset} dataset with LLM text labels...")
-    if params.downstream_dataset.upper() == 'BCICIV2A':
+    ds = params.downstream_dataset.upper()
+    if ds == 'BCICIV2A':
         from datasets import bciciv2a_llm_dataset
         load_dataset = bciciv2a_llm_dataset.LoadDataset(params, model.tokenizer)
+    elif ds == 'VI':
+        from datasets import visual_imagery_llm_dataset
+        load_dataset = visual_imagery_llm_dataset.LoadDataset(params, model.tokenizer)
     else:
         from datasets import faced_llm_dataset
         load_dataset = faced_llm_dataset.LoadDataset(params, model.tokenizer)
