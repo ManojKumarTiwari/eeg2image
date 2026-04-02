@@ -87,6 +87,21 @@ _EMOTION_VISUAL_PROMPTS = {
     ),
 }
 
+# ─── Visual imagery prompts (VI dataset, 10 classes) ─────────────────────────
+
+_VI_VISUAL_PROMPTS = {
+    0: "a dog, full body portrait, clear studio background, photorealistic, sharp focus, 8k resolution",
+    1: "a bird perched on a branch, clear studio background, photorealistic, sharp focus, 8k resolution",
+    2: "a fish swimming, clear studio background, photorealistic, sharp focus, 8k resolution",
+    3: "a pentagram star shape, clean white background, sharp geometric lines, high contrast, 8k resolution",
+    4: "a square shape, clean white background, sharp geometric lines, high contrast, 8k resolution",
+    5: "a circle shape, clean white background, sharp geometric lines, high contrast, 8k resolution",
+    6: "a pair of scissors, product photography, clean white background, photorealistic, sharp focus, 8k resolution",
+    7: "a wristwatch, product photography, clean white background, photorealistic, sharp focus, 8k resolution",
+    8: "a cup or mug, product photography, clean white background, photorealistic, sharp focus, 8k resolution",
+    9: "a chair, product photography, clean white background, photorealistic, sharp focus, 8k resolution",
+}
+
 _NEGATIVE_PROMPT = (
     "blurry, low quality, distorted, deformed, ugly, bad anatomy, extra limbs, "
     "watermark, text, logo, oversaturated, cartoon, anime, sketch"
@@ -160,8 +175,11 @@ class EEGImageGenerator:
         Returns:
             A visual text prompt suitable for Stable Diffusion
         """
-        if dataset.upper() == "BCICIV2A":
+        ds = dataset.upper()
+        if ds == "BCICIV2A":
             visual_map = _MI_VISUAL_PROMPTS
+        elif ds == "VI":
+            visual_map = _VI_VISUAL_PROMPTS
         else:
             visual_map = _EMOTION_VISUAL_PROMPTS
 
