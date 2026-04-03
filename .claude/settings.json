@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.venv/Scripts/python.exe -c ':*)",
+      "Bash(.venv/Scripts/python.exe finetune_eeg_to_image.py --epochs 20 --warmup_epochs 5 --lr 1e-4 --batch_size 4 --gradient_accumulation_steps 8 --lambda_cls 5.0 --lambda_contrastive 2.0 --lambda_cos 1.0 --lambda_mse 0.1 --temperature 0.5 --model_dir pth_downtasks/eeg_direct)",
+      "Bash(echo \"PID: $!\")",
+      "Read(//c/Users/manoj/.cache/huggingface/hub/**)"
+    ]
+  }
+}
