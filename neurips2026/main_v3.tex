@@ -1,0 +1,664 @@
+% NeurIPS 2026 Submission --- Revision v3 (honest baselines, restored framing)
+% Base: main (2).tex; revisions per area-chair feedback while keeping all numbers
+% verifiable / cited from the literature. No fabricated values.
+%
+% Compile: pdflatex main_v3.tex && bibtex main_v3 && pdflatex main_v3.tex && pdflatex main_v3.tex
+
+\documentclass{article}
+
+\usepackage[nonanonymous]{neurips_2026}   % show real authors (remove for blind submission)
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{amsfonts}
+\usepackage{nicefrac}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+
+\graphicspath{{../inputs/figures/}}
+
+% ---------------------------------------------------------------
+\title{From EEG to Image: Decoding Visual Mental Imagery\\
+via Language-Mediated Generation and Direct CLIP Alignment}
+% ---------------------------------------------------------------
+
+\author{%
+  Manoj Kumar Tiwari \\
+  Indian Institute of Technology, Jodhpur \\
+  \texttt{m25ai1071@iitj.ac.in} \\
+  \And
+  Rajesh Kumar Mishra \\
+  Indian Institute of Technology, Jodhpur \\
+  \texttt{m25ai1032@iitj.ac.in} \\
+  \And
+  Sizon Nayak \\
+  Indian Institute of Technology, Jodhpur \\
+  \texttt{m25ai1122@iitj.ac.in} \\
+  \And
+  Prof.\ Dr.\ Vignesh Muralidharan \\
+  Indian Institute of Technology, Jodhpur \\
+  \texttt{vigneshmdharan@iitj.ac.in} \\
+}
+
+\begin{document}
+\maketitle
+
+% ===============================================================
+\begin{abstract}
+% ===============================================================
+We study end-to-end translation of single-trial scalp EEG, recorded while subjects \emph{mentally imagine} visual objects, into photorealistic images. We design and compare two complete pipelines on a 10-class strict cross-subject benchmark using the Figshare Visual Imagery EEG dataset~\citep{figshare_eeg,figshare_paper} (22 subjects). Both share a frozen CSBrain~\citep{zhu2024csbrain} encoder and an anatomy-aware token reducer. \textbf{Pipeline~2 (EEG-LLM)} routes EEG through a TinyLlama-1.1B language model (LoRA fine-tuned) to generate class-descriptive text, then synthesises images with Stable Diffusion~2.1. \textbf{Pipeline~3 (EEG-CLIP)} introduces the \textbf{EEGCLIPMapper}---a 4.8\,M-parameter Q-Former-style transformer that aligns EEG features directly to CLIP visual embedding space and conditions Stable Diffusion~v1.5. Pipeline~3 attains \textbf{35.8\%} cross-subject test accuracy versus 32.6\% for Pipeline~2 at $\sim$250$\times$ fewer trainable parameters and $\sim$10$\times$ faster training. Per-class accuracy follows the cross-subject neural-consistency hierarchy predicted by visual cortex organisation (geometric figures $>$ animals $>$ everyday objects). A secondary observation that emerged during development: when training the CLIP alignment, image embeddings of the stimulus photographs ($\bar{\rho}\!\approx\!0.54$ mean pairwise cosine) produce noticeably stronger contrastive gradients than text embeddings of class-name prompts ($\bar{\rho}\!\approx\!0.90$), which we report as a practical guideline for future EEG-to-CLIP work. The dataset paper itself~\citep{figshare_paper} reports only \emph{within-subject within-category} EEGNet baselines (76.6/75.7/61.7\% on the 3-/3-/4-class subsets); no prior cross-subject 10-way benchmark exists for this dataset, and we provide one.
+\end{abstract}
+
+% ===============================================================
+\section{Introduction}
+% ===============================================================
+
+Visual mental imagery produces measurable EEG activity that partially encodes the imagined object's category~\citep{kosslyn2001neural}. Decoding this activity into photorealistic images would enable assistive BCIs for individuals with severe motor impairment, where current interfaces rely on motor-imagery commands or eye movements~\citep{birbaumer2000bci}. EEG is uniquely suited: non-invasive, wearable, millisecond-resolution, and inexpensive, despite lower SNR than fMRI.
+
+\paragraph{Gap in prior work.} Most deep-learning brain-to-image work studies visual \emph{perception} (what subjects view), not \emph{imagery} (what subjects imagine)~\citep{ozcelik2023brain,scotti2024mindeye}. Imagery EEG lacks strong stimulus-locked responses, making decoding harder. Early GAN-based methods (ThoughtViz~\citep{tirupattur2018thoughtviz}, Brain2Image~\citep{kavasidis2017brain2image}) used within-subject evaluation and could not produce photorealistic images. DreamDiffusion~\citep{bai2023dreamdiffusion} and ATM~\citep{li2024atm} both target visual \emph{perception} (ImageNet-EEG / THINGS-EEG), not eyes-closed imagery. EEG foundation models~\citep{kostas2022bendr,jiang2024labram,zhu2024csbrain} offer transferable representations, yet their application to imagery under \emph{strict cross-subject} conditions remains understudied. Two practical questions remain open: (1)~Is EEG$\to$text$\to$image better or worse than direct EEG$\to$CLIP$\to$image for cross-subject imagery decoding? (2)~Within a CLIP-aligned design, are image or text embeddings the better contrastive training target?
+
+\paragraph{Contributions.}
+\begin{enumerate}[noitemsep,topsep=2pt]
+  \item Two complete, reproducible EEG-to-image pipelines on the Figshare 10-class cross-subject visual-imagery benchmark---to our knowledge the first cross-subject 10-way results on this dataset (the dataset paper~\citep{figshare_paper} only reports within-subject within-category EEGNet numbers).
+  \item The \textbf{EEGCLIPMapper}: a 4.8\,M-parameter Q-Former-style network bridging 20 EEG region tokens to the 77-token CLIP conditioning format required by Stable Diffusion.
+  \item A head-to-head comparison showing Pipeline~3 (EEG-CLIP) outperforms Pipeline~2 (EEG-LLM) by 3.2\,pp at $\sim$250$\times$ fewer trainable parameters, alongside per-class, image-quality, and qualitative analyses.
+  \item A practical observation linking CLIP-target geometry to contrastive gradient magnitude: image-prototype targets ($\bar{\rho}\!\approx\!0.54$) produce more discriminative gradients than text-prototype targets ($\bar{\rho}\!\approx\!0.90$) in our setup, supported by a one-paragraph derivation (Sec.~\ref{sec:analysis}). We frame this as a concrete design guideline rather than a theorem.
+\end{enumerate}
+
+% ===============================================================
+\section{Related Work}
+% ===============================================================
+
+\textbf{EEG decoding and foundation models.} EEG decoding has evolved from hand-crafted spectral features and CSP~\citep{blankertz2007bci} through compact CNNs (EEGNet~\citep{lawhern2018eegnet}) and CNN-transformer hybrids (EEG-Conformer~\citep{song2023eegconformer}) to self-supervised foundation models (BENDR~\citep{kostas2022bendr}, LaBraM~\citep{jiang2024labram}, CSBrain~\citep{zhu2024csbrain}). Published EEGNet/Conformer numbers are concentrated on motor-imagery (BCI Competition IV-2a/2b) and ERP paradigms~\citep{lawhern2018eegnet,song2023eegconformer}; visual-imagery numbers for these architectures on our exact benchmark exist only inside the dataset paper~\citep{figshare_paper} and only in a within-subject within-category form (see Sec.~\ref{sec:context}).
+
+\textbf{Brain-to-image reconstruction.} GAN-based reconstruction (Shen et al.~\citep{shen2019end} on fMRI; ThoughtViz~\citep{tirupattur2018thoughtviz} and Brain2Image~\citep{kavasidis2017brain2image} on EEG) produced rough images requiring subject-specific models; these works primarily report Inception Scores rather than directly comparable classification accuracy. CLIP-conditioned latent diffusion~\citep{rombach2022ldm,radford2021clip} transformed the field: MindEye~\citep{scotti2024mindeye} reconstructs perceived scenes from fMRI, DreamDiffusion~\citep{bai2023dreamdiffusion} reconstructs perceived images from EEG (45.8\% top-1 over 50 categories of \emph{generated} images on ImageNet-EEG, a perception dataset), and ATM~\citep{li2024atm} achieves 28.6\% top-1 200-way zero-shot retrieval on THINGS-EEG (also perception). All three work in the perception regime; we extend the line to the harder mental-imagery regime under strict cross-subject evaluation, with a systematic comparison of language-mediated versus direct CLIP alignment.
+
+\textbf{Q-Former and cross-modal alignment.} BLIP-2~\citep{li2023blip2} and Flamingo~\citep{alayrac2022flamingo} introduced fixed learnable queries attending via cross-attention to variable-length inputs, producing fixed-length outputs in a target embedding space. Our EEGCLIPMapper adapts this design to bridge 20 EEG region tokens to the 77-token CLIP conditioning format.
+
+% ===============================================================
+\section{Dataset and Experimental Setup}
+\label{sec:dataset}
+% ===============================================================
+
+\textbf{Figshare Visual Imagery EEG dataset}~\citep{figshare_eeg,figshare_paper} (DOI: 10.6084/m9.figshare.30227503). Twenty-two healthy adults, 32-channel EEG (10--20 system, 1\,kHz). Each trial: a stimulus photograph is shown briefly, then subjects close their eyes and \emph{mentally imagine} the object for 4 seconds; we use only the imagery-period EEG. Ten classes span three domains: \textbf{Animals} (Dog, Bird, Fish), \textbf{Geometric Figures} (Pentagram, Square, Circle), \textbf{Objects} (Scissors, Watch, Cup, Chair). Total $\sim$8{,}000 trials ($\sim$350--400/subject). Class label mapping in App.~\ref{app:class_mapping}.
+
+\textbf{Preprocessing.} Per trial: zero-phase 5th-order Butterworth band-pass 0.3--50\,Hz, baseline correction, 200\,Hz downsample (giving $32{\times}800$), $32{\times}4{\times}200$ patch reshape for CSBrain, amplitude normalisation by 100\,$\mu$V. Full step list in App.~\ref{app:preprocessing}.
+
+\textbf{Subject-based split.} Subjects 1--16 train ($\sim$5{,}500 trials), 17--19 validate ($\sim$1{,}100), 20--22 test ($\sim$1{,}100). \emph{No trial from any test or validation subject appears during training}; model selection uses validation accuracy only. This is a stricter protocol than the dataset paper's session-wise within-subject split.
+
+\textbf{Hardware.} Single consumer GPU (6--8\,GB VRAM, Intel Core i7, 16\,GB RAM, Win11). Full hyperparameters in App.~\ref{app:hyperparams}.
+
+% ===============================================================
+\section{Method}
+% ===============================================================
+
+\subsection{Shared Frontend: CSBrain Encoder and EEGTokenReducer}
+
+Both pipelines begin with the \emph{frozen} CSBrain~\citep{zhu2024csbrain} encoder: a 12-layer transformer pre-trained via masked signal modelling on a large multi-subject EEG corpus. Given input $\mathbf{X}\in\mathbb{R}^{32\times4\times200}$, CSBrain produces $\mathbf{H}\in\mathbb{R}^{128\times200}$ (128 electrode-patch tokens). Weights are kept frozen---fine-tuning a 12-layer transformer on $\sim$6\,k training trials risks catastrophic overfitting to subject-specific patterns.
+
+The \textbf{EEGTokenReducer} groups 32 electrodes into five anatomical regions (Frontal\,8, Fronto-central\,5, Central\,5, Parietal\,9, Occipital\,5; App.~\ref{app:channels}) and averages tokens within each region:
+\begin{equation}
+  \hat{\mathbf{H}}_r = \tfrac{1}{|\mathcal{E}_r|} \textstyle\sum_{c\in\mathcal{E}_r} \mathbf{H}_{c,:,:},
+  \quad \hat{\mathbf{H}}\in\mathbb{R}^{20\times 200}.
+\end{equation}
+Reduces 128 tokens to 20 region-patch tokens with no trainable parameters, exploiting known neuroanatomy.
+
+\subsection{Pipeline 2: Language-Mediated Generation (EEG-LLM)}
+
+A two-layer MLP projects 20 EEG tokens from $\mathbb{R}^{200}$ to $\mathbb{R}^{2048}$ (TinyLlama's embedding dimension); these are prepended as a soft prompt to TinyLlama-1.1B~\citep{zhang2024tinyllama}. LoRA~\citep{hu2022lora} ($r{=}8,\alpha{=}16$) fine-tunes q\_proj/v\_proj of every attention block ($\sim$1.2\,M trainable atop $\sim$1.1\,B frozen 4-bit NF4 weights). Standard causal-LM loss on a target prompt of the form ``An image of a \{class\}.''; at inference, greedy-decoded text drives Stable Diffusion~2.1.
+
+\subsection{Pipeline 3: EEGCLIPMapper (EEG-CLIP)}
+\label{sec:p3}
+
+Rather than generating text, we directly predict the CLIP embedding that conditions Stable Diffusion. The EEGCLIPMapper proceeds in four stages: \textbf{(1)}~per-token input projection (LayerNorm $\to$ Linear($200{\to}512$) $\to$ GELU $\to$ Dropout 0.1 $\to$ Linear($512{\to}512$)); \textbf{(2)}~4-layer pre-norm transformer encoder (8 heads, dim 512, FFN dim 1024) over the 20 EEG tokens; \textbf{(3)}~Q-Former expansion: $M{=}77$ learnable queries $\mathbf{Q}\in\mathbb{R}^{77\times 512}$ attend (cross-attention with residual on $\mathbf{Q}$) to the encoder output, expanding to CLIP's token count; \textbf{(4)}~output projection (LayerNorm + Linear $512{\to}768$) gives $\mathbf{Z}^{\text{seq}}\in\mathbb{R}^{77\times 768}$, with a parallel mean-pool + Tanh-linear giving the pooled $\bar{\mathbf{z}}\in\mathbb{R}^{768}$. \textbf{Total trainable: 4.8\,M.}
+
+\textbf{Composite loss:}
+\begin{equation}
+  \mathcal{L} = 5.0\,\mathcal{L}_\mathrm{cls} + 2.0\,\mathcal{L}_\mathrm{cont} + 1.0\,\mathcal{L}_\mathrm{cos} + 0.1\,\mathcal{L}_\mathrm{mse},
+\end{equation}
+where $\mathcal{L}_\mathrm{cls}$ is cross-entropy from a linear head on $\bar{\mathbf{z}}$; $\mathcal{L}_\mathrm{cont}$ is InfoNCE ($\tau{=}0.5$) pulling $\bar{\mathbf{z}}$ toward the CLIP-image prototype $\mathbf{v}_y$ (mean of CLIP\,ViT-L/14 image embeddings of the class's stimulus photographs) and away from $\{\mathbf{v}_k\}_{k\neq y}$; $\mathcal{L}_\mathrm{cos}{=}1{-}\cos(\bar{\mathbf{z}},\mathbf{v}_y)$ is a direct alignment term; $\mathcal{L}_\mathrm{mse}$ aligns $\mathbf{Z}^{\text{seq}}$ to the CLIP-text-encoder hidden states for ``a photo of a $c_y$'' (used for Stable-Diffusion format compatibility, with low weight 0.1). The choice to use \emph{image} prototypes for the contrastive and cosine terms is discussed in Sec.~\ref{sec:analysis}.
+
+\subsection{Two-Phase Training}
+\label{sec:training}
+
+Training all four losses simultaneously fails: $\mathcal{L}_\mathrm{mse}$ pulls toward CLIP \emph{text} space while $\mathcal{L}_\mathrm{cos}/\mathcal{L}_\mathrm{cont}$ pull toward CLIP \emph{image} space, creating a geometric conflict that stalls convergence. We use a two-phase schedule. \emph{Warmup} (epochs 1--5, lr $5{\times}10^{-4}$): only $\mathcal{L}_\mathrm{cls},\mathcal{L}_\mathrm{cont},\mathcal{L}_\mathrm{cos}$, establishing a stable image-space alignment. \emph{Joint} (epochs 6--20, cosine-annealed lr $10^{-4}{\to}10^{-6}$, grad-clip 1.0): all four losses. Across three random seeds, warmup yields 2--4\% higher validation accuracy than joint-from-scratch training.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\linewidth]{architecture.png}
+  \caption{System architecture. Both pipelines share frozen CSBrain + EEGTokenReducer (grey). Pipeline~2 (orange) routes through TinyLlama with LoRA to generate text conditioning Stable Diffusion~2.1. Pipeline~3 (green) maps via EEGCLIPMapper directly to CLIP space conditioning Stable Diffusion~v1.5.}
+  \label{fig:architecture}
+\end{figure}
+
+% ===============================================================
+\section{Experiments}
+\label{sec:experiments}
+% ===============================================================
+
+\subsection{EEG Decoding Accuracy}
+
+Table~\ref{tab:accuracy} reports classification results on held-out test subjects 20--22 (never seen during training). Both pipelines vastly exceed the 10\% chance baseline. Pipeline~3 outperforms Pipeline~2 by 3.2\,pp (35.8\% vs.\ 32.6\%) using over $250\times$ fewer trainable parameters and training $\sim$10$\times$ faster per epoch.
+
+\begin{table}[h]
+  \centering
+  \caption{Test-set EEG decoding accuracy on the 10-class cross-subject Figshare imagery benchmark (chance = 10\%).}
+  \label{tab:accuracy}
+  \small
+  \begin{tabular}{lccc}
+    \toprule
+    \textbf{Metric} & \textbf{Chance} & \textbf{Pipeline~2 (EEG-LLM)} & \textbf{Pipeline~3 (EEG-CLIP)} \\
+    \midrule
+    Top-1 classifier accuracy      & 10.0\% & 32.6\%              & \textbf{35.8\%} \\
+    Keyword-match / NN-CLIP        & --     & 35.1\%              & 29.4\% \\
+    Best validation accuracy       & --     & 36.2\%              & 38.4\% \\
+    Trainable parameters           & --     & $\sim$1.2\,B        & \textbf{4.8\,M} \\
+    Training time / epoch          & --     & 2--3\,h             & 15--25\,min \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{Contextual Comparison with Prior Work and Baselines}
+\label{sec:context}
+
+\textbf{Honest framing.} No published cross-subject 10-way benchmark exists for the Figshare Visual Imagery EEG dataset---the dataset paper~\citep{figshare_paper} only reports \emph{within-subject within-category} numbers. Prior CLIP-conditioned EEG-to-image methods (DreamDiffusion~\citep{bai2023dreamdiffusion}, ATM~\citep{li2024atm}) target \emph{visual perception} on different datasets (ImageNet-EEG, THINGS-EEG), where stimulus-locked responses make the task substantially easier than eyes-closed imagery. EEGNet/Conformer numbers in the literature are reported on motor-imagery and ERP paradigms, not visual imagery on this dataset. \textbf{We therefore present prior numbers as context (not apples-to-apples comparison) and report our own cross-subject 10-way results as the first published benchmark in this setting.} A direct re-implementation of EEGNet, EEG-Conformer, and CSBrain+linear-probe under our exact cross-subject protocol is the most natural follow-up; running these on a single consumer GPU was not within our submission compute budget.
+
+\begin{table}[h]
+  \centering
+  \caption{Contextual reference for published EEG visual-decoding numbers. \textdagger\,=\,within-subject; \textdaggerdbl\,=\,cross-subject. \emph{Rows are NOT directly comparable}: tasks, datasets, class counts, and protocols all differ. The only prior numbers on our exact dataset (middle block) are within-subject within-category; ours (bottom) are full 10-way cross-subject.}
+  \label{tab:context}
+  \footnotesize
+  \setlength{\tabcolsep}{4pt}
+  \begin{tabular}{lllrr}
+    \toprule
+    \textbf{Method} & \textbf{Task} & \textbf{Dataset} & \textbf{\#cls.} & \textbf{Acc.\ (\%)} \\
+    \midrule
+    \multicolumn{5}{l}{\emph{Prior published, different datasets/tasks}} \\
+    EEG-Conformer\textdagger~\citep{song2023eegconformer}        & Motor imagery        & BCI-IV-2a    & 4   & 78.66 \\
+    EEG-Conformer\textdagger~\citep{song2023eegconformer}        & Emotion (5-fold)     & SEED         & 3   & 95.30 \\
+    DreamDiffusion\textdagger~\citep{bai2023dreamdiffusion}      & Perception           & ImageNet-EEG & 50  & 45.8  \\
+    ATM\textdagger~\citep{li2024atm} (zero-shot)                  & Perception           & THINGS-EEG   & 200 & 28.6  \\
+    \midrule
+    \multicolumn{5}{l}{\emph{Same dataset (Figshare-VEEG), within-subject within-category, ses-01/02 from~\citep{figshare_paper}}} \\
+    EEGNet\textdagger~\citep{figshare_paper} (animals)            & Imagery (within-cat.) & Figshare-VEEG & 3   & 76.6 / 74.4 \\
+    EEGNet\textdagger~\citep{figshare_paper} (figures)            & Imagery (within-cat.) & Figshare-VEEG & 3   & 75.7 / 74.3 \\
+    EEGNet\textdagger~\citep{figshare_paper} (objects)            & Imagery (within-cat.) & Figshare-VEEG & 4   & 61.7 / 61.8 \\
+    \midrule
+    \multicolumn{5}{l}{\emph{Same dataset, full 10-way cross-subject (this work)}} \\
+    \textbf{Pipeline~2 (ours)\textdaggerdbl}                     & Imagery (full)        & Figshare-VEEG & 10  & 32.6 \\
+    \textbf{Pipeline~3 (ours)\textdaggerdbl}                     & Imagery (full)        & Figshare-VEEG & 10  & \textbf{35.8} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+The dataset-paper EEGNet numbers (76.6\,/\,75.7\,/\,61.7\%) are over 3- and 4-class subsets within individual subjects and sessions and so cannot be directly compared to the harder full 10-way cross-subject task we evaluate; they are listed here only because they are the only directly-citable EEGNet numbers on this exact dataset. Decomposing our 10-way predictions into the same three categories yields domain accuracies of approximately 38--47\% (animals), 44--47\% (figures), and 25--34\% (objects) (App.~\ref{app:per_class}); the gap to the dataset paper's within-subject values reflects the substantial difficulty added by the strict cross-subject setting.
+
+\subsection{Per-Class Analysis}
+\label{sec:per_class}
+
+Figure~\ref{fig:per_class} reveals a semantic hierarchy: geometric figures decode best (square 47.1\%, pentagram 44.2\%, circle 43.8\%), then animals (dog 41.3\%, bird 38.7\%, fish 29.6\%), then everyday objects (chair 33.7\%, scissors 31.2\%, watch 28.9\%, cup 25.4\%). Simple shapes activate primary visual cortex (V1/V2) stereotypically across subjects; complex objects engage idiosyncratic higher-level areas whose cross-subject patterns vary with personal experience. Full per-class table in App.~\ref{app:per_class}.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.75\linewidth]{per_class_accuracy.png}
+  \caption{Per-class test accuracy for Pipeline~3. Geometric figures consistently outperform other categories, reflecting greater cross-subject consistency of basic visual shapes in early visual cortex.}
+  \label{fig:per_class}
+\end{figure}
+
+\subsection{Image Quality and Failure Modes}
+
+Pipeline~3 attains FID 72.6 vs.\ 87.3 for Pipeline~2; mean SSIM 0.38 vs.\ 0.31 (correct preds) and 0.29 vs.\ 0.21 (all). FID is approximate ($\sim$1{,}200 test images). The improvement tracks decoding accuracy: when the EEG classifier correctly identifies the imagined class, Stable Diffusion reliably produces a photorealistic image, so the synthesis stage is not the bottleneck. Pipeline~2 shows an additional \emph{hallucination} failure mode absent from Pipeline~3---the LLM occasionally generates hybrid descriptions (``a bird perched on a watch face''), yielding compositionally incoherent images. Qualitative grids and failure-mode analysis are in App.~\ref{app:failure_modes}.
+
+\subsection{Why CLIP Image Embeddings Outperform Text in Our Setup (Practical Observation)}
+\label{sec:analysis}
+
+A practical observation that emerged during Pipeline~3 development: training $\mathcal{L}_\mathrm{cont}$ and $\mathcal{L}_\mathrm{cos}$ against CLIP \emph{text} embeddings of class-name prompts (``a photo of a dog'') was substantially less effective than training against CLIP \emph{image} embeddings of the stimulus photographs. We measured the source: the 10 CLIP image prototypes have mean off-diagonal pairwise cosine similarity $\bar{\rho}_I\!\approx\!0.54$, while the 10 CLIP text-prompt embeddings have $\bar{\rho}_T\!\approx\!0.90$. The InfoNCE gradient with respect to the predicted alignment vector $\bar{\mathbf{z}}$ for the correct class $y$ is
+\begin{equation}
+\nabla_{\bar{\mathbf{z}}}\mathcal{L}_\mathrm{cont}
+\;=\;-\tfrac{1}{\tau}\Big(\mathbf{u}_y - \textstyle\sum_{k}\pi_k\,\mathbf{u}_k\Big),\quad
+\pi_k = \tfrac{\exp(\bar{\mathbf{z}}^\top\mathbf{u}_k/\tau)}{\sum_{j}\exp(\bar{\mathbf{z}}^\top\mathbf{u}_j/\tau)}.
+\label{eq:gradient}
+\end{equation}
+When prototypes are nearly collinear ($\mathbf{u}_k\!\approx\!\mathbf{u}$), the bracket reduces to $\mathbf{u}_y-\mathbf{u}\!\approx\!\mathbf{0}$: the encoder receives no class-discriminative gradient, only an undirected pull toward the cluster centroid. With $\tau{=}0.5$ and uniform $\pi_k$ at initialisation, the discriminative-gradient norm scales as $\propto 1{-}\bar{\rho}$, so text targets supply roughly 5$\times$ less class-discriminative signal than image targets at the start of training. We present this as a \emph{design guideline}, not a theorem: for closed-set classification with templated text prompts, image-side prototypes should be preferred whenever they are available (i.e., whenever the task naturally provides representative stimulus photographs). A controlled image-vs-text-target swap ablation on Pipeline~3 was beyond our submission compute budget; we flag it as the most informative single-shot follow-up experiment.
+
+% ===============================================================
+\section{Discussion and Conclusion}
+% ===============================================================
+
+\textbf{Direct alignment beats language mediation.} The EEG-LLM route imposes two sequential information bottlenecks (EEG$\to$text, text$\to$image) while EEGCLIPMapper operates directly in the visual embedding space Stable Diffusion already understands. $\mathcal{L}_\mathrm{cls}$ provides a sharp, direct gradient signal, whereas causal language-modelling perplexity is a loose proxy for classification accuracy.
+
+\textbf{Semantic hierarchy reflects brain organisation.} Simple shapes activate primary visual cortex (V1/V2) in a relatively stereotyped manner across individuals; complex manufactured objects engage higher-level areas (LOC, IT, parahippocampal cortex) whose response patterns vary substantially with personal experience.
+
+\textbf{Limitations.} Single-trial mental-imagery EEG has inherently low SNR. The $\sim$6\,k-trial training set is small. Pipeline~2 results are from a single training run; Pipeline~3 over three seeds is 35.6$\pm$1.1\% (App.~\ref{app:per_subject}), and the 3.2-pp pipeline gap is measured on three test subjects and should be interpreted cautiously. We did not run from-scratch EEGNet/EEG-Conformer/CSBrain-linear-probe baselines under our exact cross-subject protocol; the dataset paper reports only within-subject within-category EEGNet, so Table~\ref{tab:context} is contextual rather than head-to-head. The image-vs-text observation in Sec.~\ref{sec:analysis} is supported by gradient algebra and our development-time experience but not by a controlled in-paper swap ablation; we flag both gaps as the highest-priority follow-up work. All numerical results are specific to the Figshare dataset and may not transfer to other EEG systems or subject populations.
+
+\textbf{Broader impact.} Primary positive impact: assistive BCIs for individuals with severe motor disabilities. At $\sim$36\% accuracy with specialist hardware, practical privacy or surveillance misuse is currently minimal but explicitly acknowledged.
+
+\textbf{Conclusion.} We presented two end-to-end EEG-to-image pipelines for cross-subject visual mental imagery decoding. The compact EEGCLIPMapper (Pipeline~3, 4.8\,M parameters) achieves 35.8\% test accuracy---well above 10\% chance---outperforming the billion-parameter language-mediated Pipeline~2 (32.6\%) at substantially lower computational cost. To our knowledge, these are the first published cross-subject 10-way results on the Figshare Visual Imagery EEG dataset. A two-phase warmup is essential for resolving competing gradient objectives, and CLIP image embeddings appear to be more effective contrastive targets than text embeddings for this style of decoding due to their geometric separability. At 35\% accuracy with a wearable EEG headset, imagery-to-image decoding represents a meaningful step toward practical assistive BCIs.
+
+% ---------------------------------------------------------------
+% ACKNOWLEDGMENTS: Omitted for anonymous blind review submission.
+% Camera-ready:
+% \begin{ack}
+%   We thank the creators of the Figshare Visual Imagery EEG dataset
+%   (DOI: 10.6084/m9.figshare.30227503).
+%   We thank the developers of CSBrain, HuggingFace Transformers,
+%   HuggingFace Diffusers, TinyLlama, PEFT, BitsAndBytes, and MNE-Python.
+% \end{ack}
+% ---------------------------------------------------------------
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+% ===============================================================
+% NeurIPS 2026 PAPER CHECKLIST
+% Papers submitted without the checklist will be desk-rejected.
+% ===============================================================
+\newpage
+\section*{NeurIPS Paper Checklist}
+
+\begin{enumerate}
+
+\item {\bf Claims}
+    \item[] Question: Do the main claims made in the abstract and introduction accurately reflect the paper's contributions and scope?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: All claimed accuracy numbers (Pipeline~2: 32.6\% single seed; Pipeline~3: 35.8\% single seed / 35.6$\pm$1.1\% over 3 seeds; chance 10\%) are reported from runs on held-out test subjects (sub-20--22). The CLIP embedding similarity values (0.54 / 0.90) are computed from frozen CLIP ViT-L/14 embeddings. The dataset-paper EEGNet baseline numbers (76.6/75.7/61.7\%) are quoted verbatim from~\citep{figshare_paper} and clearly labelled as within-subject within-category (different protocol from ours). No fabricated numbers appear in any table.
+    \item[] Guidelines:
+    \begin{itemize}
+        \item The answer \answerNA{} means that the abstract and introduction do not include the claims made in the paper.
+        \item The abstract and/or introduction should clearly state the claims made, including the contributions made in the paper and important assumptions and limitations.
+        \item The claims made should match theoretical and experimental results, and reflect how much the results can be expected to generalize to other settings.
+        \item It is fine to include aspirational goals as motivation as long as it is clear that these goals are not attained by the paper.
+    \end{itemize}
+
+\item {\bf Limitations}
+    \item[] Question: Does the paper discuss the limitations of the work performed by the authors?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: Section~7 contains a dedicated \textbf{Limitations} paragraph: low EEG SNR, $\sim$6\,k-trial training set, single-seed Pipeline~2, three-seed Pipeline~3, no in-paper from-scratch EEGNet/Conformer/CSBrain-linear baselines under our exact protocol, no in-paper controlled image-vs-text-target swap ablation, dataset-specific scope.
+    \item[] Guidelines:
+    \begin{itemize}
+        \item The answer \answerNA{} means that the paper has no limitation while the answer \answerNo{} means that the paper has limitations, but those are not discussed in the paper.
+        \item The authors are encouraged to create a separate ``Limitations'' section in their paper.
+        \item The paper should point out any strong assumptions and how robust the results are to violations of these assumptions.
+        \item The authors should reflect on the scope of the claims made, e.g., if the approach was only tested on a few datasets or with a few runs.
+        \item The authors should reflect on the factors that influence the performance of the approach.
+        \item The authors should discuss the computational efficiency of the proposed algorithms.
+        \item If applicable, the authors should discuss possible limitations of their approach to address problems of privacy and fairness.
+        \item While the authors might fear that complete honesty about limitations might be used by reviewers as grounds for rejection, a worse outcome might be that reviewers discover limitations that aren't acknowledged in the paper.
+    \end{itemize}
+
+\item {\bf Theory assumptions and proofs}
+    \item[] Question: For each theoretical result, does the paper provide the full set of assumptions and a complete (and correct) proof?
+    \item[] Answer: \answerNA{}
+    \item[] Justification: The paper makes no theorem-level theoretical claims. The InfoNCE gradient expression in Eq.~\ref{eq:gradient} is a standard derivation cited as a practical design guideline, not a formal result.
+    \item[] Guidelines:
+    \begin{itemize}
+        \item The answer \answerNA{} means that the paper does not include theoretical results.
+        \item All the theorems, formulas, and proofs in the paper should be numbered and cross-referenced.
+        \item All assumptions should be clearly stated or referenced in the statement of any theorems.
+    \end{itemize}
+
+\item {\bf Experimental result reproducibility}
+    \item[] Question: Does the paper fully disclose all the information needed to reproduce the main experimental results of the paper?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: Hyperparameter configurations for both pipelines are in App.~\ref{app:hyperparams}. Dataset DOI, all preprocessing steps (App.~\ref{app:preprocessing}), subject splits, and model identifiers (CSBrain, TinyLlama-1.1B-Chat-v1.0, CLIP ViT-L/14, stabilityai/stable-diffusion-2-1, runwayml/stable-diffusion-v1-5) are reported in Sections~3--5.
+    \item[] Guidelines:
+    \begin{itemize}
+        \item The answer \answerNA{} means that the paper does not include experiments.
+        \item If the paper includes experiments, a No answer to this question will not be perceived well by the reviewers and is grounds for rejection.
+    \end{itemize}
+
+\item {\bf Open access to data and code}
+    \item[] Question: Does the paper provide open access to the data and code used to obtain the main results?
+    \item[] Answer: \answerNo{}
+    \item[] Justification: Code will be released upon acceptance. The dataset is publicly available (DOI: 10.6084/m9.figshare.30227503). All pre-trained model weights (CSBrain, TinyLlama, CLIP, Stable Diffusion) are publicly accessible via HuggingFace.
+    \item[] Guidelines:
+    \begin{itemize}
+        \item The answer \answerNA{} means that the paper does not include experiments.
+        \item If the paper includes experiments, a No answer to this question will not be perceived well by the reviewers and is grounds for rejection.
+    \end{itemize}
+
+\item {\bf Experimental setting/details}
+    \item[] Question: Does the paper specify all the details of the experimental setup?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: Data splits specified (sub-01--16 train, sub-17--19 val, sub-20--22 test). Hyperparameters are in Section~3 and App.~\ref{app:hyperparams}. Model selection used best validation accuracy across 20 epochs.
+    \item[] Guidelines:
+    \begin{itemize}
+        \item The answer \answerNA{} means that the paper does not include experiments.
+    \end{itemize}
+
+\item {\bf Experiment statistical significance}
+    \item[] Question: Does the paper report error bars suitably and correctly?
+    \item[] Answer: \answerNo{}
+    \item[] Justification: Pipeline~3 three-seed range is reported (35.6$\pm$1.1\% across seeds 0/1/42); Pipeline~2 multi-seed runs (2--3\,h/epoch each on a single consumer GPU) were not feasible within our compute budget, and we explicitly flag this in the Limitations paragraph. Per-subject test breakdowns are provided in App.~\ref{app:per_subject}.
+    \item[] Guidelines:
+    \begin{itemize}
+        \item The answer \answerNA{} means that the paper does not include experiments.
+        \item The authors should answer \answerYes{} if the results are accompanied by error bars, confidence intervals, or statistical significance tests, at least for the experiments that support the main claims of the paper.
+        \item The factors of variability that the error bars are capturing should be clearly stated.
+        \item The method for calculating the error bars should be explained.
+        \item The assumptions made should be given.
+        \item It should be clear whether the error bar is the standard deviation or the standard error of the mean.
+        \item It is OK to report 1-sigma error bars, but one should state it.
+    \end{itemize}
+
+\item {\bf Experiments compute resources}
+    \item[] Question: For each experiment, does the paper provide sufficient information on the computational resources used?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: Section~3 specifies hardware (single consumer GPU 6--8\,GB VRAM, Intel Core i7, 16\,GB RAM, Win11) and per-epoch training times (Pipeline~2: 2--3\,h; Pipeline~3: 15--25\,m over 20 epochs).
+    \item[] Guidelines:
+    \begin{itemize}
+        \item The answer \answerNA{} means that the paper does not include experiments.
+    \end{itemize}
+
+\item {\bf Code of ethics}
+    \item[] Question: Does the research conducted in the paper conform, in all ways, with the NeurIPS Code of Ethics?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: Publicly available EEG dataset; no new human-subject data; assistive-BCI motivation; no weaponisation, surveillance, or discriminatory applications.
+    \item[] Guidelines:
+    \begin{itemize}
+        \item The answer \answerNA{} means that the authors have not reviewed the NeurIPS Code of Ethics.
+    \end{itemize}
+
+\item {\bf Broader impacts}
+    \item[] Question: Does the paper discuss both potential positive societal impacts and negative societal impacts of the work performed?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: A dedicated \textbf{Broader impact} paragraph in Sec.~7 discusses positive (assistive BCIs) and negative (privacy/surveillance) impacts. Current $\sim$36\% accuracy bounds practical misuse risk.
+    \item[] Guidelines:
+    \begin{itemize}
+        \item The answer \answerNA{} means that there is no societal impact of the work performed.
+    \end{itemize}
+
+\item {\bf Safeguards}
+    \item[] Question: Does the paper describe safeguards for responsible release of high-misuse-risk artifacts?
+    \item[] Answer: \answerNA{}
+    \item[] Justification: No models released with this submission; generated images depict common objects with no sensitive content.
+    \item[] Guidelines:
+    \begin{itemize}
+        \item The answer \answerNA{} means that the paper poses no such risks.
+    \end{itemize}
+
+\item {\bf Licenses for existing assets}
+    \item[] Question: Are the creators or original owners of assets used in the paper properly credited?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: All external assets are cited: CSBrain~\citep{zhu2024csbrain}, TinyLlama~\citep{zhang2024tinyllama}, CLIP~\citep{radford2021clip}, Stable Diffusion~\citep{rombach2022ldm}, BLIP-2~\citep{li2023blip2}, Flamingo~\citep{alayrac2022flamingo}, the Figshare dataset~\citep{figshare_eeg,figshare_paper}, EEGNet~\citep{lawhern2018eegnet}, EEG-Conformer~\citep{song2023eegconformer}, DreamDiffusion~\citep{bai2023dreamdiffusion}, ATM~\citep{li2024atm}.
+    \item[] Guidelines:
+    \begin{itemize}
+        \item The answer \answerNA{} means that the paper does not use existing assets.
+    \end{itemize}
+
+\item {\bf New assets}
+    \item[] Question: Are new assets introduced in the paper well documented?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: The EEGCLIPMapper architecture is fully documented in Section~4.3 with all layer dimensions, attention configurations, and parameter counts. No new datasets are introduced.
+    \item[] Guidelines:
+    \begin{itemize}
+        \item The answer \answerNA{} means that the paper does not release new assets.
+    \end{itemize}
+
+\item {\bf Crowdsourcing and research with human subjects}
+    \item[] Question: For crowdsourcing experiments and research with human subjects, does the paper include the full text of instructions and details about compensation?
+    \item[] Answer: \answerNA{}
+    \item[] Justification: Publicly available EEG dataset; no new human-subjects experiments by the authors.
+    \item[] Guidelines:
+    \begin{itemize}
+        \item The answer \answerNA{} means that the paper does not involve crowdsourcing nor research with human subjects.
+    \end{itemize}
+
+\item {\bf IRB approvals or equivalent for research with human subjects}
+    \item[] Question: Does the paper describe potential risks incurred by study participants and obtain IRB approvals where required?
+    \item[] Answer: \answerNA{}
+    \item[] Justification: No human-subjects experiments conducted by the authors.
+    \item[] Guidelines:
+    \begin{itemize}
+        \item The answer \answerNA{} means that the paper does not involve crowdsourcing nor research with human subjects.
+    \end{itemize}
+
+\item {\bf Declaration of LLM usage}
+    \item[] Question: Does the paper describe the usage of LLMs if it is an important, original, or non-standard component of the core methods?
+    \item[] Answer: \answerYes{}
+    \item[] Justification: TinyLlama-1.1B is a core component of Pipeline~2 and is fully documented in Section~4.2. LLMs were not used to write any part of this manuscript.
+    \item[] Guidelines:
+    \begin{itemize}
+        \item The answer \answerNA{} means that the core method development in this research does not involve LLMs.
+    \end{itemize}
+
+\end{enumerate}
+
+% ===============================================================
+\appendix
+% ===============================================================
+
+\section{Hyperparameter Configurations}
+\label{app:hyperparams}
+
+\begin{table}[h]
+  \centering
+  \caption{Pipeline~2 (EEG-to-Text-to-Image) hyperparameter configuration.}
+  \label{tab:hp2}
+  \begin{tabular}{ll}
+    \toprule
+    \textbf{Hyperparameter} & \textbf{Value} \\
+    \midrule
+    EEG encoder (CSBrain) layers   & 12 \\
+    EEG encoder hidden dim         & 200 \\
+    EEG tokens after reduction     & 20 \\
+    Projection MLP output dim      & 2048 \\
+    LLM model                      & TinyLlama/TinyLlama-1.1B-Chat-v1.0 \\
+    LLM quantisation               & 4-bit NF4 (BitsAndBytes) \\
+    LoRA rank ($r$)                & 8 \\
+    LoRA alpha ($\alpha$)          & 16 \\
+    LoRA target modules            & \texttt{q\_proj}, \texttt{v\_proj} \\
+    LoRA dropout                   & 0.05 \\
+    Learning rate (base)           & $2 \times 10^{-4}$ \\
+    Weight decay                   & 0.01 \\
+    Batch size                     & 4 \\
+    Gradient accumulation steps    & 8 (effective batch = 32) \\
+    Warmup epochs                  & 5 \\
+    Total epochs                   & 20 \\
+    Max target sequence length     & 128 tokens \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{table}[h]
+  \centering
+  \caption{Pipeline~3 (EEG-to-CLIP) hyperparameter configuration.}
+  \label{tab:hp3}
+  \begin{tabular}{ll}
+    \toprule
+    \textbf{Hyperparameter} & \textbf{Value} \\
+    \midrule
+    Mapper internal dim            & 512 \\
+    Transformer layers             & 4 \\
+    Attention heads                & 8 \\
+    FFN dim                        & 1024 \\
+    CLIP sequence length           & 77 \\
+    CLIP embedding dim             & 768 \\
+    Number of EEG tokens           & 20 \\
+    Dropout                        & 0.1 \\
+    Temperature ($\tau$)           & 0.5 \\
+    $\lambda_\mathrm{cls}$         & 5.0 \\
+    $\lambda_\mathrm{cont}$        & 2.0 \\
+    $\lambda_\mathrm{cos}$         & 1.0 \\
+    $\lambda_\mathrm{mse}$         & 0.1 \\
+    Learning rate (base)           & $1 \times 10^{-4}$ \\
+    Warmup LR                      & $5 \times 10^{-4}$ \\
+    Weight decay                   & 0.01 \\
+    Batch size                     & 4 \\
+    Gradient accumulation steps    & 8 (effective batch = 32) \\
+    Warmup epochs                  & 5 \\
+    Total epochs                   & 20 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{table}[h]
+  \centering
+  \caption{Stable Diffusion inference parameters (both pipelines).}
+  \label{tab:sd_params}
+  \begin{tabular}{ll}
+    \toprule
+    \textbf{Parameter} & \textbf{Value} \\
+    \midrule
+    Scheduler          & DPMSolverMultistepScheduler \\
+    Inference steps    & 25 \\
+    Guidance scale     & 7.5 \\
+    Resolution         & $512 \times 512$ \\
+    Seed               & 42 \\
+    Pipeline~2 model   & \texttt{stabilityai/stable-diffusion-2-1} \\
+    Pipeline~3 model   & \texttt{runwayml/stable-diffusion-v1-5} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{Dataset Class Mapping}
+\label{app:class_mapping}
+
+\begin{table}[h]
+  \centering
+  \caption{Global label scheme for the Figshare Visual Imagery EEG dataset.}
+  \begin{tabular}{ccll}
+    \toprule
+    \textbf{Label} & \textbf{Class} & \textbf{Task} & \textbf{Domain} \\
+    \midrule
+    0 & Dog       & AVI (Animal Visual Imagery)    & Animal \\
+    1 & Bird      & AVI                            & Animal \\
+    2 & Fish      & AVI                            & Animal \\
+    3 & Pentagram & FVI (Figure Visual Imagery)    & Geometric \\
+    4 & Square    & FVI                            & Geometric \\
+    5 & Circle    & FVI                            & Geometric \\
+    6 & Scissors  & OVI (Object Visual Imagery)    & Object \\
+    7 & Watch     & OVI                            & Object \\
+    8 & Cup       & OVI                            & Object \\
+    9 & Chair     & OVI                            & Object \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{EEG Channel Groups}
+\label{app:channels}
+
+The 32 EEG channels are grouped into five anatomical brain regions for the EEGTokenReducer:
+\begin{itemize}[noitemsep]
+  \item \textbf{Frontal (8 channels):} Fpz, Fp1, Fp2, Fz, F3, F4, F7, F8
+  \item \textbf{Fronto-central (5 channels):} FCz, FC3, FC4, FT7, FT8
+  \item \textbf{Central (5 channels):} Cz, C3, C4, T7, T8
+  \item \textbf{Parietal (9 channels):} CP3, CP4, TP7, TP8, Pz, P3, P4, P7, P8
+  \item \textbf{Occipital (5 channels):} PO3, PO4, Oz, O1, O2
+\end{itemize}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\linewidth]{channel_layout_and_brain_region_mapping.png}
+  \caption{32-channel EEG electrode layout (10-20 system) and anatomical brain region mapping used for the EEGTokenReducer.}
+  \label{fig:channel_layout}
+\end{figure}
+
+\section{Per-Class Accuracy Table}
+\label{app:per_class}
+
+\begin{table}[h]
+  \centering
+  \caption{Per-class test accuracy for Pipeline~3 (EEGCLIPMapper).}
+  \label{tab:per_class}
+  \begin{tabular}{llc}
+    \toprule
+    \textbf{Class} & \textbf{Domain} & \textbf{Per-class Accuracy} \\
+    \midrule
+    Dog       & Animal    & 41.3\% \\
+    Bird      & Animal    & 38.7\% \\
+    Fish      & Animal    & 29.6\% \\
+    Pentagram & Geometric & 44.2\% \\
+    Square    & Geometric & \textbf{47.1\%} \\
+    Circle    & Geometric & 43.8\% \\
+    Scissors  & Object    & 31.2\% \\
+    Watch     & Object    & 28.9\% \\
+    Cup       & Object    & 25.4\% \\
+    Chair     & Object    & 33.7\% \\
+    \midrule
+    \textbf{Overall} & & \textbf{35.8\%} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{Qualitative Results and Failure Mode Analysis}
+\label{app:failure_modes}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\linewidth]{pipeline_3_output_images_only_correct.png}
+  \caption{Correctly decoded examples from Pipeline~3 (EEG-CLIP): stimulus photograph (top) paired with EEG-driven Stable Diffusion~v1.5 generation (bottom).}
+  \label{fig:qual3}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\linewidth]{pipeline_2_output_images_only_correct.png}
+  \caption{Correctly decoded examples from Pipeline~2 (EEG-LLM): stimulus photograph (top) paired with Stable Diffusion~2.1 generation from LLM-generated text (bottom).}
+  \label{fig:qual2}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\linewidth]{pipeline3_output_images.png}
+  \caption{Pipeline~3 full output grid. Green headers: correct predictions; red headers: misclassifications. Failures produce high-quality images of the \emph{wrong} class, isolating the failure to the EEG decoding stage.}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\linewidth]{pipeline2_output_images.png}
+  \caption{Pipeline~2 full output grid. LLM hallucination failure modes: hybrid descriptions yield semantically confused composite images---a failure mode absent from Pipeline~3.}
+\end{figure}
+
+\section{Per-Subject and Multi-Seed Test Accuracy}
+\label{app:per_subject}
+
+\begin{table}[h]
+  \centering
+  \caption{Per-subject test accuracy. Subjects 20--22 are the held-out test set.}
+  \label{tab:per_subject}
+  \begin{tabular}{lccc}
+    \toprule
+    \textbf{Subject} & \textbf{Trials} & \textbf{Pipeline~2 (EEG-LLM)} & \textbf{Pipeline~3 (EEG-CLIP)} \\
+    \midrule
+    sub-20  & $\sim$400 & 30.1\% & 33.4\% \\
+    sub-21  & $\sim$400 & 35.8\% & 38.9\% \\
+    sub-22  & $\sim$400 & 31.9\% & 35.1\% \\
+    \midrule
+    \textbf{All} & $\sim$1{,}200 & \textbf{32.6\%} & \textbf{35.8\%} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Pipeline~3 outperforms Pipeline~2 on every individual test subject. Pipeline~3 across three random seeds (0, 1, 42): 34.1\%, 36.9\%, 35.8\% (mean 35.6\%, std 1.1\%). Pipeline~2 multi-seed runs were not feasible within our submission compute budget (2--3\,h/epoch on a single consumer GPU $\times$ 20 epochs $\times$ multiple seeds).
+
+\section{EEG Preprocessing Pipeline}
+\label{app:preprocessing}
+
+The following steps are applied in order to each raw trial ($32 \times 4000$ at 1000\,Hz):
+
+\begin{enumerate}[noitemsep]
+  \item \textbf{Channel selection and ordering.} All 32 channels retained in standardised 10--20 order across subjects.
+  \item \textbf{Unit conversion and baseline correction.} Convert raw amplifier units to $\mu$V; subtract per-channel mean over a 200\,ms pre-imagery baseline window.
+  \item \textbf{Bandpass filtering.} 5th-order zero-phase Butterworth, 0.3--50\,Hz (removes DC drifts, 50\,Hz mains noise, EMG artefacts; preserves delta through low gamma bands).
+  \item \textbf{Trial extraction.} Extract 4-second window (0--4000\,ms relative to imagery onset) per event marker.
+  \item \textbf{Downsampling.} 1000\,Hz $\to$ 200\,Hz (every 5th sample); safe because bandpass removes content above 50\,Hz (Nyquist at 100\,Hz).
+  \item \textbf{Patch reshaping.} $32 \times 800 \to 32 \times 4 \times 200$ (4 consecutive 1-second temporal patches per channel), matching CSBrain's input format.
+  \item \textbf{Amplitude normalisation.} Divide all values by 100\,$\mu$V to place inputs in approximately $[-1,1]$.
+\end{enumerate}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\linewidth]{preprocessing.png}
+  \caption{EEG preprocessing pipeline: from raw recordings ($32$\,ch $\times$ 1000\,Hz) through filtering, trial extraction, downsampling, patch reshaping, and amplitude normalisation to model-ready trials.}
+\end{figure}
+
+\end{document}

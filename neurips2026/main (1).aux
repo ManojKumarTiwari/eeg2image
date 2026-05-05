@@ -1,0 +1,171 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{kosslyn2001neural}
+\citation{birbaumer2000bci}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}The Problem: Reading Visual Thought}{1}{subsection.1.1}\protected@file@percent }
+\citation{ozcelik2023brain,scotti2024mindeye}
+\citation{tirupattur2018thoughtviz}
+\citation{kavasidis2017brain2image}
+\citation{rombach2022ldm}
+\citation{radford2021clip}
+\citation{bai2023brain}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Why EEG?}{2}{subsection.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}The Core Challenge: Mental Imagery Under Cross-Subject Conditions}{2}{subsection.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4}What Has Been Tried Before}{2}{subsection.1.4}\protected@file@percent }
+\citation{ozcelik2023brain}
+\citation{scotti2024mindeye}
+\citation{kostas2022bendr,jiang2024labram,zhu2024csbrain}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.5}Our Approach and Findings}{3}{subsection.1.5}\protected@file@percent }
+\citation{blankertz2007bci}
+\citation{lawhern2018eegnet}
+\citation{song2023eegconformer}
+\citation{kostas2022bendr}
+\citation{jiang2024labram}
+\citation{zhu2024csbrain}
+\citation{haxby2001distributed,kay2008identifying}
+\citation{shen2019end}
+\citation{tirupattur2018thoughtviz}
+\citation{kavasidis2017brain2image}
+\citation{rombach2022ldm}
+\citation{ozcelik2023brain}
+\citation{scotti2024mindeye}
+\citation{bai2023brain}
+\citation{radford2021clip}
+\citation{li2023blip2}
+\citation{alayrac2022flamingo}
+\citation{figshare_eeg}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{4}{section.2}\protected@file@percent }
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Dataset and Data Preparation}{5}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Study Design and Data Collection}{5}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Featurisation: Which Part of the EEG Signal We Use}{5}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Preprocessing Pipeline}{5}{subsection.3.3}\protected@file@percent }
+\citation{zhu2024csbrain}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Dataset Split}{6}{subsection.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Method}{6}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Problem Formulation}{6}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Shared Frontend: CSBrain Encoder and EEGTokenReducer}{6}{subsection.4.2}\protected@file@percent }
+\citation{zhang2024tinyllama}
+\citation{hu2022lora}
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces System architecture. Both pipelines share a frozen CSBrain encoder and EEGTokenReducer frontend (grey). Pipeline~2 (orange) routes through TinyLlama-1.1B with LoRA to produce a class-descriptive text that drives Stable Diffusion~2.1. Pipeline~3 (green) maps EEG tokens directly to CLIP space via EEGCLIPMapper, conditioning Stable Diffusion~v1.5.}}{7}{figure.caption.2}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:architecture}{{1}{7}{System architecture. Both pipelines share a frozen CSBrain encoder and EEGTokenReducer frontend (grey). Pipeline~2 (orange) routes through TinyLlama-1.1B with LoRA to produce a class-descriptive text that drives Stable Diffusion~2.1. Pipeline~3 (green) maps EEG tokens directly to CLIP space via EEGCLIPMapper, conditioning Stable Diffusion~v1.5}{figure.caption.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Pipeline 2: Language-Mediated Generation (EEG-LLM)}{7}{subsection.4.3}\protected@file@percent }
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Pipeline 3: Direct CLIP Alignment via EEGCLIPMapper (EEG-CLIP)}{8}{subsection.4.4}\protected@file@percent }
+\def\@LN@column{1}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Two-Phase Training Strategy}{10}{subsection.4.5}\protected@file@percent }
+\newlabel{sec:training}{{4.5}{10}{Two-Phase Training Strategy}{subsection.4.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Experiments}{10}{section.5}\protected@file@percent }
+\newlabel{sec:experiments}{{5}{10}{Experiments}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Research Questions}{10}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Experimental Setup}{10}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}EEG Decoding Accuracy}{10}{subsection.5.3}\protected@file@percent }
+\citation{kavasidis2017brain2image}
+\citation{tirupattur2018thoughtviz}
+\citation{bai2023brain}
+\citation{li2024atm}
+\def\@LN@column{1}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Test set EEG decoding accuracy (10 classes, chance = 10\%).}}{11}{table.caption.3}\protected@file@percent }
+\newlabel{tab:accuracy}{{1}{11}{Test set EEG decoding accuracy (10 classes, chance = 10\%)}{table.caption.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Contextual Comparison with Prior EEG Decoding Methods}{11}{subsection.5.4}\protected@file@percent }
+\newlabel{sec:prior_comparison}{{5.4}{11}{Contextual Comparison with Prior EEG Decoding Methods}{subsection.5.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Contextual comparison with prior EEG visual decoding methods. \textdagger : evaluated within-subject (trained and tested on same individuals); \textdaggerdbl : evaluated cross-subject (generalises to unseen individuals). Dashes indicate the metric was not reported or is not applicable. Direct numerical comparison is not meaningful due to different datasets, protocols, and task types, but the table situates our results within the broader literature.}}{11}{table.caption.4}\protected@file@percent }
+\newlabel{tab:sota}{{2}{11}{Contextual comparison with prior EEG visual decoding methods. \textdagger : evaluated within-subject (trained and tested on same individuals); \textdaggerdbl : evaluated cross-subject (generalises to unseen individuals). Dashes indicate the metric was not reported or is not applicable. Direct numerical comparison is not meaningful due to different datasets, protocols, and task types, but the table situates our results within the broader literature}{table.caption.4}{}}
+\citation{binkowski2018demystifying}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Per-Class Analysis}{12}{subsection.5.5}\protected@file@percent }
+\newlabel{sec:per_class}{{5.5}{12}{Per-Class Analysis}{subsection.5.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Per-class test accuracy for Pipeline~3 (EEGCLIPMapper). Geometric figures consistently outperform animals and everyday objects, reflecting the greater cross-subject consistency of basic visual shapes in early visual cortex.}}{12}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:per_class}{{2}{12}{Per-class test accuracy for Pipeline~3 (EEGCLIPMapper). Geometric figures consistently outperform animals and everyday objects, reflecting the greater cross-subject consistency of basic visual shapes in early visual cortex}{figure.caption.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6}Image Quality}{12}{subsection.5.6}\protected@file@percent }
+\def\@LN@column{1}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Image quality metrics (FID lower is better; SSIM higher is better).}}{13}{table.caption.6}\protected@file@percent }
+\newlabel{tab:image_quality}{{3}{13}{Image quality metrics (FID lower is better; SSIM higher is better)}{table.caption.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.7}Qualitative Analysis}{13}{subsection.5.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.8}Analysis: Why CLIP Image Embeddings Outperform Text Embeddings}{13}{subsection.5.8}\protected@file@percent }
+\newlabel{sec:analysis}{{5.8}{13}{Analysis: Why CLIP Image Embeddings Outperform Text Embeddings}{subsection.5.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Correctly decoded examples from Pipeline~3 (EEG-CLIP): stimulus photograph (top) paired with the EEG-driven Stable Diffusion~v1.5 generation (bottom). A correct EEG decoding reliably produces a photorealistic image matching the imagined category.}}{14}{figure.caption.7}\protected@file@percent }
+\newlabel{fig:qual3}{{3}{14}{Correctly decoded examples from Pipeline~3 (EEG-CLIP): stimulus photograph (top) paired with the EEG-driven Stable Diffusion~v1.5 generation (bottom). A correct EEG decoding reliably produces a photorealistic image matching the imagined category}{figure.caption.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Correctly decoded examples from Pipeline~2 (EEG-LLM): stimulus photograph (top) paired with the Stable Diffusion~2.1 generation from LLM-generated text (bottom). When TinyLlama generates the correct class keyword, image synthesis produces a semantically accurate photorealistic output.}}{15}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:qual2}{{4}{15}{Correctly decoded examples from Pipeline~2 (EEG-LLM): stimulus photograph (top) paired with the Stable Diffusion~2.1 generation from LLM-generated text (bottom). When TinyLlama generates the correct class keyword, image synthesis produces a semantically accurate photorealistic output}{figure.caption.8}{}}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Discussion}{16}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{16}{section.7}\protected@file@percent }
+\bibstyle{plainnat}
+\bibdata{references}
+\bibcite{alayrac2022flamingo}{{1}{2022}{{Alayrac et~al.}}{{Alayrac, Donahue, Luc, Miech, Barr, Hasson, Lespiau, Mensch, Millican, Reynolds, Ring, Runyshev, Borgeaud, Bousquet, Cabi, Chen, Fidjeland, Brock, de~Freitas, et~al.}}}
+\bibcite{bai2023brain}{{2}{2023}{{Bai et~al.}}{{Bai, Wang, Tan, Shao, and Wu}}}
+\bibcite{blankertz2007bci}{{3}{2007}{{Blankertz et~al.}}{{Blankertz, M{\"u}ller, Krusienski, Schalk, Wolpaw, Schl{\"o}gl, Pfurtscheller, d.~R.~Mill{\'a}n, Sch{\"o}gl, and Birbaumer}}}
+\bibcite{figshare_eeg}{{4}{2024}{{Figshare}}{{}}}
+\bibcite{haxby2001distributed}{{5}{2001}{{Haxby et~al.}}{{Haxby, Gobbini, Furey, Ishai, Schouten, and Pietrini}}}
+\bibcite{jiang2024labram}{{6}{2024}{{Jiang et~al.}}{{Jiang, Zhao, and Lu}}}
+\bibcite{kavasidis2017brain2image}{{7}{2017}{{Kavasidis et~al.}}{{Kavasidis, Palazzo, Spampinato, Giordano, and Shah}}}
+\bibcite{kay2008identifying}{{8}{2008}{{Kay et~al.}}{{Kay, Naselaris, Prenger, and Gallant}}}
+\bibcite{kostas2022bendr}{{9}{2022}{{Kostas et~al.}}{{Kostas, Aroca-Ouellette, and Bhatt}}}
+\bibcite{lawhern2018eegnet}{{10}{2018}{{Lawhern et~al.}}{{Lawhern, Solon, Waytowich, Gordon, Hung, and Lance}}}
+\bibcite{li2023blip2}{{11}{2023}{{Li et~al.}}{{Li, Li, Savarese, and Hoi}}}
+\bibcite{ozcelik2023brain}{{12}{2023}{{Ozcelik and VanRullen}}{{}}}
+\bibcite{radford2021clip}{{13}{2021}{{Radford et~al.}}{{Radford, Kim, Hallacy, Ramesh, Goh, Agarwal, Sastry, Askell, Mishkin, Clark, Krueger, and Sutskever}}}
+\bibcite{rombach2022ldm}{{14}{2022}{{Rombach et~al.}}{{Rombach, Blattmann, Lorenz, Esser, and Ommer}}}
+\bibcite{scotti2024mindeye}{{15}{2023}{{Scotti et~al.}}{{Scotti, Banerjee, Goode, Shabalin, Nguyen, Cohen, Dempster, Verlinde, et~al.}}}
+\bibcite{shen2019end}{{16}{2019}{{Shen et~al.}}{{Shen, Dwivedi, Majima, Horikawa, and Kamitani}}}
+\def\@LN@column{1}
+\bibcite{song2023eegconformer}{{17}{2023}{{Song et~al.}}{{Song, Zheng, Liu, and Gao}}}
+\bibcite{tirupattur2018thoughtviz}{{18}{2018}{{Tirupattur et~al.}}{{Tirupattur, Rawat, Spampinato, and Shah}}}
+\bibcite{zhu2024csbrain}{{19}{2024}{{Zhu et~al.}}{{Zhu, Guo, et~al.}}}
+\def\@LN@column{1}
+\def\@LN@column{1}
+\def\@LN@column{1}
+\citation{zhu2024csbrain}
+\citation{radford2021clip}
+\citation{rombach2022ldm}
+\citation{li2023blip2}
+\citation{alayrac2022flamingo}
+\citation{figshare_eeg}
+\def\@LN@column{1}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {section}{\numberline {A}Hyperparameter Configurations}{22}{appendix.A}\protected@file@percent }
+\newlabel{app:hyperparams}{{A}{22}{Hyperparameter Configurations}{appendix.A}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Pipeline~2 (EEG-to-Text-to-Image) hyperparameter configuration.}}{22}{table.caption.11}\protected@file@percent }
+\newlabel{tab:hp2}{{4}{22}{Pipeline~2 (EEG-to-Text-to-Image) hyperparameter configuration}{table.caption.11}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {B}Dataset Class Mapping}{22}{appendix.B}\protected@file@percent }
+\newlabel{app:class_mapping}{{B}{22}{Dataset Class Mapping}{appendix.B}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {C}EEG Channel Groups}{22}{appendix.C}\protected@file@percent }
+\newlabel{app:channels}{{C}{22}{EEG Channel Groups}{appendix.C}{}}
+\def\@LN@column{1}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Pipeline~3 (EEG-to-CLIP) hyperparameter configuration.}}{23}{table.caption.12}\protected@file@percent }
+\newlabel{tab:hp3}{{5}{23}{Pipeline~3 (EEG-to-CLIP) hyperparameter configuration}{table.caption.12}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Stable Diffusion inference parameters (both pipelines).}}{23}{table.caption.13}\protected@file@percent }
+\newlabel{tab:sd_params}{{6}{23}{Stable Diffusion inference parameters (both pipelines)}{table.caption.13}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces 32-channel EEG electrode layout (10-20 system) and anatomical brain region mapping used for the EEGTokenReducer. Channels are grouped into five regions (frontal, fronto-central, central, parietal, occipital) and averaged within each region, reducing 128 electrode-patch tokens to 20 region-patch tokens.}}{23}{figure.caption.15}\protected@file@percent }
+\newlabel{fig:channel_layout}{{5}{23}{32-channel EEG electrode layout (10-20 system) and anatomical brain region mapping used for the EEGTokenReducer. Channels are grouped into five regions (frontal, fronto-central, central, parietal, occipital) and averaged within each region, reducing 128 electrode-patch tokens to 20 region-patch tokens}{figure.caption.15}{}}
+\def\@LN@column{1}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Global label scheme for the Figshare Visual Imagery EEG dataset.}}{24}{table.caption.14}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Per-class test accuracy for Pipeline~3 (EEGCLIPMapper).}}{24}{table.caption.16}\protected@file@percent }
+\newlabel{tab:per_class}{{8}{24}{Per-class test accuracy for Pipeline~3 (EEGCLIPMapper)}{table.caption.16}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {D}Per-Class Accuracy Table}{24}{appendix.D}\protected@file@percent }
+\newlabel{app:per_class}{{D}{24}{Per-Class Accuracy Table}{appendix.D}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {E}Qualitative Results and Failure Mode Analysis}{24}{appendix.E}\protected@file@percent }
+\newlabel{app:failure_modes}{{E}{24}{Qualitative Results and Failure Mode Analysis}{appendix.E}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {F}Per-Subject Test Accuracy}{24}{appendix.F}\protected@file@percent }
+\newlabel{app:per_subject}{{F}{24}{Per-Subject Test Accuracy}{appendix.F}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Per-subject test accuracy for both pipelines. Subjects 20--22 constitute the held-out test set. ``All'' is the aggregate over all test trials.}}{24}{table.caption.21}\protected@file@percent }
+\newlabel{tab:per_subject}{{9}{24}{Per-subject test accuracy for both pipelines. Subjects 20--22 constitute the held-out test set. ``All'' is the aggregate over all test trials}{table.caption.21}{}}
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Pipeline~3 (EEG-CLIP) generated images compared with stimulus photographs. Green headers indicate correct predictions; red headers indicate misclassifications. Failures produce high-quality images of the \emph  {wrong} class, cleanly isolating the failure to the EEG decoding stage rather than image generation.}}{25}{figure.caption.18}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {G}EEG Preprocessing Pipeline}{25}{appendix.G}\protected@file@percent }
+\newlabel{app:preprocessing}{{G}{25}{EEG Preprocessing Pipeline}{appendix.G}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Pipeline~2 (EEG-LLM) full output grid including both correct and incorrect predictions. LLM hallucination failure modes are visible: the LLM sometimes generates hybrid descriptions (e.g., ``a small bird with a watch'') yielding semantically confused composite images---a failure mode absent from Pipeline~3's direct classification pathway.}}{26}{figure.caption.20}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces EEG preprocessing pipeline: from raw recordings (32\,ch $\times $ 1000\,Hz) through channel selection, bandpass filtering, trial extraction, downsampling, patch reshaping, and amplitude normalisation to LMDB-stored trials ready for model input.}}{26}{figure.caption.22}\protected@file@percent }
+\gdef \@abspage@last{26}

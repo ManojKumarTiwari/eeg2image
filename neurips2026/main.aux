@@ -1,0 +1,118 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\citation{blankertz2007bci}
+\citation{lawhern2018eegnet}
+\citation{song2023eegconformer}
+\citation{kostas2022bendr}
+\citation{jiang2024labram}
+\citation{zhu2024csbrain}
+\citation{tirupattur2018thoughtviz}
+\citation{kavasidis2017brain2image}
+\citation{rombach2022ldm}
+\citation{ozcelik2023brain}
+\citation{scotti2024mindeye}
+\citation{bai2023brain}
+\citation{radford2021clip}
+\citation{li2023blip2}
+\citation{alayrac2022flamingo}
+\citation{figshare_eeg}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{2}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Dataset and Setup}{2}{section.3}\protected@file@percent }
+\newlabel{sec:dataset}{{3}{2}{Dataset and Setup}{section.3}{}}
+\citation{zhu2024csbrain}
+\citation{zhang2024tinyllama}
+\citation{hu2022lora}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Method}{3}{section.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Both pipelines share a frozen CSBrain + EEGTokenReducer frontend (grey). Pipeline~2 (orange) projects EEG into TinyLlama-1.1B (4-bit NF4 + LoRA $r{=}8$), generates a class-descriptive prompt, and feeds Stable Diffusion~2.1. Pipeline~3 (green) maps EEG tokens directly to CLIP image space via EEGCLIPMapper and conditions Stable Diffusion~v1.5.}}{3}{figure.caption.2}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:architecture}{{1}{3}{Both pipelines share a frozen CSBrain + EEGTokenReducer frontend (grey). Pipeline~2 (orange) projects EEG into TinyLlama-1.1B (4-bit NF4 + LoRA $r{=}8$), generates a class-descriptive prompt, and feeds Stable Diffusion~2.1. Pipeline~3 (green) maps EEG tokens directly to CLIP image space via EEGCLIPMapper and conditions Stable Diffusion~v1.5}{figure.caption.2}{}}
+\newlabel{sec:training}{{4}{3}{Two-phase schedule}{section*.3}{}}
+\@writefile{toc}{\contentsline {paragraph}{Two-phase schedule.}{3}{section*.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Why Text is a Poor Alignment Space for Noisy Modalities}{3}{section.5}\protected@file@percent }
+\newlabel{sec:theory}{{5}{3}{Why Text is a Poor Alignment Space for Noisy Modalities}{section.5}{}}
+\citation{lawhern2018eegnet}
+\citation{song2023eegconformer}
+\citation{bai2023brain}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Experiments}{4}{section.6}\protected@file@percent }
+\newlabel{sec:experiments}{{6}{4}{Experiments}{section.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Headline Results and Baselines}{4}{subsection.6.1}\protected@file@percent }
+\newlabel{sec:baselines}{{6.1}{4}{Headline Results and Baselines}{subsection.6.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Test accuracy on the 10-class cross-subject benchmark (chance 10\%). Mean$\pm $std over 3 seeds; $p$ is paired $t$-test vs.\ Pipeline~3. \texttt  {[TODO]} cells require running the corresponding configuration; values for Pipeline~2/Pipeline~3 main rows are single-seed runs to be updated to multi-seed for camera-ready.}}{4}{table.caption.4}\protected@file@percent }
+\newlabel{tab:accuracy}{{1}{4}{Test accuracy on the 10-class cross-subject benchmark (chance 10\%). Mean$\pm $std over 3 seeds; $p$ is paired $t$-test vs.\ Pipeline~3. \texttt {[TODO]} cells require running the corresponding configuration; values for Pipeline~2/Pipeline~3 main rows are single-seed runs to be updated to multi-seed for camera-ready}{table.caption.4}{}}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Ablations: Isolating the Cause of the Gap}{5}{subsection.6.2}\protected@file@percent }
+\newlabel{sec:ablations}{{6.2}{5}{Ablations: Isolating the Cause of the Gap}{subsection.6.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Ablations on Pipeline~3 (single-factor swaps; multi-seed values \texttt  {[TODO]}). Predicted ordering of $\Delta $: target-geometry $\gg $ loss-term $\gg $ architectural.}}{5}{table.caption.5}\protected@file@percent }
+\newlabel{tab:ablations}{{2}{5}{Ablations on Pipeline~3 (single-factor swaps; multi-seed values \texttt {[TODO]}). Predicted ordering of $\Delta $: target-geometry $\gg $ loss-term $\gg $ architectural}{table.caption.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Per-Class, Image Quality, and Failure Modes}{5}{subsection.6.3}\protected@file@percent }
+\newlabel{sec:per_class}{{6.3}{5}{Per-Class, Image Quality, and Failure Modes}{subsection.6.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Per-class Pipeline~3 accuracy. Geometric figures $>$ animals $>$ everyday objects.}}{5}{figure.caption.6}\protected@file@percent }
+\newlabel{fig:per_class}{{2}{5}{Per-class Pipeline~3 accuracy. Geometric figures $>$ animals $>$ everyday objects}{figure.caption.6}{}}
+\bibstyle{plainnat}
+\bibdata{references}
+\bibcite{alayrac2022flamingo}{{1}{2022}{{Alayrac et~al.}}{{Alayrac, Donahue, Luc, Miech, Barr, Hasson, Lespiau, Mensch, Millican, Reynolds, Ring, Runyshev, Borgeaud, Bousquet, Cabi, Chen, Fidjeland, Brock, de~Freitas, et~al.}}}
+\bibcite{bai2023brain}{{2}{2023}{{Bai et~al.}}{{Bai, Wang, Tan, Shao, and Wu}}}
+\bibcite{blankertz2007bci}{{3}{2007}{{Blankertz et~al.}}{{Blankertz, M{\"u}ller, Krusienski, Schalk, Wolpaw, Schl{\"o}gl, Pfurtscheller, d.~R.~Mill{\'a}n, Sch{\"o}gl, and Birbaumer}}}
+\bibcite{figshare_eeg}{{4}{2024}{{Figshare}}{{}}}
+\bibcite{jiang2024labram}{{5}{2024}{{Jiang et~al.}}{{Jiang, Zhao, and Lu}}}
+\bibcite{kavasidis2017brain2image}{{6}{2017}{{Kavasidis et~al.}}{{Kavasidis, Palazzo, Spampinato, Giordano, and Shah}}}
+\bibcite{kostas2022bendr}{{7}{2022}{{Kostas et~al.}}{{Kostas, Aroca-Ouellette, and Bhatt}}}
+\bibcite{lawhern2018eegnet}{{8}{2018}{{Lawhern et~al.}}{{Lawhern, Solon, Waytowich, Gordon, Hung, and Lance}}}
+\bibcite{li2023blip2}{{9}{2023}{{Li et~al.}}{{Li, Li, Savarese, and Hoi}}}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Discussion and Conclusion}{6}{section.7}\protected@file@percent }
+\bibcite{ozcelik2023brain}{{10}{2023}{{Ozcelik and VanRullen}}{{}}}
+\bibcite{radford2021clip}{{11}{2021}{{Radford et~al.}}{{Radford, Kim, Hallacy, Ramesh, Goh, Agarwal, Sastry, Askell, Mishkin, Clark, Krueger, and Sutskever}}}
+\bibcite{rombach2022ldm}{{12}{2022}{{Rombach et~al.}}{{Rombach, Blattmann, Lorenz, Esser, and Ommer}}}
+\bibcite{scotti2024mindeye}{{13}{2023}{{Scotti et~al.}}{{Scotti, Banerjee, Goode, Shabalin, Nguyen, Cohen, Dempster, Verlinde, et~al.}}}
+\bibcite{song2023eegconformer}{{14}{2023}{{Song et~al.}}{{Song, Zheng, Liu, and Gao}}}
+\bibcite{tirupattur2018thoughtviz}{{15}{2018}{{Tirupattur et~al.}}{{Tirupattur, Rawat, Spampinato, and Shah}}}
+\bibcite{zhu2024csbrain}{{16}{2024}{{Zhu et~al.}}{{Zhu, Guo, et~al.}}}
+\def\@LN@column{1}
+\def\@LN@column{1}
+\def\@LN@column{1}
+\citation{zhu2024csbrain}
+\citation{radford2021clip}
+\citation{rombach2022ldm}
+\citation{li2023blip2}
+\citation{alayrac2022flamingo}
+\citation{figshare_eeg}
+\def\@LN@column{1}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {section}{\numberline {A}Information-Bottleneck View of the Alignment Target}{11}{appendix.A}\protected@file@percent }
+\newlabel{app:theory}{{A}{11}{Information-Bottleneck View of the Alignment Target}{appendix.A}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {B}Hyperparameter Configurations}{11}{appendix.B}\protected@file@percent }
+\newlabel{app:hyperparams}{{B}{11}{Hyperparameter Configurations}{appendix.B}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {C}Dataset Class Mapping}{11}{appendix.C}\protected@file@percent }
+\newlabel{app:class_mapping}{{C}{11}{Dataset Class Mapping}{appendix.C}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {D}EEG Channel Groups}{11}{appendix.D}\protected@file@percent }
+\newlabel{app:channels}{{D}{11}{EEG Channel Groups}{appendix.D}{}}
+\def\@LN@column{1}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Pipeline~2 (EEG-to-Text-to-Image) hyperparameter configuration.}}{12}{table.caption.9}\protected@file@percent }
+\newlabel{tab:hp2}{{3}{12}{Pipeline~2 (EEG-to-Text-to-Image) hyperparameter configuration}{table.caption.9}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Pipeline~3 (EEG-to-CLIP) hyperparameter configuration.}}{12}{table.caption.10}\protected@file@percent }
+\newlabel{tab:hp3}{{4}{12}{Pipeline~3 (EEG-to-CLIP) hyperparameter configuration}{table.caption.10}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {E}Per-Class Accuracy Table}{12}{appendix.E}\protected@file@percent }
+\newlabel{app:per_class}{{E}{12}{Per-Class Accuracy Table}{appendix.E}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {F}Qualitative Results and Failure Mode Analysis}{12}{appendix.F}\protected@file@percent }
+\newlabel{app:failure_modes}{{F}{12}{Qualitative Results and Failure Mode Analysis}{appendix.F}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {G}EEG Preprocessing Pipeline}{12}{appendix.G}\protected@file@percent }
+\newlabel{app:preprocessing}{{G}{12}{EEG Preprocessing Pipeline}{appendix.G}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Stable Diffusion inference parameters (both pipelines).}}{13}{table.caption.11}\protected@file@percent }
+\newlabel{tab:sd_params}{{5}{13}{Stable Diffusion inference parameters (both pipelines)}{table.caption.11}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Global label scheme for the Figshare Visual Imagery EEG dataset.}}{13}{table.caption.12}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces 32-channel EEG electrode layout (10-20 system) and anatomical brain region mapping used for the EEGTokenReducer. Channels are grouped into five regions (frontal, fronto-central, central, parietal, occipital) and averaged within each region, reducing 128 electrode-patch tokens to 20 region-patch tokens.}}{13}{figure.caption.13}\protected@file@percent }
+\newlabel{fig:channel_layout}{{3}{13}{32-channel EEG electrode layout (10-20 system) and anatomical brain region mapping used for the EEGTokenReducer. Channels are grouped into five regions (frontal, fronto-central, central, parietal, occipital) and averaged within each region, reducing 128 electrode-patch tokens to 20 region-patch tokens}{figure.caption.13}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Per-class test accuracy for Pipeline~3 (EEGCLIPMapper).}}{13}{table.caption.14}\protected@file@percent }
+\newlabel{tab:per_class}{{7}{13}{Per-class test accuracy for Pipeline~3 (EEGCLIPMapper)}{table.caption.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Pipeline~3 (EEG-CLIP) generated images compared with stimulus photographs. Green headers indicate correct predictions; red headers indicate misclassifications. Failures produce high-quality images of the \emph  {wrong} class, cleanly isolating the failure to the EEG decoding stage rather than image generation.}}{14}{figure.caption.16}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Pipeline~2 (EEG-LLM) full output grid including both correct and incorrect predictions. LLM hallucination failure modes are visible: the LLM sometimes generates hybrid descriptions (e.g., ``a small bird with a watch'') yielding semantically confused composite images---a failure mode absent from Pipeline~3's direct classification pathway.}}{14}{figure.caption.18}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces EEG preprocessing pipeline: from raw recordings (32\,ch $\times $ 1000\,Hz) through channel selection, bandpass filtering, trial extraction, downsampling, patch reshaping, and amplitude normalisation to LMDB-stored trials ready for model input.}}{15}{figure.caption.19}\protected@file@percent }
+\gdef \@abspage@last{15}

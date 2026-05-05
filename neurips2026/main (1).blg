@@ -1,0 +1,57 @@
+This is BibTeX, Version 0.99e
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main (1).aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: plainnat.bst
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Database file #1: references.bib
+Warning--I didn't find a database entry for "kosslyn2001neural"
+Warning--I didn't find a database entry for "birbaumer2000bci"
+Warning--I didn't find a database entry for "zhang2024tinyllama"
+Warning--I didn't find a database entry for "hu2022lora"
+Warning--I didn't find a database entry for "li2024atm"
+Warning--I didn't find a database entry for "binkowski2018demystifying"
+Warning--empty booktitle in blankertz2007bci
+Warning--can't use both volume and number fields in blankertz2007bci
+You've used 19 entries,
+            2773 wiz_defined-function locations,
+            702 strings with 9039 characters,
+and the built_in function-call counts, 12590 in all, are:
+= -- 1028
+> -- 1051
+< -- 11
++ -- 352
+- -- 333
+* -- 1114
+:= -- 1918
+add.period$ -- 55
+call.type$ -- 19
+change.case$ -- 165
+chr.to.int$ -- 19
+cite$ -- 40
+duplicate$ -- 477
+empty$ -- 840
+format.name$ -- 354
+if$ -- 2619
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 16
+newline$ -- 101
+num.names$ -- 76
+pop$ -- 362
+preamble$ -- 1
+purify$ -- 146
+quote$ -- 0
+skip$ -- 443
+stack$ -- 0
+substring$ -- 401
+swap$ -- 98
+text.length$ -- 9
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 209
+warning$ -- 2
+while$ -- 84
+width$ -- 0
+write$ -- 245
+(There were 8 warnings)

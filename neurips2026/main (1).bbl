@@ -1,0 +1,146 @@
+\begin{thebibliography}{19}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Alayrac et~al.(2022)Alayrac, Donahue, Luc, Miech, Barr, Hasson,
+  Lespiau, Mensch, Millican, Reynolds, Ring, Runyshev, Borgeaud, Bousquet,
+  Cabi, Chen, Fidjeland, Brock, de~Freitas, et~al.]{alayrac2022flamingo}
+J.-B. Alayrac, J.~Donahue, P.~Luc, A.~Miech, I.~Barr, Y.~Hasson, K.~Lespiau,
+  L.~Mensch, K.~Millican, M.~Reynolds, R.~Ring, E.~Runyshev, S.~Borgeaud,
+  O.~Bousquet, S.~Cabi, T.~Chen, A.~Fidjeland, A.~Brock, N.~de~Freitas, et~al.
+\newblock Flamingo: A visual language model for few-shot learning.
+\newblock In \emph{Advances in Neural Information Processing Systems
+  (NeurIPS)}, volume~35, pages 23716--23736, 2022.
+
+\bibitem[Bai et~al.(2023)Bai, Wang, Tan, Shao, and Wu]{bai2023brain}
+Y.~Bai, X.~Wang, X.~Tan, Y.~Shao, and F.~Wu.
+\newblock Brain-guided visual reconstruction using {CLIP}-powered brain
+  decoding, 2023.
+
+\bibitem[Blankertz et~al.(2007)Blankertz, M{\"u}ller, Krusienski, Schalk,
+  Wolpaw, Schl{\"o}gl, Pfurtscheller, d.~R.~Mill{\'a}n, Sch{\"o}gl, and
+  Birbaumer]{blankertz2007bci}
+B.~Blankertz, K.-R. M{\"u}ller, D.~J. Krusienski, G.~Schalk, J.~R. Wolpaw,
+  A.~Schl{\"o}gl, G.~Pfurtscheller, J.~d.~R.~Mill{\'a}n, M.~Sch{\"o}gl, and
+  N.~Birbaumer.
+\newblock The {BCI} competition {III}: Validating alternative approaches to
+  actual {BCI} problems.
+\newblock volume~14, pages 153--159, 2007.
+
+\bibitem[{Figshare}(2024)]{figshare_eeg}
+{Figshare}.
+\newblock Visual imagery {EEG} dataset, 2024.
+\newblock DOI: 10.6084/m9.figshare.30227503.
+
+\bibitem[Haxby et~al.(2001)Haxby, Gobbini, Furey, Ishai, Schouten, and
+  Pietrini]{haxby2001distributed}
+J.~V. Haxby, M.~I. Gobbini, M.~L. Furey, A.~Ishai, J.~L. Schouten, and
+  P.~Pietrini.
+\newblock Distributed and overlapping representations of faces and objects in
+  ventral temporal cortex.
+\newblock \emph{Science}, 293\penalty0 (5539):\penalty0 2425--2430, 2001.
+
+\bibitem[Jiang et~al.(2024)Jiang, Zhao, and Lu]{jiang2024labram}
+W.~Jiang, L.~Zhao, and B.-L. Lu.
+\newblock {LaBraM}: Large brain model for learning generic representations with
+  tremendous {EEG} data in {BCI}.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition (CVPR)}, 2024.
+
+\bibitem[Kavasidis et~al.(2017)Kavasidis, Palazzo, Spampinato, Giordano, and
+  Shah]{kavasidis2017brain2image}
+I.~Kavasidis, S.~Palazzo, C.~Spampinato, D.~Giordano, and M.~Shah.
+\newblock {Brain2Image}: Converting brain signals into images.
+\newblock In \emph{Proceedings of the 25th ACM International Conference on
+  Multimedia}, pages 1809--1817, 2017.
+
+\bibitem[Kay et~al.(2008)Kay, Naselaris, Prenger, and
+  Gallant]{kay2008identifying}
+K.~N. Kay, T.~Naselaris, R.~J. Prenger, and J.~L. Gallant.
+\newblock Identifying natural images from human brain activity.
+\newblock \emph{Nature}, 452\penalty0 (7185):\penalty0 352--355, 2008.
+
+\bibitem[Kostas et~al.(2022)Kostas, Aroca-Ouellette, and
+  Bhatt]{kostas2022bendr}
+D.~Kostas, S.~Aroca-Ouellette, and R.~Bhatt.
+\newblock {BENDR}: Using transformers and a contrastive self-supervised
+  learning task to learn from physiological recordings.
+\newblock \emph{Frontiers in Human Neuroscience}, 16:\penalty0 869671, 2022.
+
+\bibitem[Lawhern et~al.(2018)Lawhern, Solon, Waytowich, Gordon, Hung, and
+  Lance]{lawhern2018eegnet}
+V.~J. Lawhern, A.~J. Solon, N.~R. Waytowich, S.~M. Gordon, C.~P. Hung, and
+  B.~J. Lance.
+\newblock {EEGNet}: A compact convolutional neural network for {EEG}-based
+  brain-computer interfaces.
+\newblock \emph{Journal of Neural Engineering}, 15\penalty0 (5):\penalty0
+  056013, 2018.
+
+\bibitem[Li et~al.(2023)Li, Li, Savarese, and Hoi]{li2023blip2}
+J.~Li, D.~Li, S.~Savarese, and S.~Hoi.
+\newblock {BLIP-2}: Bootstrapping language-image pre-training with frozen image
+  encoders and large language models.
+\newblock In \emph{International Conference on Machine Learning (ICML)}, 2023.
+
+\bibitem[Ozcelik and VanRullen(2023)]{ozcelik2023brain}
+F.~Ozcelik and R.~VanRullen.
+\newblock Brain-diffuser: Natural scene reconstruction from {fMRI} signals
+  using generative latent diffusion, 2023.
+
+\bibitem[Radford et~al.(2021)Radford, Kim, Hallacy, Ramesh, Goh, Agarwal,
+  Sastry, Askell, Mishkin, Clark, Krueger, and Sutskever]{radford2021clip}
+A.~Radford, J.~W. Kim, C.~Hallacy, A.~Ramesh, G.~Goh, S.~Agarwal, G.~Sastry,
+  A.~Askell, P.~Mishkin, J.~Clark, G.~Krueger, and I.~Sutskever.
+\newblock Learning transferable visual models from natural language
+  supervision.
+\newblock In \emph{International Conference on Machine Learning (ICML)}, pages
+  8748--8763, 2021.
+
+\bibitem[Rombach et~al.(2022)Rombach, Blattmann, Lorenz, Esser, and
+  Ommer]{rombach2022ldm}
+R.~Rombach, A.~Blattmann, D.~Lorenz, P.~Esser, and B.~Ommer.
+\newblock High-resolution image synthesis with latent diffusion models.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition (CVPR)}, pages 10684--10695, 2022.
+
+\bibitem[Scotti et~al.(2023)Scotti, Banerjee, Goode, Shabalin, Nguyen, Cohen,
+  Dempster, Verlinde, et~al.]{scotti2024mindeye}
+P.~S. Scotti, A.~Banerjee, J.~Goode, S.~Shabalin, A.~Nguyen, E.~Cohen, A.~J.
+  Dempster, N.~Verlinde, et~al.
+\newblock Reconstructing the mind's eye: {fMRI}-to-image with contrastive
+  learning and diffusion priors.
+\newblock In \emph{Advances in Neural Information Processing Systems
+  (NeurIPS)}, volume~36, 2023.
+
+\bibitem[Shen et~al.(2019)Shen, Dwivedi, Majima, Horikawa, and
+  Kamitani]{shen2019end}
+G.~Shen, K.~Dwivedi, K.~Majima, T.~Horikawa, and Y.~Kamitani.
+\newblock End-to-end deep image reconstruction from human brain activity.
+\newblock \emph{Frontiers in Computational Neuroscience}, 13:\penalty0 21,
+  2019.
+
+\bibitem[Song et~al.(2023)Song, Zheng, Liu, and Gao]{song2023eegconformer}
+Y.~Song, Q.~Zheng, B.~Liu, and X.~Gao.
+\newblock {EEG} conformer: Convolutional transformer for {EEG} decoding and
+  visualization.
+\newblock \emph{IEEE Transactions on Neural Systems and Rehabilitation
+  Engineering}, 31:\penalty0 710--719, 2023.
+
+\bibitem[Tirupattur et~al.(2018)Tirupattur, Rawat, Spampinato, and
+  Shah]{tirupattur2018thoughtviz}
+P.~Tirupattur, Y.~S. Rawat, C.~Spampinato, and M.~Shah.
+\newblock {ThoughtViz}: Visualizing human thoughts using generative adversarial
+  network.
+\newblock In \emph{Proceedings of the 26th ACM International Conference on
+  Multimedia}, pages 950--958, 2018.
+
+\bibitem[Zhu et~al.(2024)Zhu, Guo, et~al.]{zhu2024csbrain}
+J.~Zhu, H.~Guo, et~al.
+\newblock {CSBrain}: A cross-subject brain foundation model for {EEG} decoding.
+\newblock In \emph{Proceedings of the International Conference on Learning
+  Representations (ICLR)}, 2024.
+
+\end{thebibliography}

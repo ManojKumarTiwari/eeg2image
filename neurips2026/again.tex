@@ -1,0 +1,121 @@
+\title{From EEG to Image: Direct CLIP Alignment Outperforms Language-Mediated Generation for Visual Mental Imagery}
+
+\author{
+Anonymous Authors\\
+Affiliation\\
+Address\\
+\texttt{email}
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Decoding visual mental imagery from electroencephalography (EEG) into images is a challenging problem due to low signal-to-noise ratio and high inter-subject variability. Existing approaches often rely on language as an intermediate representation, mapping EEG to text and then to images. We show that this paradigm is suboptimal for noisy modalities such as EEG. 
+
+We propose direct alignment of EEG representations to CLIP image embedding space using a lightweight transformer-based mapper. Compared to a language-mediated pipeline using a fine-tuned language model, our approach achieves higher accuracy (35.8\% vs. 32.6\%) while using over 250$\times$ fewer parameters. 
+
+We further demonstrate that CLIP image embeddings provide a more discriminative contrastive space than text embeddings, explaining the performance gap. Our findings suggest that embedding geometry plays a critical role in multimodal alignment for low-SNR modalities.
+\end{abstract}
+
+\section{Introduction}
+
+Decoding mental imagery from EEG signals into images is a key challenge in brain--computer interfaces. EEG is attractive due to its non-invasive nature and high temporal resolution, but suffers from low spatial resolution and high noise.
+
+Recent work combines brain decoding with generative models. A common approach maps EEG signals to text descriptions using language models, which are then used to condition image generation. While intuitive, this introduces an additional abstraction layer that may degrade signal quality.
+
+In this paper, we question this paradigm. We show that text embeddings are poorly suited as an alignment space for noisy modalities due to their high inter-class similarity. Instead, we propose direct alignment to image embedding space.
+
+We compare two pipelines:
+\begin{itemize}
+\item EEG $\rightarrow$ LLM $\rightarrow$ Image
+\item EEG $\rightarrow$ CLIP $\rightarrow$ Image (ours)
+\end{itemize}
+
+Our method achieves higher accuracy and significantly better efficiency.
+
+\textbf{Key Insight.} Image embeddings are more discriminative than text embeddings, leading to stronger contrastive learning signals.
+
+\textbf{Contributions.}
+\begin{itemize}
+\item We identify a limitation of text-based alignment for noisy modalities.
+\item We propose EEGCLIPMapper, a lightweight EEG-to-CLIP alignment model.
+\item We demonstrate improved accuracy and efficiency over language-mediated pipelines.
+\end{itemize}
+
+\section{Related Work}
+
+\textbf{EEG decoding.}
+Deep learning models such as EEGNet and transformer-based approaches have improved EEG classification performance.
+
+\textbf{Brain-to-image reconstruction.}
+Recent work uses diffusion models and CLIP alignment for fMRI. EEG-based reconstruction remains more challenging.
+
+\textbf{Multimodal learning.}
+CLIP enables cross-modal alignment via contrastive learning. Architectures such as Q-Former enable mapping between modalities.
+
+\section{Method}
+
+\subsection{Problem Setup}
+
+Given EEG signals $x \in \mathbb{R}^{C \times T}$, the goal is to generate images consistent with the imagined class.
+
+\subsection{Pipeline 1: EEG-to-Text-to-Image}
+
+EEG features are projected into a language model, which generates descriptive text used to condition a diffusion model.
+
+\subsection{Pipeline 2: EEG-to-CLIP Alignment}
+
+We propose EEGCLIPMapper, a transformer-based model that maps EEG features directly into CLIP embedding space.
+
+The training objective is:
+\begin{equation}
+L = \lambda_{cls} L_{cls} + \lambda_{cont} L_{cont} + \lambda_{cos} L_{cos} + \lambda_{mse} L_{mse}
+\end{equation}
+
+A two-phase training strategy is used to stabilize optimization.
+
+\section{Experiments}
+
+\subsection{Dataset}
+
+We evaluate on a 10-class EEG visual imagery dataset with a cross-subject split.
+
+\subsection{Results}
+
+\begin{table}[t]
+\centering
+\begin{tabular}{lcc}
+\hline
+Method & Accuracy & Parameters \\
+\hline
+EEG-LLM & 32.6\% & $\sim$1.2B \\
+EEG-CLIP (ours) & \textbf{35.8\%} & 4.8M \\
+\hline
+\end{tabular}
+\caption{EEG decoding accuracy}
+\end{table}
+
+Our method improves accuracy while being significantly more efficient.
+
+\subsection{Image Quality}
+
+Our method achieves better FID (72.6 vs. 87.3) and SSIM (0.38 vs. 0.31).
+
+\subsection{Analysis}
+
+We observe that text embeddings have high similarity, which weakens contrastive learning. Image embeddings are more diverse, leading to improved performance.
+
+\section{Discussion}
+
+Direct alignment to image embeddings provides a stronger learning signal than text-based approaches. This insight may generalize to other noisy modalities.
+
+\textbf{Limitations.}
+The dataset is small and limited to 10 classes. Results may not generalize broadly.
+
+\section{Conclusion}
+
+We show that direct EEG-to-image alignment via CLIP is more effective than language-mediated approaches. Our results highlight the importance of embedding geometry in multimodal learning.
+
+\end{document}

@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99e
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main_v3.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: plainnat.bst
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Database file #1: references.bib
+Warning--empty booktitle in blankertz2007bci
+Warning--can't use both volume and number fields in blankertz2007bci
+You've used 23 entries,
+            2773 wiz_defined-function locations,
+            715 strings with 9823 characters,
+and the built_in function-call counts, 15254 in all, are:
+= -- 1226
+> -- 1342
+< -- 11
++ -- 449
+- -- 426
+* -- 1367
+:= -- 2355
+add.period$ -- 69
+call.type$ -- 23
+change.case$ -- 208
+chr.to.int$ -- 23
+cite$ -- 48
+duplicate$ -- 554
+empty$ -- 981
+format.name$ -- 451
+if$ -- 3148
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 18
+newline$ -- 123
+num.names$ -- 92
+pop$ -- 456
+preamble$ -- 1
+purify$ -- 185
+quote$ -- 0
+skip$ -- 522
+stack$ -- 0
+substring$ -- 412
+swap$ -- 103
+text.length$ -- 9
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 253
+warning$ -- 2
+while$ -- 97
+width$ -- 0
+write$ -- 298
+(There were 2 warnings)

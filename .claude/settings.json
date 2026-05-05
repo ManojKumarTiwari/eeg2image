@@ -4,7 +4,28 @@
       "Bash(.venv/Scripts/python.exe -c ':*)",
       "Bash(.venv/Scripts/python.exe finetune_eeg_to_image.py --epochs 20 --warmup_epochs 5 --lr 1e-4 --batch_size 4 --gradient_accumulation_steps 8 --lambda_cls 5.0 --lambda_contrastive 2.0 --lambda_cos 1.0 --lambda_mse 0.1 --temperature 0.5 --model_dir pth_downtasks/eeg_direct)",
       "Bash(echo \"PID: $!\")",
-      "Read(//c/Users/manoj/.cache/huggingface/hub/**)"
+      "Read(//c/Users/manoj/.cache/huggingface/hub/**)",
+      "Bash(awk -F',' 'NR>1 && $8==\"True\" {print $0}' \"c:/Users/manoj/Projects/Mtech_Project2/EEG2Image/outputs/vi_test_report.csv\")",
+      "Bash(awk -F',' 'NR>1 {print $3}' \"c:/Users/manoj/Projects/Mtech_Project2/EEG2Image/outputs/vi_test_report.csv\")",
+      "Bash(awk -F',' 'NR>1 && $8==\"True\" {print $4}' \"c:/Users/manoj/Projects/Mtech_Project2/EEG2Image/outputs/vi_test_report.csv\")",
+      "Bash(python generate_summary_grids.py --pipeline both)",
+      "Bash(.venv/Scripts/python generate_summary_grids.py --pipeline both)",
+      "Bash(.venv/Scripts/python generate_summary_grids.py --pipeline 3)",
+      "Bash(wmic OS get FreePhysicalMemory /value)",
+      "Bash(systeminfo)",
+      "Bash(.venv/Scripts/python -c \"import torch; print\\(f'CUDA available: {torch.cuda.is_available\\(\\)}'\\); print\\(f'GPU: {torch.cuda.get_device_name\\(0\\) if torch.cuda.is_available\\(\\) else \\\\\"N/A\\\\\"}'\\); print\\(f'VRAM: {torch.cuda.get_device_properties\\(0\\).total_mem / 1024**3:.1f} GB' if torch.cuda.is_available\\(\\) else ''\\)\")",
+      "Bash(.venv/Scripts/python generate_summary_grids.py --pipeline 2)",
+      "Bash(.venv/Scripts/python generate_single_image.py --class_idx 1 --pipeline 2 --output_path outputs/vi_images/generated_correct_class1.png)",
+      "Bash(.venv/Scripts/python generate_summary_grids.py --pipeline 2 --skip_generate)",
+      "Bash(.venv/Scripts/python generate_summary_grids.py --pipeline 3 --skip_generate)",
+      "Bash(tasklist /FO CSV /NH)",
+      "Bash(awk -F',' '{gsub\\(/\"/, \"\", $5\\); gsub\\(/ K/, \"\", $5\\); gsub\\(/,/, \"\", $5\\); mem=$5+0; name=$1; gsub\\(/\"/, \"\", name\\); printf \"%8d KB  %s\\\\n\", mem, name}')",
+      "Bash(powershell -NoProfile -Command 'Get-Process | Sort-Object WorkingSet64 -Descending | Select-Object -First 15 Name, @{N=\"MemMB\";E={[math]::Round\\($_.WorkingSet64/1MB\\)}} | Format-Table -AutoSize')",
+      "Bash(.venv/Scripts/python generate_all_classes.py --pipeline 2)",
+      "Bash(.venv/Scripts/python -c \"from huggingface_hub import InferenceClient; print\\('HF hub available'\\)\")",
+      "Bash(.venv/Scripts/python -c ':*)",
+      "Bash(.venv/Scripts/python generate_all_classes.py)",
+      "Bash(.venv/Scripts/python.exe create_method_diagram.py)"
     ]
   }
 }
