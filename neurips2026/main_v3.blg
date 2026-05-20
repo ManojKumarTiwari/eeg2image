@@ -7,45 +7,45 @@ Reallocating 'name_of_file' (item size: 1) to 11 items.
 Database file #1: references.bib
 Warning--empty booktitle in blankertz2007bci
 Warning--can't use both volume and number fields in blankertz2007bci
-You've used 23 entries,
+You've used 25 entries,
             2773 wiz_defined-function locations,
-            715 strings with 9823 characters,
-and the built_in function-call counts, 15254 in all, are:
-= -- 1226
-> -- 1342
-< -- 11
-+ -- 449
-- -- 426
-* -- 1367
-:= -- 2355
-add.period$ -- 69
-call.type$ -- 23
-change.case$ -- 208
-chr.to.int$ -- 23
-cite$ -- 48
-duplicate$ -- 554
-empty$ -- 981
-format.name$ -- 451
-if$ -- 3148
+            727 strings with 10226 characters,
+and the built_in function-call counts, 16886 in all, are:
+= -- 1355
+> -- 1521
+< -- 10
++ -- 508
+- -- 483
+* -- 1542
+:= -- 2621
+add.period$ -- 75
+call.type$ -- 25
+change.case$ -- 233
+chr.to.int$ -- 25
+cite$ -- 52
+duplicate$ -- 589
+empty$ -- 1056
+format.name$ -- 510
+if$ -- 3467
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 18
-newline$ -- 123
-num.names$ -- 92
-pop$ -- 456
+missing$ -- 19
+newline$ -- 133
+num.names$ -- 100
+pop$ -- 501
 preamble$ -- 1
-purify$ -- 185
+purify$ -- 208
 quote$ -- 0
-skip$ -- 522
+skip$ -- 565
 stack$ -- 0
-substring$ -- 412
-swap$ -- 103
+substring$ -- 465
+swap$ -- 104
 text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 253
+type$ -- 275
 warning$ -- 2
-while$ -- 97
+while$ -- 106
 width$ -- 0
-write$ -- 298
+write$ -- 324
 (There were 2 warnings)

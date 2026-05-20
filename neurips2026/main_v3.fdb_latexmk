@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main_v3"] 1777894054.00008 "main_v3.aux" "main_v3.bbl" "main_v3" 1777894055.4224 0
-  "./references.bib" 1777872884 11039 634cd9138e4e7f8a9d43aadcec7b99bd ""
+["bibtex main_v3"] 1778135064.11341 "main_v3.aux" "main_v3.bbl" "main_v3" 1778135065.69362 0
+  "./references.bib" 1778134940 10882 be979a412de40f8ffbdfb6c29821c1e1 ""
   "C:/Program Files/MiKTeX/bibtex/bst/natbib/plainnat.bst" 1284455456 26816 ffe5423d2019860bad9f54bc402fac15 ""
-  "main_v3.aux" 1777894054 15322 bf40a56d6fe83fad292823719830ba67 "pdflatex"
+  "main_v3.aux" 1778135065 16164 051d83636c8cec068df6b94e7b9cb67d "pdflatex"
   (generated)
   "main_v3.bbl"
   "main_v3.blg"
   (rewritten before read)
-["pdflatex"] 1777894054.17417 "c:/Users/manoj/Projects/NeuralIPS/neurips2026/main_v3.tex" "main_v3.pdf" "main_v3" 1777894055.42282 0
+["pdflatex"] 1778135064.28961 "c:/Users/manoj/Projects/Mtech_Project2/EEG2Image/neurips2026/main_v3.tex" "main_v3.pdf" "main_v3" 1778135065.69401 0
   "../inputs/figures/architecture.png" 1777785478 132013 515d857a589abe8709b5cc9e1e0057b5 ""
   "../inputs/figures/channel_layout_and_brain_region_mapping.png" 1776159868 43368 1294a6ab20aee7b6c2dd09c42b8a90dc ""
   "../inputs/figures/per_class_accuracy.png" 1776160033 38412 6f68088ddba00c24d7f2c984507a227f ""
@@ -152,11 +152,11 @@
   "C:/Users/manoj/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1775630323 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/manoj/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1000.pk" 1777448459 20028 3e69956d3d8bdb78d780f75412e25666 ""
   "C:/Users/manoj/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1775631417 13323781 64520dbd8c02df90e959378055e5d8f1 ""
-  "c:/Users/manoj/Projects/NeuralIPS/neurips2026/main_v3.tex" 1777894053 50047 98a66c9dc7990f2239fcf2bf70007bcf ""
-  "main_v3.aux" 1777894054 15322 bf40a56d6fe83fad292823719830ba67 "pdflatex"
-  "main_v3.bbl" 1777894054 8373 deae57a09b186e5e2267baca27280a8e "bibtex main_v3"
-  "main_v3.out" 1777894054 4560 edd4a0a9c213274d733ab96b68c0cef5 "pdflatex"
-  "main_v3.tex" 1777894053 50047 98a66c9dc7990f2239fcf2bf70007bcf ""
+  "c:/Users/manoj/Projects/Mtech_Project2/EEG2Image/neurips2026/main_v3.tex" 1778135052 53081 f87caed5b42ec257f326c8eccf149eee ""
+  "main_v3.aux" 1778135065 16164 051d83636c8cec068df6b94e7b9cb67d "pdflatex"
+  "main_v3.bbl" 1778135064 9146 e1c1e09875e313b3d72a5809dc120a41 "bibtex main_v3"
+  "main_v3.out" 1778135065 4560 edd4a0a9c213274d733ab96b68c0cef5 "pdflatex"
+  "main_v3.tex" 1778135052 53081 f87caed5b42ec257f326c8eccf149eee ""
   "neurips_2026.sty" 1777448375 13462 818d80447f57703e59b8270885421e82 ""
   (generated)
   "main_v3.aux"

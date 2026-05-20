@@ -1,6 +1,6 @@
-PWD c:\Users\manoj\Projects\NeuralIPS\neurips2026
+PWD c:\Users\manoj\Projects\Mtech_Project2\EEG2Image\neurips2026
 INPUT C:\Users\manoj\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\manoj\Projects\NeuralIPS\neurips2026\main_v3.tex
+INPUT c:\Users\manoj\Projects\Mtech_Project2\EEG2Image\neurips2026\main_v3.tex
 OUTPUT main_v3.log
 INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls
@@ -216,19 +216,6 @@ INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmri8t.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmri8r.tfm
 INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx7.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
-INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
-INPUT ..\inputs\figures\architecture.png
-INPUT ..\inputs\figures\architecture.png
-INPUT ..\inputs\figures\architecture.png
-INPUT ..\inputs\figures\architecture.png
-INPUT ..\inputs\figures\architecture.png
-INPUT ..\inputs\figures\architecture.png
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr9.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
@@ -238,13 +225,30 @@ INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsy9.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex9.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx9.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx6.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx7.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
+INPUT ..\inputs\figures\architecture.png
+INPUT ..\inputs\figures\architecture.png
+INPUT ..\inputs\figures\architecture.png
+INPUT ..\inputs\figures\architecture.png
+INPUT ..\inputs\figures\architecture.png
+INPUT ..\inputs\figures\architecture.png
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx9.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx6.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmb8t.tfm
+INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
+INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
+INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT C:\Program Files\MiKTeX\tex\latex\psnfss\ts1ptm.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\psnfss\ts1ptm.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\psnfss\ts1ptm.fd
@@ -260,16 +264,6 @@ INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmb8t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmri8t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8c.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmb8c.tfm
-INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
-INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
-INPUT ..\inputs\figures\per_class_accuracy.png
-INPUT ..\inputs\figures\per_class_accuracy.png
-INPUT ..\inputs\figures\per_class_accuracy.png
-INPUT ..\inputs\figures\per_class_accuracy.png
-INPUT ..\inputs\figures\per_class_accuracy.png
-INPUT ..\inputs\figures\per_class_accuracy.png
 INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmr8c.vf
 INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
@@ -277,6 +271,12 @@ INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmri8t.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmri8r.tfm
 INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmr8c.vf
 INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmb8c.vf
+INPUT ..\inputs\figures\per_class_accuracy.png
+INPUT ..\inputs\figures\per_class_accuracy.png
+INPUT ..\inputs\figures\per_class_accuracy.png
+INPUT ..\inputs\figures\per_class_accuracy.png
+INPUT ..\inputs\figures\per_class_accuracy.png
+INPUT ..\inputs\figures\per_class_accuracy.png
 INPUT .\main_v3.bbl
 INPUT .\main_v3.bbl
 INPUT main_v3.bbl

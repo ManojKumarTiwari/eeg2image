@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.8)  4 MAY 2026 16:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.8)  7 MAY 2026 11:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/manoj/Projects/NeuralIPS/neurips2026/main_v3.tex
-(c:/Users/manoj/Projects/NeuralIPS/neurips2026/main_v3.tex
+**c:/Users/manoj/Projects/Mtech_Project2/EEG2Image/neurips2026/main_v3.tex
+(c:/Users/manoj/Projects/Mtech_Project2/EEG2Image/neurips2026/main_v3.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
 (C:\Program Files\MiKTeX\tex/latex/base\article.cls
@@ -529,8 +529,8 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 
 {C:/Users/manoj/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}]
-Underfull \hbox (badness 6893) in paragraph at lines 92--93
-\T1/ptm/b/n/10 (+20) Figshare Vi-sual Im-agery EEG dataset \T1/ptm/m/n/10 (+20) [[]Figshare[], []2024[], []Gao et al.[], []2026[]] (DOI:
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
+\T1/ptm/b/n/10 (+20) Visual Im-agery EEG (VI-BCI) dataset \T1/ptm/m/n/10 (+20) [[]Gao et al.[], []2024[], []2026[]] (DOI:
  []
 
 [2] [3]
@@ -539,20 +539,23 @@ File: ../inputs/figures/architecture.png Graphic file (type png)
 <use ../inputs/figures/architecture.png>
 Package pdftex.def Info: ../inputs/figures/architecture.png  used on input line 137.
 (pdftex.def)             Requested size: 397.48499pt x 68.3081pt.
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 176.
+ [4 <../inputs/figures/architecture.png>]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 196.
  (C:\Program Files\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[4 <../inputs/figures/architecture.png>]
-<../inputs/figures/per_class_accuracy.png, id=273, 568.1225pt x 386.94562pt>
+) [5]
+<../inputs/figures/per_class_accuracy.png, id=281, 568.1225pt x 386.94562pt>
 File: ../inputs/figures/per_class_accuracy.png Graphic file (type png)
 <use ../inputs/figures/per_class_accuracy.png>
-Package pdftex.def Info: ../inputs/figures/per_class_accuracy.png  used on input line 211.
+Package pdftex.def Info: ../inputs/figures/per_class_accuracy.png  used on input line 231.
 (pdftex.def)             Requested size: 298.11374pt x 203.04912pt.
- [5 <../inputs/figures/per_class_accuracy.png>] (main_v3.bbl [6] [7]) [8] [9] [10] [11]
+
+Underfull \vbox (badness 1642) has occurred while \output is active []
+
+
+Underfull \vbox (badness 1642) has occurred while \output is active []
+
+ [6 <../inputs/figures/per_class_accuracy.png>] (main_v3.bbl [7] [8]) [9] [10] [11] [12]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -565,52 +568,52 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../inputs/figures/channel_layout_and_brain_region_mapping.png, id=361, 888.82062pt x 227.85126pt>
+<../inputs/figures/channel_layout_and_brain_region_mapping.png, id=377, 888.82062pt x 227.85126pt>
 File: ../inputs/figures/channel_layout_and_brain_region_mapping.png Graphic file (type png)
 <use ../inputs/figures/channel_layout_and_brain_region_mapping.png>
-Package pdftex.def Info: ../inputs/figures/channel_layout_and_brain_region_mapping.png  used on input line 560.
+Package pdftex.def Info: ../inputs/figures/channel_layout_and_brain_region_mapping.png  used on input line 580.
 (pdftex.def)             Requested size: 397.48499pt x 101.89587pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[12]
+[13]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../inputs/figures/pipeline_3_output_images_only_correct.png, id=370, 851.18pt x 1331.97626pt>
+<../inputs/figures/pipeline_3_output_images_only_correct.png, id=387, 851.18pt x 1331.97626pt>
 File: ../inputs/figures/pipeline_3_output_images_only_correct.png Graphic file (type png)
 <use ../inputs/figures/pipeline_3_output_images_only_correct.png>
-Package pdftex.def Info: ../inputs/figures/pipeline_3_output_images_only_correct.png  used on input line 597.
+Package pdftex.def Info: ../inputs/figures/pipeline_3_output_images_only_correct.png  used on input line 617.
 (pdftex.def)             Requested size: 397.48499pt x 622.00471pt.
 
-LaTeX Warning: Float too large for page by 2.63963pt on input line 600.
+LaTeX Warning: Float too large for page by 2.63963pt on input line 620.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../inputs/figures/pipeline_2_output_images_only_correct.png, id=371, 851.18pt x 1331.97626pt>
+<../inputs/figures/pipeline_2_output_images_only_correct.png, id=388, 851.18pt x 1331.97626pt>
 File: ../inputs/figures/pipeline_2_output_images_only_correct.png Graphic file (type png)
 <use ../inputs/figures/pipeline_2_output_images_only_correct.png>
-Package pdftex.def Info: ../inputs/figures/pipeline_2_output_images_only_correct.png  used on input line 604.
+Package pdftex.def Info: ../inputs/figures/pipeline_2_output_images_only_correct.png  used on input line 624.
 (pdftex.def)             Requested size: 397.48499pt x 622.00471pt.
 
-LaTeX Warning: Float too large for page by 2.63963pt on input line 607.
+LaTeX Warning: Float too large for page by 2.63963pt on input line 627.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../inputs/figures/pipeline3_output_images.png, id=372, 2055.68pt x 1385.175pt>
+<../inputs/figures/pipeline3_output_images.png, id=389, 2055.68pt x 1385.175pt>
 File: ../inputs/figures/pipeline3_output_images.png Graphic file (type png)
 <use ../inputs/figures/pipeline3_output_images.png>
-Package pdftex.def Info: ../inputs/figures/pipeline3_output_images.png  used on input line 611.
+Package pdftex.def Info: ../inputs/figures/pipeline3_output_images.png  used on input line 631.
 (pdftex.def)             Requested size: 397.48499pt x 267.8359pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../inputs/figures/pipeline2_output_images.png, id=373, 2055.68pt x 1284.8pt>
+<../inputs/figures/pipeline2_output_images.png, id=390, 2055.68pt x 1284.8pt>
 File: ../inputs/figures/pipeline2_output_images.png Graphic file (type png)
 <use ../inputs/figures/pipeline2_output_images.png>
-Package pdftex.def Info: ../inputs/figures/pipeline2_output_images.png  used on input line 617.
+Package pdftex.def Info: ../inputs/figures/pipeline2_output_images.png  used on input line 637.
 (pdftex.def)             Requested size: 397.48499pt x 248.42752pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -618,17 +621,17 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[13]
-<../inputs/figures/preprocessing.png, id=381, 875.27pt x 86.3225pt>
+[14]
+<../inputs/figures/preprocessing.png, id=397, 875.27pt x 86.3225pt>
 File: ../inputs/figures/preprocessing.png Graphic file (type png)
 <use ../inputs/figures/preprocessing.png>
-Package pdftex.def Info: ../inputs/figures/preprocessing.png  used on input line 660.
+Package pdftex.def Info: ../inputs/figures/preprocessing.png  used on input line 680.
 (pdftex.def)             Requested size: 397.48499pt x 39.2017pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[14] [15 <../inputs/figures/channel_layout_and_brain_region_mapping.png>] [16 <../inputs/figures/pipeline_3_output_images_only_correct.png (PNG copy)>] [17 <../inputs/figures/pipeline_2_output_images_only_correct.png (PNG copy)>] [18 <../inputs/figures/pipeline3_output_images.png (PNG copy)> <../inputs/figures/pipeline2_output_images.png (PNG copy)>] [19 <../inputs/figures/preprocessing.png>] (main_v3.aux)
+[15] [16 <../inputs/figures/channel_layout_and_brain_region_mapping.png>] [17 <../inputs/figures/pipeline_3_output_images_only_correct.png (PNG copy)>] [18 <../inputs/figures/pipeline_2_output_images_only_correct.png (PNG copy)>] [19 <../inputs/figures/pipeline3_output_images.png (PNG copy)> <../inputs/figures/pipeline2_output_images.png (PNG copy)>] [20 <../inputs/figures/preprocessing.png>] (main_v3.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -637,17 +640,17 @@ Package rerunfilecheck Info: File `main_v3.out' has not changed.
 (rerunfilecheck)             Checksum: EDD4A0A9C213274D733AB96B68C0CEF5;4560.
  ) 
 Here is how much of TeX's memory you used:
- 15041 strings out of 467867
- 232254 string characters out of 5428402
- 703675 words of memory out of 5000000
- 43279 multiletter control sequences out of 15000+600000
- 690219 words of font info for 290 fonts, out of 8000000 for 9000
+ 15064 strings out of 467867
+ 232795 string characters out of 5428402
+ 704055 words of memory out of 5000000
+ 43286 multiletter control sequences out of 15000+600000
+ 691024 words of font info for 298 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,10n,79p,1921b,829s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,10n,79p,1936b,827s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\manoj\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main_v3.pdf (19 pages, 5571915 bytes).
+Output written on main_v3.pdf (20 pages, 5580969 bytes).
 PDF statistics:
- 565 PDF objects out of 1000 (max. 8388607)
- 115 named destinations out of 1000 (max. 500000)
+ 588 PDF objects out of 1000 (max. 8388607)
+ 119 named destinations out of 1000 (max. 500000)
  70361 words of extra memory for PDF output out of 74296 (max. 10000000)
 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{23}
+\begin{thebibliography}{25}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -42,18 +42,34 @@ B.~Blankertz, K.-R. M{\"u}ller, D.~J. Krusienski, G.~Schalk, J.~R. Wolpaw,
   actual {BCI} problems.
 \newblock volume~14, pages 153--159, 2007.
 
-\bibitem[{Figshare}(2024)]{figshare_eeg}
-{Figshare}.
-\newblock Visual imagery {EEG} dataset, 2024.
+\bibitem[Dijkstra et~al.(2019)Dijkstra, Mostert, de~Lange, Bosch, and van
+  Gerven]{dijkstra2019differential}
+N.~Dijkstra, P.~Mostert, F.~P. de~Lange, S.~Bosch, and M.~A.~J. van Gerven.
+\newblock Differential temporal dynamics during visual imagery and perception.
+\newblock \emph{eLife}, 8:\penalty0 e42311, 2019.
+
+\bibitem[Gao et~al.(2024)Gao, Liu, Li, Huang, Wang, Xu, Zhao, Li, and
+  Fu]{figshare_eeg}
+J.~Gao, Y.~Liu, Z.~Li, K.~Huang, F.~Wang, J.~Xu, L.~Zhao, T.~Li, and Y.~Fu.
+\newblock {VI-BCI}: Visual imagery {EEG} dataset, 2024.
 \newblock DOI: 10.6084/m9.figshare.30227503.
 
 \bibitem[Gao et~al.(2026)Gao, Liu, Li, Huang, Wang, Xu, Zhao, Li, and
   Fu]{figshare_paper}
 J.~Gao, Y.~Liu, Z.~Li, K.~Huang, F.~Wang, J.~Xu, L.~Zhao, T.~Li, and Y.~Fu.
-\newblock An {EEG} dataset for visual imagery-based brain--computer interface.
+\newblock An {EEG} dataset for visual imagery-based brain--computer interface
+  ({VI-BCI}).
 \newblock \emph{Scientific Data}, 13:\penalty0 194, 2026.
 \newblock \doi{10.1038/s41597-025-06512-5}.
 \newblock Dataset DOI: 10.6084/m9.figshare.30227503.
+
+\bibitem[Haxby et~al.(2001)Haxby, Gobbini, Furey, Ishai, Schouten, and
+  Pietrini]{haxby2001distributed}
+J.~V. Haxby, M.~I. Gobbini, M.~L. Furey, A.~Ishai, J.~L. Schouten, and
+  P.~Pietrini.
+\newblock Distributed and overlapping representations of faces and objects in
+  ventral temporal cortex.
+\newblock \emph{Science}, 293\penalty0 (5539):\penalty0 2425--2430, 2001.
 
 \bibitem[Hu et~al.(2022)Hu, Shen, Wallis, Allen-Zhu, Li, Wang, Wang, and
   Chen]{hu2022lora}
@@ -67,8 +83,8 @@ E.~J. Hu, Y.~Shen, P.~Wallis, Z.~Allen-Zhu, Y.~Li, S.~Wang, L.~Wang, and
 W.~Jiang, L.~Zhao, and B.-L. Lu.
 \newblock {LaBraM}: Large brain model for learning generic representations with
   tremendous {EEG} data in {BCI}.
-\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
-  and Pattern Recognition (CVPR)}, 2024.
+\newblock In \emph{International Conference on Learning Representations
+  (ICLR)}, 2024.
 
 \bibitem[Kavasidis et~al.(2017)Kavasidis, Palazzo, Spampinato, Giordano, and
   Shah]{kavasidis2017brain2image}
@@ -167,10 +183,9 @@ P.~Tirupattur, Y.~S. Rawat, C.~Spampinato, and M.~Shah.
 P.~Zhang, G.~Zeng, T.~Wang, and W.~Lu.
 \newblock {TinyLlama}: An open-source small language model, 2024.
 
-\bibitem[Zhu et~al.(2024)Zhu, Guo, et~al.]{zhu2024csbrain}
+\bibitem[Zhu et~al.(2025)Zhu, Guo, et~al.]{zhu2024csbrain}
 J.~Zhu, H.~Guo, et~al.
-\newblock {CSBrain}: A cross-subject brain foundation model for {EEG} decoding.
-\newblock In \emph{Proceedings of the International Conference on Learning
-  Representations (ICLR)}, 2024.
+\newblock {CSBrain}: A cross-scale spatiotemporal brain foundation model, 2025.
+\newblock OpenReview: \url{https://openreview.net/forum?id=agcXjEHmyW}.
 
 \end{thebibliography}

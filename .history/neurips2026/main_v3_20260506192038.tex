@@ -103,7 +103,7 @@ Visual mental imagery produces measurable EEG activity that partially encodes th
 
 \subsection{Shared Frontend: CSBrain Encoder and EEGTokenReducer}
 
-Both pipelines begin with the \emph{frozen} CSBrain~\citep{zhu2024csbrain} encoder, a 12-layer transformer pre-trained via masked signal modelling on a large multi-subject EEG corpus. For each trial represented as $\mathbf{X}\in\mathbb{R}^{32\times4\times200}$, CSBrain produces a sequence of 128 electrode-patch token representations $\mathbf{H}\in\mathbb{R}^{128\times200}$. The encoder weights are kept frozen throughout training, because fine-tuning a 12-layer transformer on the $\sim$5{,}500 cross-subject training trials available from subjects 1--16 would risk catastrophic overfitting to subject-specific neural patterns.
+Both pipelines begin with the \emph{frozen} CSBrain~\citep{zhu2024csbrain} encoder: a 12-layer transformer pre-trained via masked signal modelling on a large multi-subject EEG corpus. Given input $\mathbf{X}\in\mathbb{R}^{32\times4\times200}$, CSBrain produces $\mathbf{H}\in\mathbb{R}^{128\times200}$ (128 electrode-patch tokens). Weights are kept frozen---fine-tuning a 12-layer transformer on $\sim$6\,k training trials risks catastrophic overfitting to subject-specific patterns.
 
 The \textbf{EEGTokenReducer} groups 32 electrodes into five anatomical regions (Frontal\,8, Fronto-central\,5, Central\,5, Parietal\,9, Occipital\,5; App.~\ref{app:channels}) and averages tokens within each region:
 \begin{equation}

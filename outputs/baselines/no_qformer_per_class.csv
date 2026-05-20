@@ -1,0 +1,11 @@
+class,correct,total,accuracy
+dog,14,160,0.0875
+bird,17,160,0.10625
+fish,12,160,0.075
+pentagram,32,160,0.2
+square,23,160,0.14375
+circle,36,160,0.225
+scissor,3,160,0.01875
+watch,26,160,0.1625
+cup,3,160,0.01875
+chair,7,160,0.04375

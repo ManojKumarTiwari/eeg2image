@@ -25,7 +25,30 @@
       "Bash(.venv/Scripts/python -c \"from huggingface_hub import InferenceClient; print\\('HF hub available'\\)\")",
       "Bash(.venv/Scripts/python -c ':*)",
       "Bash(.venv/Scripts/python generate_all_classes.py)",
-      "Bash(.venv/Scripts/python.exe create_method_diagram.py)"
+      "Bash(.venv/Scripts/python.exe create_method_diagram.py)",
+      "Bash(Get-ChildItem -Path \"c:\\\\Users\\\\manoj\\\\Projects\\\\Mtech_Project2\\\\EEG2Image\" -Recurse -Directory)",
+      "Bash(Select-Object -ExpandProperty FullName)",
+      "PowerShell(Get-ChildItem -Path \"c:\\\\Users\\\\manoj\\\\Projects\\\\Mtech_Project2\\\\EEG2Image\" -Directory -Exclude \".venv\" | ForEach-Object { $_.Name })",
+      "Read(//c/ProgramData/miniconda3/**)",
+      "Read(//c/Users/manoj/.conda/**)",
+      "PowerShell(& \"C:\\\\Users\\\\manoj\\\\anaconda3\\\\envs\\\\.venv\\\\python.exe\" -c \"import torch; print\\(torch.__version__\\); print\\(torch.cuda.is_available\\(\\)\\)\")",
+      "Read(//c/Users/manoj/**)",
+      "Bash(\"/c/Users/manoj/Projects/Mtech_Project2/EEG2Image/.venv/Scripts/python.exe\" -c \"import torch; print\\('torch:', torch.__version__\\); print\\('cuda:', torch.cuda.is_available\\(\\)\\)\")",
+      "Bash(\"/c/Users/manoj/Projects/Mtech_Project2/EEG2Image/.venv/Scripts/python.exe\" baseline_linear_probe.py --epochs 30 --batch_size 32 --lr 1e-3 --seed 42)",
+      "Bash(\"/c/Users/manoj/Projects/Mtech_Project2/EEG2Image/.venv/Scripts/python.exe\" baseline_no_qformer.py --epochs 20 --batch_size 4 --seed 42)",
+      "WebFetch(domain:doi.org)",
+      "WebFetch(domain:www.nature.com)",
+      "WebFetch(domain:pmc.ncbi.nlm.nih.gov)",
+      "WebFetch(domain:pubmed.ncbi.nlm.nih.gov)",
+      "WebFetch(domain:www.sciencedirect.com)",
+      "WebFetch(domain:linkinghub.elsevier.com)",
+      "WebFetch(domain:api.semanticscholar.org)",
+      "WebFetch(domain:www.semanticscholar.org)",
+      "WebFetch(domain:arxiv.org)",
+      "PowerShell(node --version)",
+      "PowerShell(npm --version)",
+      "PowerShell(npm list -g @anthropic-ai/claude-code 2>$null)",
+      "PowerShell(npm list -g claude 2>$null)"
     ]
   }
 }
